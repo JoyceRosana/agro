@@ -1,115 +1,33 @@
-@media(max-width:1200px){
-
-    .hero h1{
-
-        font-size:4.8rem;
-    }
-
-}
-
-@media(max-width:992px){
-
-    .hero h1{
-
-        font-size:4rem;
-    }
-
-    .hero p{
-
-        font-size:1.1rem;
-    }
-
-    nav ul{
-
-        gap:25px;
-    }
-
-}
-
 @media(max-width:768px){
 
-    /* HEADER */
-
-    .nav{
-
-        flex-direction:column;
-
-        gap:20px;
-    }
-
-    nav ul{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:20px;
-    }
-
-    /* HERO */
-
     .hero{
-
-        text-align:left;
 
         padding-top:120px;
     }
 
-    .hero h1{
+    .hero-content{
 
-        font-size:3rem;
+        margin-left:0;
     }
 
-    .hero p{
+    .hero h1{
+
+        font-size:2.8rem;
+    }
+
+    .hero-description{
 
         font-size:1rem;
     }
 
-    /* BOTÕES */
+    .cards{
 
-    .hero-buttons{
-
-        flex-direction:column;
-
-        align-items:flex-start;
+        grid-template-columns:1fr;
     }
 
-    .btn-primary,
-    .btn-secondary{
+    nav ul{
 
-        width:100%;
-        justify-content:center;
-    }
-
-    /* FEATURES */
-
-    .features{
-
-        padding:80px 0;
-    }
-
-    .section-title h2{
-
-        font-size:2.2rem;
-    }
-
-}
-
-@media(max-width:480px){
-
-    .hero h1{
-
-        font-size:2.4rem;
-    }
-
-    .logo{
-
-        font-size:1.5rem;
-    }
-
-    .section-title h2{
-
-        font-size:2rem;
+        margin-right:0;
     }
 
 }
