@@ -1,0 +1,709 @@
+/* ========================================
+   RESET
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+    background:#f5f5f5;
+
+    transition:.3s;
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container{
+
+    width:92%;
+
+    max-width:1500px;
+
+    margin:0 auto;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    backdrop-filter:blur(10px);
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.2);
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 0;
+}
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:#16351f;
+}
+
+/* ========================================
+   MENU
+======================================== */
+
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    list-style:none;
+
+    margin-right:320px;
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#16351f;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    position:relative;
+}
+
+/* LINHA MENU */
+
+nav a::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+    height:2px;
+
+    background:#2E7D32;
+
+    transition:.3s;
+}
+
+nav a:hover::after{
+
+    width:100%;
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    background:
+    url('../assets/images/agro-inicial.png');
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* ========================================
+   OVERLAY
+======================================== */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:640px;
+
+    margin-left:100px;
+
+    margin-top:40px;
+}
+
+/* ========================================
+   SUBTITLE
+======================================== */
+
+.hero-subtitle{
+
+    display:block;
+
+    margin-bottom:28px;
+
+    letter-spacing:6px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:#2E7D32;
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.hero h1{
+
+    font-size:4.3rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    color:#12361f;
+
+    margin-bottom:28px;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.hero-description{
+
+    max-width:560px;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+    color:#18351f;
+
+    margin-bottom:40px;
+
+    padding:18px 24px;
+
+    border-radius:18px;
+
+    border:2px solid rgba(255,255,255,0.85);
+
+    background:
+    rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 38px;
+
+    border-radius:999px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2E7D32,
+        #1B5E20
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.18);
+}
+
+.btn-primary:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.02);
+}
+
+/* ========================================
+   BOTÃO ROLAR
+======================================== */
+
+.scroll-down{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:40px;
+
+    transform:translateX(-50%);
+
+    z-index:5;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    animation:
+    float 2s infinite ease-in-out;
+
+    transition:.4s;
+}
+
+/* ESCONDER BOTÃO AO ROLAR */
+
+.scroll-down.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:
+    translateX(-50%)
+    translateY(30px);
+}
+
+/* MOUSE */
+
+.mouse{
+
+    width:34px;
+
+    height:54px;
+
+    border:
+    2px solid white;
+
+    border-radius:30px;
+
+    position:relative;
+
+    margin-bottom:10px;
+}
+
+/* BOLINHA */
+
+.mouse::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:10px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:6px;
+    height:6px;
+
+    background:white;
+
+    border-radius:50%;
+
+    animation:
+    scroll 1.6s infinite;
+}
+
+/* TEXTO */
+
+.scroll-text{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:white;
+
+    text-shadow:
+    0 3px 10px rgba(0,0,0,0.4);
+}
+
+/* ========================================
+   ANIMAÇÕES
+======================================== */
+
+@keyframes scroll{
+
+    0%{
+        opacity:1;
+
+        transform:
+        translateX(-50%)
+        translateY(0);
+    }
+
+    100%{
+        opacity:0;
+
+        transform:
+        translateX(-50%)
+        translateY(18px);
+    }
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:
+        translateX(-50%)
+        translateY(0);
+    }
+
+    50%{
+
+        transform:
+        translateX(-50%)
+        translateY(-8px);
+    }
+}
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.features{
+
+    padding:110px 0;
+
+    background:white;
+}
+
+/* TÍTULO */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+}
+
+.section-title h2{
+
+    font-size:3rem;
+
+    color:#111;
+
+    margin-bottom:18px;
+}
+
+.section-title p{
+
+    color:#666;
+
+    font-size:1.1rem;
+}
+
+/* ========================================
+   CARDS
+======================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+}
+
+.card{
+
+    background:white;
+
+    padding:40px 35px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+}
+
+.card-icon{
+
+    font-size:3rem;
+
+    margin-bottom:25px;
+}
+
+.card h3{
+
+    font-size:1.5rem;
+
+    margin-bottom:18px;
+
+    color:#16351f;
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.8;
+}
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+.accessibility-bar{
+
+    position:fixed;
+
+    top:18px;
+    right:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    z-index:99999;
+}
+
+.accessibility-bar button{
+
+    width:46px;
+    height:46px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+    rgba(20,60,32,0.96);
+
+    color:white;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.18);
+
+    transition:.3s;
+}
+
+.accessibility-bar button:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.05);
+
+    background:#2E7D32;
+}
+
+/* ========================================
+   DARK MODE
+======================================== */
+
+body.dark-mode{
+
+    background:#111;
+
+    color:white;
+}
+
+body.dark-mode .header{
+
+    background:
+    rgba(0,0,0,0.35);
+}
+
+body.dark-mode .features{
+
+    background:#171717;
+}
+
+body.dark-mode .card{
+
+    background:#202020;
+
+    color:white;
+}
+
+body.dark-mode .card h3,
+body.dark-mode .section-title h2{
+
+    color:white;
+}
+
+body.dark-mode .card p,
+body.dark-mode .section-title p{
+
+    color:#cccccc;
+}
+
+body.dark-mode nav a,
+body.dark-mode .logo{
+
+    color:white;
+}
+
+/* ========================================
+   READING MODE
+======================================== */
+
+body.reading-mode{
+
+    background:#f4ecd8;
+
+    color:#2b2b2b;
+}
+
+body.reading-mode .features{
+
+    background:#f4ecd8;
+}
+
+body.reading-mode .card{
+
+    background:#fffaf0;
+}
+
+body.reading-mode p{
+
+    line-height:2;
+
+    font-size:1.12rem;
+}
+
+/* ========================================
+   ANIMAÇÃO
+======================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
