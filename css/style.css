@@ -17,6 +17,10 @@ body{
     font-family:'Inter',sans-serif;
 
     overflow-x:hidden;
+
+
+    background:#e3e64c;
+
     color:#16351f;
 
     transition:.3s;
