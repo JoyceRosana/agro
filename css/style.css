@@ -1,6 +1,6 @@
 
 ROSANA JOYCE ROCHA TAVARES <tavares.rosana@escola.pr.gov.br>
-22:44 (há 0 minuto)
+22:44 (há 3 minutos)
 para mim
 
 /* ========================================
@@ -379,18 +379,25 @@ nav a:hover::after{
     text-shadow:
     0 3px 10px rgba(0,0,0,0.4);
 }
+
 /* ========================================
    FEATURES
 ======================================== */
 
 .features{
 
-    padding:110px 0;
+    position:relative;
+
+    z-index:3;
 
     background:white;
+
+    padding:120px 0;
 }
 
-/* TÍTULO */
+/* ========================================
+   TÍTULO
+======================================== */
 
 .section-title{
 
@@ -401,7 +408,7 @@ nav a:hover::after{
 
 .section-title h2{
 
-    font-size:3rem;
+    font-size:clamp(2rem,5vw,3rem);
 
     color:#111;
 
@@ -412,7 +419,13 @@ nav a:hover::after{
 
     color:#666;
 
-    font-size:1.1rem;
+    font-size:1.08rem;
+
+    line-height:1.7;
+
+    max-width:700px;
+
+    margin:0 auto;
 }
 
 /* ========================================
