@@ -379,25 +379,18 @@ nav a:hover::after{
     text-shadow:
     0 3px 10px rgba(0,0,0,0.4);
 }
-
 /* ========================================
    FEATURES
 ======================================== */
 
 .features{
 
-    position:relative;
-
-    z-index:3;
+    padding:110px 0;
 
     background:white;
-
-    padding:120px 0;
 }
 
-/* ========================================
-   TÍTULO
-======================================== */
+/* TÍTULO */
 
 .section-title{
 
