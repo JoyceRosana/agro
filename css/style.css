@@ -752,3 +752,22 @@ body.reading-mode p{
     background: #1565c0 !important;
     transform: scale(1.05);
 }
+
+.btn-jogar{
+    background:#2E7D32;
+    color:white;
+
+    padding:10px 16px;
+    border-radius:10px;
+
+    text-decoration:none;
+    display:inline-block;
+
+    transition:.3s;
+    margin-top:12px;
+}
+
+.btn-jogar:hover{
+    background:#1b5e20;
+    transform:scale(1.05);
+}
