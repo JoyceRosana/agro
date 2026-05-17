@@ -381,13 +381,13 @@ nav a:hover::after{
 
 .features{
 
-    position:center;
+    position: absolute;
 
     z-index:3;
 
     background:white;
 
-    padding:120px 0;
+    padding:200x 0;
 }
 
 /* ========================================
