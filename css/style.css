@@ -457,6 +457,10 @@ nav a:hover::after{
     translateY(-10px);
 }
 
+/* ========================================
+   BOTÃO Jogar
+======================================== */
+
 /* IMAGEM */
 
 .card img{
@@ -712,43 +716,3 @@ body.reading-mode p{
     .hero-description{
         padding:18px;
     }
-
-}
-
-.simulador-card {
-    background: linear-gradient(135deg, #dff6ff, #b3e5ff);
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.10);
-    transition: .4s;
-}
-
-.simulador-card:hover {
-    transform: translateY(-10px);
-}
-
-/* título azul */
-.simulador-card h3 {
-    color: #1e88e5;
-}
-
-/* texto */
-.simulador-card p {
-    color: #2b2b2b;
-}
-
-/* botão */
-.simulador-card .card-content button {
-    background: #1e88e5 !important;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.simulador-card .card-content button:hover {
-    background: #1565c0 !important;
-    transform: scale(1.05);
-}
