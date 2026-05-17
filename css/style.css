@@ -381,7 +381,7 @@ nav a:hover::after{
 
 .features{
 
-    position:relative;
+    position:center;
 
     z-index:3;
 
