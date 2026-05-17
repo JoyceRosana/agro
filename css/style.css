@@ -408,7 +408,7 @@ nav a:hover::after{
 
 .section-title h2{
 
-    font-size:clamp(2rem,5vw,3rem);
+    font-size:3rem;
 
     color:#111;
 
@@ -419,13 +419,7 @@ nav a:hover::after{
 
     color:#666;
 
-    font-size:1.08rem;
-
-    line-height:1.7;
-
-    max-width:700px;
-
-    margin:0 auto;
+    font-size:1.1rem;
 }
 
 /* ========================================
