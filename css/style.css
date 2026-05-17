@@ -457,14 +457,10 @@ nav a:hover::after{
     translateY(-10px);
 }
 
-.card-simulador {
-  background: linear-gradient(135deg, #dff6ff, #b3e5ff);
-  border-radius: 16px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  font-family: Arial, sans-serif;
-}
+/* ========================================
+   BOTÃO Jogar
+======================================== */
+
 /* IMAGEM */
 
 .card img{
