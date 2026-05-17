@@ -19,5 +19,7 @@ window.addEventListener('scroll',()=>{
         header.style.boxShadow =
         'none';
     }
-
+    function irParaSimulador() {
+  window.location.href = "pages/simulador.html";
+}
 });

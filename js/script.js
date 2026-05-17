@@ -40,4 +40,8 @@ window.addEventListener('scroll',()=>{
         scrollButton.classList.remove('hide');
     }
 
+    function irParaSimulador() {
+  window.location.href = "pages/simulador.html";
+}
+
 });
