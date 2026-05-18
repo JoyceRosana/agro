@@ -463,7 +463,7 @@ nav a:hover::after{
 
 .card img{
 
-    width:100%;
+    width:80%;
 
     height:500px;
 
@@ -474,12 +474,12 @@ nav a:hover::after{
 
 .card-content{
 
-    padding:28px;
+    padding:8px;
 }
 
 .card-content h3{
 
-    font-size:1.6rem;
+    font-size:1rem;
 
     margin-bottom:15px;
 
