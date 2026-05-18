@@ -758,7 +758,7 @@ body.reading-mode p{
 }
 
 .simulador-card .card-content button:hover {
-    background: #1565c0 !important;
+    background: #0d4482 !important;
     transform: scale(1.05);
 }
 
@@ -767,9 +767,9 @@ body.reading-mode p{
 
     margin-top:20px;
 
-    background:#1e88e5;
+    background:#6bb8fb;
 
-    color:white;
+    color:rgb(138, 174, 193);
 
     padding:14px 28px;
 
