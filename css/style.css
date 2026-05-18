@@ -474,12 +474,12 @@ nav a:hover::after{
 
 .card-content{
 
-    padding:8px;
+    padding:40px;
 }
 
 .card-content h3{
 
-    font-size:1rem;
+    font-size:1.06rem;
 
     margin-bottom:15px;
 
