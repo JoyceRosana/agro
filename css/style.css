@@ -805,3 +805,16 @@ body.reading-mode p{
 
     border-radius:15px;
 }
+
+.footer{
+
+    background:#16351f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    margin-top:80px;
+}
