@@ -439,6 +439,15 @@ nav a:hover::after{
     gap:35px;
 }
 
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.45);
+}
+
 .card{
 
     background:white;
