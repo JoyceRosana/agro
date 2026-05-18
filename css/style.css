@@ -377,24 +377,21 @@ nav a:hover::after{
     0 3px 10px rgba(0,0,0,0.4);
 }
 
+
+
+
 /* ========================================
    FEATURES
 ======================================== */
 
 .features{
 
-    position:relative;
-
-    z-index:3;
+    padding:110px 0;
 
     background:white;
-
-    padding:120px 0;
 }
 
-/* ========================================
-   TÍTULO
-======================================== */
+/* TÍTULO */
 
 .section-title{
 
@@ -405,7 +402,7 @@ nav a:hover::after{
 
 .section-title h2{
 
-    font-size:clamp(2rem,5vw,3rem);
+    font-size:3rem;
 
     color:#111;
 
@@ -416,13 +413,7 @@ nav a:hover::after{
 
     color:#666;
 
-    font-size:1.08rem;
-
-    line-height:1.7;
-
-    max-width:700px;
-
-    margin:0 auto;
+    font-size:1.1rem;
 }
 
 /* ========================================
@@ -434,191 +425,51 @@ nav a:hover::after{
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(320px,1fr));
+    repeat(auto-fit,minmax(260px,1fr));
 
-    gap:35px;
+    gap:30px;
 }
 
 .card{
 
     background:white;
 
+    padding:40px 35px;
+
     border-radius:24px;
 
-    overflow:hidden;
-
     box-shadow:
-    0 15px 40px rgba(0,0,0,0.08);
+    0 10px 30px rgba(0,0,0,0.08);
 
     transition:.4s;
 }
 
 .card:hover{
 
-    transform:
-    translateY(-10px);
+    transform:translateY(-10px);
 }
 
-/* IMAGEM */
+.card-icon{
 
-.card img{
-    width: 100%;
-    height:100%;
+    font-size:3rem;
 
-    object-fit:contain;
-
-    background:#f5f5f5;
+    margin-bottom:25px;
 }
 
-/* CONTEÚDO */
+.card h3{
 
-.card-content{
+    font-size:1.5rem;
 
-    padding:40px;
-}
-
-.card-content h3{
-
-    font-size:1.06rem;
-
-    margin-bottom:15px;
+    margin-bottom:18px;
 
     color:#16351f;
 }
 
-.card-content p{
+.card p{
 
     color:#666;
 
     line-height:1.8;
-}
-
-/* ========================================
-   ACESSIBILIDADE
-======================================== */
-
-.accessibility-bar{
-
-    position:fixed;
-
-    top:18px;
-    right:25px;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    z-index:99999;
-}
-
-.accessibility-bar button{
-
-    width:46px;
-    height:46px;
-
-    border:none;
-
-    border-radius:14px;
-
-    background:
-    rgba(20,60,32,0.96);
-
-    color:white;
-
-    font-size:.95rem;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.18);
-
-    transition:.3s;
-}
-
-.accessibility-bar button:hover{
-
-    transform:
-    translateY(-3px)
-    scale(1.05);
-
-    background:#2E7D32;
-}
-
-/* ========================================
-   DARK MODE
-======================================== */
-
-body.dark-mode{
-
-    background:#111;
-
-    color:white;
-}
-
-body.dark-mode .header{
-
-    background:
-    rgba(0,0,0,0.4);
-}
-
-body.dark-mode .features{
-
-    background:#171717;
-}
-
-body.dark-mode .card{
-
-    background:#202020;
-}
-
-body.dark-mode .card-content h3,
-body.dark-mode .section-title h2{
-
-    color:white;
-}
-
-body.dark-mode .card-content p,
-body.dark-mode .section-title p{
-
-    color:#cccccc;
-}
-
-body.dark-mode nav a,
-body.dark-mode .logo{
-
-    color:white;
-}
-
-/* ========================================
-   READING MODE
-======================================== */
-
-body.reading-mode{
-
-    background:#f4ecd8;
-
-    color:#2b2b2b;
-}
-
-body.reading-mode .features{
-
-    background:#f4ecd8;
-}
-
-body.reading-mode .card{
-
-    background:#fffaf0;
-}
-
-body.reading-mode p{
-
-    line-height:2;
-
-    font-size:1.08rem;
 }
 
 /* ========================================
