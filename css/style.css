@@ -802,4 +802,5 @@ body.reading-mode p{
     width:300px;
 
     border-radius:15px;
+     flex-wrap:wrap;
 }
