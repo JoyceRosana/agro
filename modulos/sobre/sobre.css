@@ -29,7 +29,7 @@ body {
     position: relative;
     min-height: 60vh;
 
-    background: url("assets/imagens/plantação.png") no-repeat center center;
+    background: url("/assets/imagens/plantação.png") no-repeat center center;
     background-size: cover;
 
     display: flex;
