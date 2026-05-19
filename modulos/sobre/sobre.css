@@ -357,16 +357,16 @@ footer {
 }
 
 .footer-brand {
+    display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .footer-brand h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 0;
 }
 
 .footer-brand p {
