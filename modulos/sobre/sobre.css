@@ -341,75 +341,47 @@ HEADER
 }
 
 /* ==========================================================================
-   FOOTER
+   FOOTER BOTTOM (Adicione este bloco)
    ========================================================================== */
-footer {
-    background-color: #052e16;
-    color: #ffffff;
-    padding: 60px 0 30px 0;
+.footer-bottom {
+    padding-top: 30px;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
-    gap: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #14532d;
-}
-
-.footer-brand h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+.footer-bottom-flex {
     display: flex;
+    justify-content: space-between; /* Empurra o logo para esquerda e o texto para a direita */
     align-items: center;
-    gap: 8px;
+    margin-bottom: 20px; /* Dá espaço para os direitos autorais que ficam embaixo */
 }
 
-.footer-brand p {
+.footer-desc {
     color: #cbd5e1;
     font-size: 0.95rem;
-    max-width: 260px;
+    margin: 0;
 }
 
-.footer-col h4 {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.footer-col ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.footer-col ul li a {
-    color: #cbd5e1;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.footer-contact li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.9rem;
-    color: #cbd5e1;
-}
-
+/* Modifique a sua classe .copyright existente para esta: */
 .copyright {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #14532d; /* Linha sutil separando os direitos autorais */
     font-size: 0.85rem;
     color: #94a3b8;
+    width: 100%;
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE (Ajuste dentro do seu @media max-width: 900px) */
 @media (max-width: 900px) {
     .grid-2x2, .split-section, .footer-grid { grid-template-columns: 1fr; }
     .card-wide { grid-column: span 1; }
     .cta-banner { flex-direction: column; gap: 20px; text-align: center; }
     .cta-info { flex-direction: column; }
     .card-flex { flex-direction: column; }
+    
+    /* Garante que fique em lista no celular */
+    .footer-bottom-flex { 
+        flex-direction: column; 
+        gap: 15px; 
+        text-align: center; 
+    }
 }
