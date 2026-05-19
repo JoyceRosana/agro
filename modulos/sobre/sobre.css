@@ -42,7 +42,7 @@ body {
 
 .hero h1 {
     /* 3. MUDANÇA AQUI: Altere o '3rem' para o tamanho que desejar (ex: 2.5rem ou 3.5rem) */
-    font-size: 3rem; 
+    font-size: 3.5rem; 
     
     color: #134326;
     margin-bottom: 15px;
@@ -54,7 +54,7 @@ body {
 
 .hero p {
     /* 5. MUDANÇA AQUI: Altere o '1.25rem' para o tamanho que desejar (ex: 1.1rem ou 1.4rem) */
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     
     color: #060a2d;
     
@@ -74,7 +74,6 @@ body {
     align-items: center;
     gap: 8px;
 }
-
 
 /* ==========================================================================
    GRID DE CARDS (2 COLUNAS)
