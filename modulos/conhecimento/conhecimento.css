@@ -135,7 +135,7 @@ nav a.active::after{
 .hero{
     position:relative;
 
-    min-height:60vh;
+    min-height:150vh;
 
     padding-top:200px;
 
