@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfdfa;
+    color: #2c3e2e;
+    line-height: 1.6;
+}
+
+.header-simples {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #f4f7f1;
+    position: relative;
+    border-bottom: 1px solid #e1e8dc;
+}
+
+.header-simples h1 {
+    font-size: 2.5rem;
+    color: #1e3322;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.detalhe-folha {
+    width: 40px;
+    height: 4px;
+    background-color: #87a96b;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.grid-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e2ebd9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(135, 169, 107, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(135, 169, 107, 0.1);
+}
+
+.card-content {
+    padding: 30px;
+    flex: 1;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: #1e3322;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #4a5d4e;
+    max-width: 500px;
+}
+
+.card img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-left: 1px solid #e2ebd9;
+}
+
+.referencias {
+    background-color: #f4f7f1;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #e1e8dc;
+}
+
+.referencias h2 {
+    font-size: 1.3rem;
+    color: #1e3322;
+    margin-bottom: 20px;
+}
+
+.referencias-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.referencias-links a {
+    color: #4c7031;
+    text-decoration: none;
+    font-weight: 500;
+    width: fit-content;
+    transition: color 0.2s ease;
+}
+
+.referencias-links a:hover {
+    color: #2c4419;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        border-left: none;
+        border-bottom: 1px solid #e2ebd9;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}
