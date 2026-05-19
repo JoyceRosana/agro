@@ -201,6 +201,29 @@ body {
     font-weight: 500;
 }
 
+/* Garante que o círculo esconda o que passar dos limites */
+.compromisso-icon {
+    background-color: #f0fdf4;
+    border: 1px solid #dcfce7;
+    color: #16a34a;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 50% garante um círculo perfeito */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden; /* Corta as rebarbas da imagem fora do círculo */
+}
+
+/* Controla o comportamento da imagem dentro do círculo */
+.compromisso-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche o círculo sem distorcer a imagem */
+    object-position: center; /* Mantém o foco no centro da imagem */
+}
+
 /* Referências */
 .ref-list {
     display: flex;
