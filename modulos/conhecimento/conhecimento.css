@@ -74,20 +74,30 @@ body {
     gap: 20px;
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    list-style: none;
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    list-style:none;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 0.95rem;
-    font-weight: 600;
-    position: relative;
-    transition: .3s;
+nav a{
+
+    text-decoration:none;
+
+    color:#16351f;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.3s;
 }
 
 /* Linha Efeito Hover no Menu */
