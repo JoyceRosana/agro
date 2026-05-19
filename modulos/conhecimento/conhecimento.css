@@ -173,37 +173,40 @@ nav a.active::after {
 /* ========================================
    HERO / BANNER
 ======================================== */
-.hero {
-    background: linear-gradient(135deg, rgba(11, 37, 26, 0.85) 0%, rgba(22, 62, 43, 0.9) 100%), 
-                url('sua-imagem-aqui.jpg'); /* Insira o link da imagem aqui */
-    background-size: cover;
-    background-position: center;
-    color: var(--white);
-    padding: 80px 0;
-    text-align: center;
+.hero{
+    position:relative;
+    min-height:60vh;
+
+    background:
+    linear-gradient(
+    rgba(5,46,22,0.65),
+    rgba(5,46,22,0.65)),
+    url("/assets/imagens/Plantação.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
 }
 
-.hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
 }
 
-.hero p {
-    color: #a3c7b8;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:0 auto;
+    color:#d1fae5;
 }
 
-.search-box {
-    background: var(--white);
-    max-width: 650px;
-    margin: 0 auto 20px auto;
-    display: flex;
-    align-items: center;
-    border-radius: 6px;
-    padding: 5px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
 
 .search-icon {
     color: var(--text-light);
