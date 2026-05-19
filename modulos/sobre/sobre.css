@@ -28,34 +28,42 @@ body {
 .hero {
     position: relative;
     min-height: 60vh;
-
     background: url("/assets/imagens/Plantação.png") no-repeat center center;
     background-size: cover;
-
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-/* Alinha todo o conteúdo para a esquerda */
+    
+    /* 1. MUDANÇA AQUI: Alinha todo o conteúdo para a esquerda */
     justify-content: flex-start; 
     
-    /* Dá um espaçamento interno para o texto não colar na borda da tela */
-    padding-left: 80%; 
+    /* 2. ADICIONE ISSO: Dá um espaçamento interno para o texto não colar na borda da tela */
+    padding-left: 10%; 
+}
 
 .hero h1 {
-    font-size: 3rem;
+    /* 3. MUDANÇA AQUI: Altere o '3rem' para o tamanho que desejar (ex: 2.5rem ou 3.5rem) */
+    font-size: 3rem; 
+    
     color: #134326;
     margin-bottom: 15px;
     font-weight: 700;
+    
+    /* 4. GARANTIA: Força o alinhamento do texto à esquerda */
+    text-align: left; 
 }
 
 .hero p {
-    font-size: 1.25rem;
+    /* 5. MUDANÇA AQUI: Altere o '1.25rem' para o tamanho que desejar (ex: 1.1rem ou 1.4rem) */
+    font-size: 1.25rem; 
+    
     color: #060a2d;
-    max-width: 700px;
+    
+    /* 6. GARANTIA: Força o alinhamento do texto à esquerda */
+    text-align: left; 
 }
 
+    min-height: 60vh
+    
 /* Títulos das Seções */
 .section-title {
     font-size: 1.2rem;
