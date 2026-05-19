@@ -39,14 +39,14 @@ body {
 
 .hero h1 {
     font-size: 3rem;
-    color: #557896;
+    color: #3e709c;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .hero p {
     font-size: 1.25rem;
-    color: #99c4d9;
+    color: #226e95;
     max-width: 700px;
 }
 
