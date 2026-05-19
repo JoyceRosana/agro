@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre o AgroTech</title>
-    <!-- Fontes e Ícones externos -->
-    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Link corrigido do FontAwesome para os ícones funcionarem -->
     <link rel="stylesheet" href="https://cloudflare.com">
-    <!-- Arquivo de Estilo Separado -->
+    <!-- Arquivo de Estilo (Verifique se o nome é style.css ou sobre.css) -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,7 +29,7 @@
         </div>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO / SEÇÃO SOBRE O AGROTECH -->
     <section class="hero">
         <div class="container">
             <h1>Sobre o AgroTech</h1>
@@ -50,7 +49,7 @@
                 <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
                 <div class="card-content">
                     <h3>O que é o AgroTech?</h3>
-                    <p>O AgroTech Sustentável é uma plataforma educativa que utiliza tecnologia para acessar práticas agrícolas sustentáveis de forma simples, prática e acessível.</p>
+                    <p>O AgroTech Sustentável é uma plataforma educativa que utiliza tecnologia para ensinar práticas agrícolas sustentáveis de forma simples, prática e acessível.</p>
                 </div>
             </div>
             <!-- Card 2 -->
@@ -69,7 +68,8 @@
                         <h3>Simulador</h3>
                         <p>Nosso simulador permite testar cenários de plantio e manejo do solo, mostrando os impactos das escolhas e auxiliando no aprendizado prático.</p>
                     </div>
-                    <img src="planta.png" alt="Planta" class="card-img">
+                    <!-- Imagem alterada para o arquivo correto da foto -->
+                    <img src="a platação.png" alt="Plantação" class="card-img">
                 </div>
             </div>
             <!-- Card 4 -->
@@ -91,44 +91,48 @@
             </div>
         </div>
 
-        <!-- SEÇÃO DUPLA -->
+        <!-- SEÇÃO DUPLA (TECNOLOGIAS E REFERÊNCIAS) -->
         <div class="split-section">
             <!-- Tecnologias -->
-            <div>
+            <div class="tech-box">
                 <div class="section-title"><i class="fa-solid fa-code"></i> Tecnologias utilizadas</div>
                 <div class="tech-logos">
-                    <div class="tech-item"><i class="fa-brands fa-html5"></i> HTML5</div>
-                    <div class="tech-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-                    <div class="tech-item"><i class="fa-brands fa-js"></i> JavaScript</div>
-                    <div class="tech-item"><div class="vercel-logo"></div> Vercel</div>
+                    <div class="tech-item html5"><i class="fa-brands fa-html5"></i> <span>HTML5</span></div>
+                    <div class="tech-item css3"><i class="fa-brands fa-css3-alt"></i> <span>CSS3</span></div>
+                    <div class="tech-item js"><i class="fa-brands fa-js"></i> <span>JavaScript</span></div>
+                    <div class="tech-item vercel"><i class="fa-solid fa-triangle-exclamation change-to-vercel"></i> <span>Vercel</span></div>
                 </div>
                 <div class="compromisso-box">
-                    <i class="fa-solid fa-leaf"></i>
+                    <div class="compromisso-icon"><img src="planta.png" alt="Planta"></div>
                     <span>Nosso compromisso é com a educação, a inovação e a sustentabilidade para um futuro melhor no campo.</span>
                 </div>
             </div>
 
             <!-- Referências -->
-            <div>
+            <div class="ref-box">
                 <div class="section-title"><i class="fa-solid fa-link"></i> Referências</div>
                 <div class="ref-list">
+                    <!-- Embrapa -->
                     <div class="ref-item">
-                        <div class="ref-logo-placeholder">Emb<span>rapa</span></div>
+                        <div class="ref-logo-placeholder logo-embrapa">Embrapa</div>
                         <div class="ref-info">
                             <h4>Empresa Brasileira de Pesquisa Agropecuária</h4>
                             <a href="https://embrapa.br" target="_blank">embrapa.br</a>
                         </div>
                     </div>
+                    <!-- FAO -->
                     <div class="ref-item">
-                        <div class="ref-logo-placeholder"><i class="fa-solid fa-globe"></i> FAO</div>
+                        <div class="ref-logo-placeholder logo-fao"><i class="fa-solid fa-globe"></i> FAO</div>
                         <div class="ref-info">
                             <h4>Organização das Nações Unidas para Agricultura e Alimentação</h4>
                             <a href="https://fao.org" target="_blank">fao.org</a>
                         </div>
                     </div>
+                    <!-- Ministério -->
                     <div class="ref-item">
+                        <div class="ref-logo-placeholder logo-ministerio">MINISTÉRIO DA AGRICULTURA E PECUÁRIA</div>
                         <div class="ref-info">
-                            <h4 style="font-size: 11px; letter-spacing: 0.5px;">MINISTÉRIO DA AGRICULTURA E PECUÁRIA</h4>
+                            <h4>Ministério da Agricultura e Pecuária</h4>
                             <a href="https://www.gov.br" target="_blank">gov.br/agricultura</a>
                         </div>
                     </div>
@@ -139,7 +143,9 @@
         <!-- CTA BANNER -->
         <div class="cta-banner">
             <div class="cta-info">
-                <i class="fa-regular fa-envelope"></i>
+                <div class="cta-icon-wrapper">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
                 <div class="cta-text">
                     <h3>Tem dúvidas ou sugestões?</h3>
                     <p>Entre em contato com a equipe AgroTech.</p>
@@ -185,11 +191,11 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; 2026 AgroTech Sustentável. Todos os direitos reservados.
+            <p>&copy; 2025 AgroTech Sustentável. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Arquivo de Script Separado -->
-    <script src="script.js"></script>
+    <!-- Script JavaScript -->
+    <script src="sobre.js"></script>
 </body>
 </html>
