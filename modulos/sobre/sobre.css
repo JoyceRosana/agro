@@ -356,29 +356,19 @@ footer {
     gap: 40px;
 }
 
-.footer-brand {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.footer-brand{
+    display:flex;
+    flex-direction:column;
 }
 
-.footer-brand h3 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 0;
+.footer-brand h3{
+    display:flex;
+    align-items:center;
+    gap:8px;
 }
 
-.footer-brand {
-    display: flex;
-    flex-direction: column;
-}
-.footer-brand p {
-    display: block;
-    margin-top: 10px;
-    color: #cbd5e1;
-    font-size: 0.95rem;
-    max-width: 260px;
+.footer-brand p{
+    margin-top:10px;
 }
 
 .footer-col h4 {
