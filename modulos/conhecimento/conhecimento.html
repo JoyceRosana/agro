@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base de Conhecimento - AgroTech</title>
-    <!-- Vinculação do CSS Local -->
-    <link rel="stylesheet" href="style-conhecimento.css">
-    <!-- Ícones via FontAwesome -->
+    <link rel="stylesheet" href="style-base.css">
+    <!-- Ícones via FontAwesome (Opcional, substitua pelas suas imagens se preferir) -->
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
@@ -15,7 +14,7 @@
     <header class="navbar">
         <div class="logo">🌿 AgroTech <span>Base de Conhecimento</span></div>
         <nav>
-            <a href="../../index.html">Início</a>
+            <a href="index.html">Início</a>
             <a href="#categorias">Categorias</a>
             <a href="#faqs">Perguntas Frequentes</a>
             <a href="#" class="btn-ask">Fazer pergunta</a>
@@ -28,7 +27,7 @@
         <p>Aprenda, pratique e evolua com conhecimento agrícola confiável e atualizado.</p>
         <div class="search-box">
             <input type="text" placeholder="Pesquisar: solo, irrigação, sustentabilidade, pragas...">
-            <button type="button">Buscar</button>
+            <button type="submit">Buscar</button>
         </div>
         <div class="popular-tags">
             <span>Pesquisas populares:</span>
@@ -108,15 +107,15 @@
     <!-- 4. CONTEÚDOS EM DESTAQUE -->
     <section class="featured-section">
         <div class="section-title">
-            <h2>🌿 Conteúdos em destaque</h2>
+            <h2>🍃 Conteúdos em destaque</h2>
             <p>Artigos e guias selecionados para você</p>
         </div>
         <div class="grid-featured">
             <!-- Artigo 1 -->
             <div class="card-feat">
                 <div class="thumb-container">
-                    <img src="https://unsplash.com" alt="Como economizar água">
-                    <span class="badge badge-tag badge-irrigacao">Irrigação</span>
+                    <img src="https://unsplash.com" alt="Água">
+                    <span class="badge badge-tag">Irrigação</span>
                     <span class="badge badge-level intermed">Intermediário</span>
                 </div>
                 <div class="card-feat-body">
@@ -132,8 +131,8 @@
             <!-- Artigo 2 -->
             <div class="card-feat">
                 <div class="thumb-container">
-                    <img src="https://unsplash.com" alt="Qualidade do solo">
-                    <span class="badge badge-tag badge-solo">Solo</span>
+                    <img src="https://unsplash.com" alt="Solo">
+                    <span class="badge badge-tag text-solo">Solo</span>
                     <span class="badge badge-level basic">Básico</span>
                 </div>
                 <div class="card-feat-body">
@@ -149,8 +148,8 @@
             <!-- Artigo 3 -->
             <div class="card-feat">
                 <div class="thumb-container">
-                    <img src="https://unsplash.com" alt="Práticas sustentáveis">
-                    <span class="badge badge-tag badge-sustentabilidade">Sustentabilidade</span>
+                    <img src="https://unsplash.com" alt="Campo">
+                    <span class="badge badge-tag text-sust">Sustentabilidade</span>
                     <span class="badge badge-level advanced">Avançado</span>
                 </div>
                 <div class="card-feat-body">
@@ -173,54 +172,24 @@
         <div class="grid-faq">
             <div class="faq-col">
                 <div class="faq-item">
-                    <div class="faq-trigger">
-                        <span>? Como economizar água na irrigação?</span> <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-content">
-                        <p>Utilize sistemas de gotejamento, monitore a umidade do solo em tempo real e planeje as irrigações nos períodos mais frescos do dia para evitar a evaporação excessiva.</p>
-                    </div>
+                    <span>? Como economizar água na irrigação?</span> <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-trigger">
-                        <span>? Como melhorar a qualidade do solo?</span> <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-content">
-                        <p>Realize a rotação de culturas, adicione matéria orgânica compostada e faça análises periódicas para corrigir a acidez com calagem de forma assertiva.</p>
-                    </div>
+                    <span>? Como melhorar a qualidade do solo?</span> <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-trigger">
-                        <span>? O que é agricultura sustentável?</span> <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-content">
-                        <p>É o modelo de produção que equilibra as demandas de alimentos e lucros sem esgotar os recursos naturais, preservando a biodiversidade e garantindo o futuro das próximas gerações.</p>
-                    </div>
+                    <span>? O que é agricultura sustentável?</span> <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div>
             <div class="faq-col">
                 <div class="faq-item">
-                    <div class="faq-trigger">
-                        <span>? Como identificar pragas na lavoura?</span> <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-content">
-                        <p>Faça monitoramentos visuais semanais nas folhas e caules, use armadilhas específicas e conte com ferramentas tecnológicas de reconhecimento por imagem se necessário.</p>
-                    </div>
+                    <span>? Como identificar pragas na lavoura?</span> <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-trigger">
-                        <span>? Qual a melhor época para plantar?</span> <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-content">
-                        <p>Depende diretamente do tipo de cultura e da sua região climática. Sempre consulte o Zoneamento Agrícola de Risco Climático (ZARC) para mitigar perdas.</p>
-                    </div>
+                    <span>? Qual a melhor época para plantar?</span> <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-trigger">
-                        <span>? Como reduzir custos na produção?</span> <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-content">
-                        <p>Adote a agricultura de precisão para evitar desperdício de insumos, faça manutenções preventivas no maquinário e otimize o uso de água e energia elétrica.</p>
-                    </div>
+                    <span>? Como reduzir custos na produção?</span> <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div>
         </div>
@@ -243,7 +212,5 @@
         <a href="#" class="back-to-top">Voltar para o início &uarr;</a>
     </footer>
 
-    <!-- Vinculação do JS Local -->
-    <script src="script-conhecimento.js"></script>
 </body>
 </html>
