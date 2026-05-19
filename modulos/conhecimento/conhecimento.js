@@ -1,44 +1,20 @@
-// conhecimento.js
+// Ativação e lógica de expansão do Accordion (FAQ)
+document.addEventListener("DOMContentLoaded", () => {
+    const faqQuestions = document.querySelectorAll(".faq-question");
 
-const pesquisa = document.getElementById("pesquisa");
+    faqQuestions.forEach(question => {
+        question.addEventListener("click", () => {
+            const currentItem = question.parentElement;
+            
+            // Fecha outros FAQs abertos para ficar organizado
+            document.querySelectorAll(".faq-item").forEach(item => {
+                if (item !== currentItem) {
+                    item.classList.remove("active");
+                }
+            });
 
-pesquisa.addEventListener("keyup", () => {
-
-    let texto = pesquisa.value.toLowerCase();
-
-    let cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-
-        let titulo = card.innerText.toLowerCase();
-
-        if(titulo.includes(texto)){
-
-            card.style.display = "block";
-
-        }else{
-
-            card.style.display = "none";
-        }
-
+            // Altera o estado do item atual
+            currentItem.classList.toggle("active");
+        });
     });
-
-});
-
-/* BOTÃO PERGUNTA */
-
-const btnPergunta = document.getElementById("btnPergunta");
-
-btnPergunta.addEventListener("click", () => {
-
-    let pergunta = prompt("Digite sua pergunta:");
-
-    if(pergunta){
-
-        alert(
-            "Pergunta enviada com sucesso!\n\n" +
-            "Pergunta: " + pergunta
-        );
-    }
-
 });

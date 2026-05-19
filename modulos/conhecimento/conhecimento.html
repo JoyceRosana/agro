@@ -1,280 +1,232 @@
-<!-- conhecimento.html -->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Base de Conhecimento</title>
-
+    <title>Base de Conhecimento - AgroTech</title>
+    <!-- Fontes Modernas -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="conhecimento.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
 </head>
-
 <body>
 
-    <header class="header">
-
-    <div class="container nav">
-
+    <!-- CABEÇALHO PADRÃO DO SITE -->
+    <header class="navbar">
         <div class="logo">
-            🌿 AgroTech Sustentável
+            <span class="logo-text">AgroTech</span>
+            <span class="logo-sub">Base de Conhecimento</span>
         </div>
-
         <nav>
-
-            <ul>
-
-                <li>
-                    <a href="../../index.html">
-                        Início
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../simulador/simulador.html">
-                        Simulador
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../suporte/suporte.html">
-                        Sobre o AgroTech
-                    </a>
-                </li>
-
-            </ul>
-
+            <a href="../../index.html">Início</a>
+            <a href="#" class="active">Categorias</a>
+            <a href="#faq">Perguntas Frequentes</a>
         </nav>
+        <button class="btn-top">Fazer pergunta</button>
+    </header>
 
-    </div>
-
-</header>
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="overlay"></div>
-
-        <div class="hero-content">
-
-            <span class="subtitulo">
-                BASE DE CONHECIMENTO
-            </span>
-
-            <h1>
-                Aprenda sobre
-                agricultura sustentável
-            </h1>
-
-            <p>
-                Explore conteúdos educativos, práticas modernas,
-                sustentabilidade e tecnologia no agro.
-            </p>
-
+    <!-- HERO SECTION DA BASE DE CONHECIMENTO -->
+    <section class="hero-section">
+        <h1>Base de Conhecimento AgroTech</h1>
+        <p class="hero-subtitle">Aprenda, pratique e evolua com conhecimento agrícola confiável e atualizado.</p>
+        
+        <!-- Barra de Pesquisa -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar: solo, irrigação, sustentabilidade, pragas...">
+            <button class="btn-search">Buscar</button>
         </div>
-
+        <div class="popular-searches">
+            <span>Pesquisas populares:</span>
+            <a href="#">irrigação</a>
+            <a href="#">solo</a>
+            <a href="#">sustentabilidade</a>
+            <a href="#">pragas</a>
+            <a href="#">clima</a>
+            <a href="#">adubação</a>
+        </div>
     </section>
 
-    <!-- PESQUISA -->
-
-    <section class="pesquisa-section">
-
-        <input
-            type="text"
-            id="pesquisa"
-            placeholder="Pesquise: irrigação, solo, clima, pragas..."
-        >
-
+    <!-- SEÇÃO: EXPLORE POR CATEGORIA -->
+    <section class="section-container">
+        <span class="section-badge center">🌱 EXPLORE POR CATEGORIA</span>
+        <h2 class="center-title">Navegue pelos assuntos mais importantes para sua produção</h2>
+        
+        <div class="grid-categories">
+            <!-- Card Irrigação -->
+            <div class="card-box category-card">
+                <div class="card-icon">💧</div>
+                <h3>Irrigação</h3>
+                <p>Técnicas e estratégias para uso eficiente da água e sistemas de irrigação.</p>
+                <button class="btn-outline">Explorar</button>
+            </div>
+            <!-- Card Solo -->
+            <div class="card-box category-card">
+                <div class="card-icon">🪵</div>
+                <h3>Solo</h3>
+                <p>Manejo, conservação e melhoria da qualidade do solo agrícola.</p>
+                <button class="btn-outline">Explorar</button>
+            </div>
+            <!-- Card Clima -->
+            <div class="card-box category-card">
+                <div class="card-icon">☀️</div>
+                <h3>Clima</h3>
+                <p>Entenda o clima e como ele impacta diretamente a sua produção no campo.</p>
+                <button class="btn-outline">Explorar</button>
+            </div>
+            <!-- Card Sustentabilidade -->
+            <div class="card-box category-card">
+                <div class="card-icon">♻️</div>
+                <h3>Sustentabilidade</h3>
+                <p>Práticas sustentáveis para manter uma agricultura responsável.</p>
+                <button class="btn-outline">Explorar</button>
+            </div>
+            <!-- Card Tecnologia -->
+            <div class="card-box category-card">
+                <div class="card-icon">🤖</div>
+                <h3>Tecnologia</h3>
+                <p>Inovações e ferramentas modernas que transformam o campo.</p>
+                <button class="btn-outline">Explorar</button>
+            </div>
+            <!-- Card Pragas -->
+            <div class="card-box category-card">
+                <div class="card-icon">🐛</div>
+                <h3>Pragas</h3>
+                <p>Identificação, prevenção e controle inteligente de pragas na lavoura.</p>
+                <button class="btn-outline">Explorar</button>
+            </div>
+        </div>
     </section>
 
-    <!-- CATEGORIAS -->
+    <!-- SEÇÃO: CONTEÚDOS EM DESTAQUE -->
+    <section class="section-container bg-alt">
+        <span class="section-badge center">📝 CONTEÚDOS EM DESTAQUE</span>
+        <h2 class="center-title">Artigos e guias selecionados para você</h2>
 
-    <section class="categorias">
+        <div class="grid-featured">
+            <!-- Artigo 1 -->
+            <div class="card-box article-card">
+                <div class="article-image-placeholder">
+                    <span class="tag tag-blue">Irrigação</span>
+                    <span class="tag tag-level">Intermediário</span>
+                </div>
+                <div class="article-content">
+                    <h3>Como economizar água na irrigação</h3>
+                    <ul>
+                        <li>• Planejamento eficiente do uso da água</li>
+                        <li>• Técnicas de irrigação mais eficientes</li>
+                        <li>• Monitoramento e manutenção do sistema</li>
+                    </ul>
+                    <button class="btn-outline full-width">Aprender mais</button>
+                </div>
+            </div>
+            <!-- Artigo 2 -->
+            <div class="card-box article-card">
+                <div class="article-image-placeholder">
+                    <span class="tag tag-orange">Solo</span>
+                    <span class="tag tag-level">Básico</span>
+                </div>
+                <div class="article-content">
+                    <h3>Como melhorar a qualidade do solo</h3>
+                    <ul>
+                        <li>• Correção de acidez do terreno</li>
+                        <li>• Matéria orgânica e nutrientes vitais</li>
+                        <li>• Rotação estratégica de culturas</li>
+                    </ul>
+                    <button class="btn-outline full-width">Aprender mais</button>
+                </div>
+            </div>
+            <!-- Artigo 3 -->
+            <div class="card-box article-card">
+                <div class="article-image-placeholder">
+                    <span class="tag tag-green">Sustentabilidade</span>
+                    <span class="tag tag-level">Avançado</span>
+                </div>
+                <div class="article-content">
+                    <h3>Práticas sustentáveis no campo</h3>
+                    <ul>
+                        <li>• Redução de impactos ambientais</li>
+                        <li>• Uso consciente e focado de recursos</li>
+                        <li>• Benefícios reais para o produtor e planeta</li>
+                    </ul>
+                    <button class="btn-outline full-width">Aprender mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- CARD -->
+    <!-- SEÇÃO: PERGUNTAS FREQUENTES (FAQ) -->
+    <section class="section-container" id="faq">
+        <h2 class="center-title">Perguntas frequentes</h2>
+        <p class="center-subtitle">Respostas rápidas para as dúvidas mais comuns dos produtores</p>
 
-        <div class="card">
-
-            <img src="../../assets/imagens/fazenda.png" alt="Irrigação">
-
-            <div class="card-content">
-
-                <span class="nivel basico">
-                    Básico
-                </span>
-
-                <h2>
-                    Irrigação
-                </h2>
-
-                <p>
-                    Aprenda técnicas para economizar água
-                    e melhorar sua produção.
-                </p>
-
-                <a href="#" class="botao">
-                    Explorar
-                </a>
-
+        <div class="faq-two-columns">
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question">Como economizar água na irrigação? <span class="arrow">▼</span></button>
+                    <div class="faq-answer">
+                        <p>Utilize sistemas de irrigação por gotejamento, monitore a umidade real do solo e evite aplicar água nos horários de sol mais forte para reduzir a evaporação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Como melhorar a qualidade do solo? <span class="arrow">▼</span></button>
+                    <div class="faq-answer">
+                        <p>Aplique matéria orgânica, faça a rotação correta de culturas ao longo das safras e realize análises laboratoriais periódicas para repor os nutrientes exatos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">O que é agricultura sustentável? <span class="arrow">▼</span></button>
+                    <div class="faq-answer">
+                        <p>É um modelo de produção agrícola que garante a segurança alimentar gerando o menor impacto ecológico possível, preservando os recursos naturais para o futuro.</p>
+                    </div>
+                </div>
             </div>
 
-        </div>
-
-        <!-- CARD -->
-
-        <div class="card">
-
-            <img src="../../assets/imagens/agro-inicial.png" alt="Solo">
-
-            <div class="card-content">
-
-                <span class="nivel intermediario">
-                    Intermediário
-                </span>
-
-                <h2>
-                    Solo
-                </h2>
-
-                <p>
-                    Descubra como melhorar a fertilidade
-                    e qualidade do solo.
-                </p>
-
-                <a href="#" class="botao">
-                    Explorar
-                </a>
-
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question">Como identificar pragas na lavoura? <span class="arrow">▼</span></button>
+                    <div class="faq-answer">
+                        <p>Realize vistorias frequentes nas folhas e caules, observe alterações de coloração nas plantas e utilize armadilhas específicas de monitoramento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Qual a melhor época para plantar? <span class="arrow">▼</span></button>
+                    <div class="faq-answer">
+                        <p>A melhor época varia totalmente de acordo com a sua região geográfica e a cultura escolhida, sendo fundamental seguir o Zoneamento Agrícola de Risco Climático.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Como reduzir custos na produção? <span class="arrow">▼</span></button>
+                    <div class="faq-answer">
+                        <p>Adote ferramentas de agricultura de precisão para evitar o desperdício de insumos, faça manutenções preventivas no maquinário e otimize o uso da água.</p>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </section>
 
-        <!-- CARD -->
-
-        <div class="card">
-
-            <img src="../../assets/imagens/TechAgro.png" alt="Tecnologia">
-
-            <div class="card-content">
-
-                <span class="nivel avancado">
-                    Avançado
-                </span>
-
-                <h2>
-                    Tecnologia
-                </h2>
-
-                <p>
-                    Conheça drones, sensores e automações
-                    no agro moderno.
-                </p>
-
-                <a href="#" class="botao">
-                    Explorar
-                </a>
-
+    <!-- SEÇÃO: CTA FINAL DE AJUDA -->
+    <section class="section-container">
+        <div class="cta-box">
+            <div class="cta-left">
+                <div class="cta-avatar">🌱</div>
+                <div>
+                    <h3>Não encontrou sua resposta?</h3>
+                    <p>Nossa equipe está pronta para ajudar você! Faça sua pergunta e responderemos em breve.</p>
+                </div>
             </div>
-
+            <button class="btn-green">Fazer pergunta</button>
         </div>
-
     </section>
 
-    <!-- FAQ -->
-
-    <section class="faq">
-
-        <div class="faq-title">
-
-            <h2>
-                Perguntas Frequentes
-            </h2>
-
-            <p>
-                Tire dúvidas rápidas sobre agricultura.
-            </p>
-
+    <!-- RODAPÉ PADRÃO DO SITE -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p><strong>AgroTech</strong> Base de Conhecimento • Informação que transforma o campo</p>
+            <a href="#" class="back-to-top">Voltar para o início ↑</a>
         </div>
-
-        <!-- PERGUNTA -->
-
-        <details>
-
-            <summary>
-                Como economizar água na irrigação?
-            </summary>
-
-            <p>
-                Utilize irrigação por gotejamento,
-                monitore o solo e evite desperdícios.
-            </p>
-
-        </details>
-
-        <!-- PERGUNTA -->
-
-        <details>
-
-            <summary>
-                O que é agricultura sustentável?
-            </summary>
-
-            <p>
-                É uma forma de produzir respeitando
-                o meio ambiente e os recursos naturais.
-            </p>
-
-        </details>
-
-        <!-- PERGUNTA -->
-
-        <details>
-
-            <summary>
-                Como melhorar o solo?
-            </summary>
-
-            <p>
-                Utilize matéria orgânica, rotação
-                de culturas e análise do solo.
-            </p>
-
-        </details>
-
-    </section>
-
-    <!-- CONTATO -->
-
-    <section class="contato">
-
-        <h2>
-            Não encontrou sua resposta?
-        </h2>
-
-        <p>
-            Envie uma pergunta para a equipe AgroTech.
-        </p>
-
-        <button id="btnPergunta">
-            Fazer pergunta
-        </button>
-
-    </section>
+    </footer>
 
     <script src="conhecimento.js"></script>
-
 </body>
-
 </html>
