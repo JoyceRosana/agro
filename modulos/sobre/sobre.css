@@ -370,6 +370,8 @@ footer {
 }
 
 .footer-brand p {
+    display: block;
+    margin-top: 10px;
     color: #cbd5e1;
     font-size: 0.95rem;
     max-width: 260px;
