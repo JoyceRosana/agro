@@ -37,10 +37,10 @@ body {
     justify-content: center;
 }
 
-/* 1. Alinha todo o conteúdo para a esquerda */
+/* Alinha todo o conteúdo para a esquerda */
     justify-content: flex-start; 
     
-    /* 2.Dá um espaçamento interno para o texto não colar na borda da tela */
+    /* Dá um espaçamento interno para o texto não colar na borda da tela */
     padding-left: 80%; 
 
 .hero h1 {
