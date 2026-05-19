@@ -1,13 +1,14 @@
+<!-- conhecimento.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Base de Conhecimento AgroTech</title>
+    <title>Base de Conhecimento</title>
 
     <link rel="stylesheet" href="conhecimento.css">
 
@@ -24,36 +25,39 @@
 
     <!-- HERO -->
 
-    <header class="hero">
+    <section class="hero">
 
         <div class="overlay"></div>
 
         <div class="hero-content">
 
             <span class="subtitulo">
-                🌿 AGROTECH
+                BASE DE CONHECIMENTO
             </span>
 
             <h1>
-                Base de Conhecimento
+                Aprenda sobre
+                agricultura sustentável
             </h1>
 
             <p>
-                Aprenda técnicas sustentáveis, descubra soluções modernas
-                e encontre respostas rápidas para o agro.
+                Explore conteúdos educativos, práticas modernas,
+                sustentabilidade e tecnologia no agro.
             </p>
 
         </div>
 
-    </header>
+    </section>
 
     <!-- PESQUISA -->
 
     <section class="pesquisa-section">
 
-        <input type="text"
+        <input
+            type="text"
             id="pesquisa"
-            placeholder="🔍 Pesquise: irrigação, solo, clima...">
+            placeholder="Pesquise: irrigação, solo, clima, pragas..."
+        >
 
     </section>
 
@@ -65,8 +69,7 @@
 
         <div class="card">
 
-            <img src="../../assets/imagens/fazenda.png"
-                alt="Solo">
+            <img src="../../assets/imagens/fazenda.png" alt="Irrigação">
 
             <div class="card-content">
 
@@ -75,17 +78,17 @@
                 </span>
 
                 <h2>
-                    Cuidados com o Solo
+                    Irrigação
                 </h2>
 
                 <p>
-                    Aprenda práticas para evitar erosão
-                    e manter nutrientes no solo.
+                    Aprenda técnicas para economizar água
+                    e melhorar sua produção.
                 </p>
 
-                <button>
+                <a href="#" class="botao">
                     Explorar
-                </button>
+                </a>
 
             </div>
 
@@ -95,8 +98,7 @@
 
         <div class="card">
 
-            <img src="../../assets/imagens/agro-inicial.png"
-                alt="Irrigação">
+            <img src="../../assets/imagens/agro-inicial.png" alt="Solo">
 
             <div class="card-content">
 
@@ -105,17 +107,17 @@
                 </span>
 
                 <h2>
-                    Irrigação Inteligente
+                    Solo
                 </h2>
 
                 <p>
-                    Descubra maneiras de economizar água
-                    e melhorar a produtividade.
+                    Descubra como melhorar a fertilidade
+                    e qualidade do solo.
                 </p>
 
-                <button>
+                <a href="#" class="botao">
                     Explorar
-                </button>
+                </a>
 
             </div>
 
@@ -125,8 +127,7 @@
 
         <div class="card">
 
-            <img src="../../assets/imagens/TechAgro.png"
-                alt="Tecnologia">
+            <img src="../../assets/imagens/TechAgro.png" alt="Tecnologia">
 
             <div class="card-content">
 
@@ -135,17 +136,17 @@
                 </span>
 
                 <h2>
-                    Tecnologia no Agro
+                    Tecnologia
                 </h2>
 
                 <p>
-                    Conheça sensores, monitoramento e
-                    ferramentas modernas para produção.
+                    Conheça drones, sensores e automações
+                    no agro moderno.
                 </p>
 
-                <button>
+                <a href="#" class="botao">
                     Explorar
-                </button>
+                </a>
 
             </div>
 
@@ -160,40 +161,31 @@
         <div class="faq-title">
 
             <h2>
-                ❓ Perguntas Frequentes
+                Perguntas Frequentes
             </h2>
 
             <p>
-                Respostas rápidas para dúvidas comuns.
+                Tire dúvidas rápidas sobre agricultura.
             </p>
 
         </div>
 
-        <details>
-
-            <summary>
-                Como economizar água na agricultura?
-            </summary>
-
-            <p>
-                Utilize irrigação por gotejamento e acompanhe
-                o clima para evitar desperdícios.
-            </p>
-
-        </details>
+        <!-- PERGUNTA -->
 
         <details>
 
             <summary>
-                Como evitar erosão do solo?
+                Como economizar água na irrigação?
             </summary>
 
             <p>
-                Faça rotação de culturas e mantenha
-                cobertura vegetal no solo.
+                Utilize irrigação por gotejamento,
+                monitore o solo e evite desperdícios.
             </p>
 
         </details>
+
+        <!-- PERGUNTA -->
 
         <details>
 
@@ -202,8 +194,23 @@
             </summary>
 
             <p>
-                É um conjunto de práticas que busca produzir
-                alimentos preservando o meio ambiente.
+                É uma forma de produzir respeitando
+                o meio ambiente e os recursos naturais.
+            </p>
+
+        </details>
+
+        <!-- PERGUNTA -->
+
+        <details>
+
+            <summary>
+                Como melhorar o solo?
+            </summary>
+
+            <p>
+                Utilize matéria orgânica, rotação
+                de culturas e análise do solo.
             </p>
 
         </details>
@@ -215,19 +222,16 @@
     <section class="contato">
 
         <h2>
-            📩 Não encontrou sua resposta?
+            Não encontrou sua resposta?
         </h2>
 
         <p>
-            Envie sua pergunta para a equipe AgroTech.
+            Envie uma pergunta para a equipe AgroTech.
         </p>
 
-        <a href="mailto:seuemail@gmail.com"
-            class="botao">
-
-            Fazer Pergunta
-
-        </a>
+        <button id="btnPergunta">
+            Fazer pergunta
+        </button>
 
     </section>
 

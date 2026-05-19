@@ -1,6 +1,4 @@
-/* ========================================
-   RESET
-======================================== */
+/* conhecimento.css */
 
 *{
     margin:0;
@@ -8,24 +6,16 @@
     box-sizing:border-box;
 }
 
-/* ========================================
-   BODY
-======================================== */
-
 body{
 
     font-family:'Inter',sans-serif;
 
-    background:#f5f7f5;
+    background:#f4f7f4;
 
     color:#16351f;
-
-    overflow-x:hidden;
 }
 
-/* ========================================
-   HERO
-======================================== */
+/* HERO */
 
 .hero{
 
@@ -40,8 +30,6 @@ body{
 
     background-position:center;
 
-    background-repeat:no-repeat;
-
     display:flex;
 
     justify-content:center;
@@ -53,23 +41,14 @@ body{
     padding:80px 20px;
 }
 
-/* ========================================
-   OVERLAY
-======================================== */
-
 .overlay{
 
     position:absolute;
 
     inset:0;
 
-    background:
-    rgba(0,0,0,0.55);
+    background:rgba(0,0,0,0.55);
 }
-
-/* ========================================
-   HERO CONTENT
-======================================== */
 
 .hero-content{
 
@@ -82,26 +61,18 @@ body{
     color:white;
 }
 
-/* ========================================
-   SUBTÍTULO
-======================================== */
-
 .subtitulo{
 
     display:block;
 
-    letter-spacing:4px;
+    margin-bottom:20px;
 
-    font-weight:700;
+    letter-spacing:4px;
 
     color:#7CFC8A;
 
-    margin-bottom:20px;
+    font-weight:700;
 }
-
-/* ========================================
-   HERO TITLE
-======================================== */
 
 .hero h1{
 
@@ -110,10 +81,6 @@ body{
     margin-bottom:25px;
 }
 
-/* ========================================
-   HERO TEXT
-======================================== */
-
 .hero p{
 
     font-size:1.1rem;
@@ -121,9 +88,7 @@ body{
     line-height:1.8;
 }
 
-/* ========================================
-   PESQUISA
-======================================== */
+/* PESQUISA */
 
 .pesquisa-section{
 
@@ -133,14 +98,12 @@ body{
 
     margin-top:-35px;
 
+    padding:0 20px;
+
     position:relative;
 
     z-index:10;
-
-    padding:0 20px;
 }
-
-/* INPUT */
 
 #pesquisa{
 
@@ -148,7 +111,7 @@ body{
 
     max-width:700px;
 
-    padding:20px 24px;
+    padding:20px;
 
     border:none;
 
@@ -162,9 +125,7 @@ body{
     0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* ========================================
-   CATEGORIAS
-======================================== */
+/* CATEGORIAS */
 
 .categorias{
 
@@ -178,9 +139,7 @@ body{
     padding:100px 8%;
 }
 
-/* ========================================
-   CARD
-======================================== */
+/* CARD */
 
 .card{
 
@@ -191,22 +150,16 @@ body{
     overflow:hidden;
 
     box-shadow:
-    0 12px 30px rgba(0,0,0,0.08);
+    0 10px 30px rgba(0,0,0,0.08);
 
     transition:.3s;
 }
-
-/* HOVER */
 
 .card:hover{
 
     transform:
     translateY(-10px);
 }
-
-/* ========================================
-   IMAGEM DO CARD
-======================================== */
 
 .card img{
 
@@ -217,25 +170,15 @@ body{
     object-fit:cover;
 }
 
-/* ========================================
-   CONTEÚDO CARD
-======================================== */
-
 .card-content{
 
     padding:30px;
 }
 
-/* TÍTULO */
-
 .card-content h2{
 
     margin:18px 0;
-
-    font-size:1.5rem;
 }
-
-/* TEXTO */
 
 .card-content p{
 
@@ -246,9 +189,7 @@ body{
     margin-bottom:25px;
 }
 
-/* ========================================
-   NÍVEIS
-======================================== */
+/* NÍVEIS */
 
 .nivel{
 
@@ -263,8 +204,6 @@ body{
     font-weight:700;
 }
 
-/* BÁSICO */
-
 .basico{
 
     background:#d8f5dc;
@@ -272,30 +211,24 @@ body{
     color:#1b5e20;
 }
 
-/* INTERMEDIÁRIO */
-
 .intermediario{
 
-    background:#fff4cc;
+    background:#fff3cd;
 
     color:#a66b00;
 }
 
-/* AVANÇADO */
-
 .avancado{
 
-    background:#ffd7d7;
+    background:#ffd6d6;
 
     color:#a30000;
 }
 
-/* ========================================
-   BOTÕES
-======================================== */
+/* BOTÃO */
 
-button,
-.botao{
+.botao,
+button{
 
     display:inline-block;
 
@@ -303,13 +236,13 @@ button,
 
     color:white;
 
-    border:none;
-
-    text-decoration:none;
-
     padding:14px 28px;
 
+    border:none;
+
     border-radius:14px;
+
+    text-decoration:none;
 
     font-weight:700;
 
@@ -318,19 +251,15 @@ button,
     transition:.3s;
 }
 
-/* HOVER */
-
-button:hover,
-.botao:hover{
+.botao:hover,
+button:hover{
 
     background:#1b5e20;
 
     transform:scale(1.05);
 }
 
-/* ========================================
-   FAQ
-======================================== */
+/* FAQ */
 
 .faq{
 
@@ -338,8 +267,6 @@ button:hover,
 
     padding:100px 10%;
 }
-
-/* TÍTULO FAQ */
 
 .faq-title{
 
@@ -355,45 +282,23 @@ button:hover,
     margin-bottom:15px;
 }
 
-.faq-title p{
-
-    color:#666;
-}
-
-/* DETAILS */
-
 details{
 
-    background:#f5f7f5;
+    background:#f4f7f4;
 
     padding:24px;
 
     border-radius:16px;
 
     margin-bottom:20px;
-
-    cursor:pointer;
-
-    transition:.3s;
 }
-
-/* HOVER DETAILS */
-
-details:hover{
-
-    transform:translateY(-3px);
-}
-
-/* SUMMARY */
 
 summary{
 
-    font-size:1.05rem;
-
     font-weight:700;
-}
 
-/* RESPOSTA */
+    cursor:pointer;
+}
 
 details p{
 
@@ -404,9 +309,7 @@ details p{
     line-height:1.7;
 }
 
-/* ========================================
-   CONTATO
-======================================== */
+/* CONTATO */
 
 .contato{
 
@@ -415,8 +318,6 @@ details p{
     padding:120px 20px;
 }
 
-/* TÍTULO */
-
 .contato h2{
 
     font-size:3rem;
@@ -424,71 +325,25 @@ details p{
     margin-bottom:20px;
 }
 
-/* TEXTO */
-
 .contato p{
 
-    color:#666;
-
     margin-bottom:35px;
+
+    color:#666;
 }
 
-/* ========================================
-   RESPONSIVIDADE
-======================================== */
+/* RESPONSIVO */
 
 @media(max-width:768px){
 
-    .hero{
-
-        min-height:auto;
-
-        padding:120px 20px;
-    }
-
     .hero h1{
 
-        font-size:2.6rem;
-    }
-
-    .hero p{
-
-        font-size:1rem;
+        font-size:2.5rem;
     }
 
     .categorias{
 
         grid-template-columns:1fr;
-    }
-
-    .faq-title h2,
-    .contato h2{
-
-        font-size:2rem;
-    }
-
-}
-
-@media(max-width:480px){
-
-    .hero h1{
-
-        font-size:2.1rem;
-    }
-
-    .subtitulo{
-
-        font-size:.85rem;
-    }
-
-    #pesquisa{
-
-        padding:16px 18px;
-    }
-
-    .card-content{
-
-        padding:22px;
     }
 
 }

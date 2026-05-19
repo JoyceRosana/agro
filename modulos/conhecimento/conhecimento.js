@@ -1,20 +1,18 @@
-// PESQUISA DE CARDS
+// conhecimento.js
 
-const pesquisa = document.querySelector(".pesquisa input");
+const pesquisa = document.getElementById("pesquisa");
 
-const cards = document.querySelectorAll(".card");
+pesquisa.addEventListener("keyup", () => {
 
-pesquisa.addEventListener("input", () => {
+    let texto = pesquisa.value.toLowerCase();
 
-    const valor = pesquisa.value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
 
     cards.forEach(card => {
 
-        const titulo = card.querySelector("h2")
-        .textContent
-        .toLowerCase();
+        let titulo = card.innerText.toLowerCase();
 
-        if(titulo.includes(valor)){
+        if(titulo.includes(texto)){
 
             card.style.display = "block";
 
@@ -24,5 +22,23 @@ pesquisa.addEventListener("input", () => {
         }
 
     });
+
+});
+
+/* BOTÃO PERGUNTA */
+
+const btnPergunta = document.getElementById("btnPergunta");
+
+btnPergunta.addEventListener("click", () => {
+
+    let pergunta = prompt("Digite sua pergunta:");
+
+    if(pergunta){
+
+        alert(
+            "Pergunta enviada com sucesso!\n\n" +
+            "Pergunta: " + pergunta
+        );
+    }
 
 });
