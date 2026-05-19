@@ -369,6 +369,10 @@ footer {
     margin-bottom: 0;
 }
 
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+}
 .footer-brand p {
     display: block;
     margin-top: 10px;
