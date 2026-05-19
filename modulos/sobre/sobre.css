@@ -47,3 +47,40 @@ body {
 .referencias ul {
   padding-left: 20px;
 }
+
+.header {
+  background: linear-gradient(120deg, #2e7d32, #1b5e20);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.header-content p {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* menu */
+.nav {
+  margin-top: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
