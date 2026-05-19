@@ -1,84 +1,195 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre - AgroTech</title>
-  <link rel="stylesheet" href="sobre.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o AgroTech</title>
+    <!-- Fontes e Ícones externos -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Arquivo de Estilo Separado -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header class="header">
-  <div class="header-content">
-    <h1>AgroTech</h1>
-    <p>Sustentabilidade na agricultura para preservar o solo e melhorar a produção.</p>
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> AgroTech
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Simulador</a></li>
+                    <li><a href="#">Conteúdos</a></li>
+                    <li><a href="#" class="active">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      <li>
-                    <a href="index.html">
-                        Início
-                    </a>
-                </li>
-                <a href="modulos/sobre/sobre.html" class="active"> 
-                    Sobre o AgroTech
-                </a>
-                        Início
-                </li>
-  </div>
-</header>
-
-  <main class="container">
-
-    <section class="card">
-      <h2>🌱 O que é este site</h2>
-      <p>
-        Este site é um projeto educativo sobre sustentabilidade na agricultura.
-        Ele mostra como práticas simples podem ajudar a preservar o solo e melhorar a produção ao longo do tempo.
-      </p>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Sobre o AgroTech</h1>
+            <p>Tecnologia, educação e sustentabilidade transformando o aprendizado agrícola.</p>
+        </div>
     </section>
 
-    <section class="card">
-      <h2>🎯 Objetivo</h2>
-      <p>
-        Ensinar como evitar a degradação do solo por meio de práticas sustentáveis,
-        como o uso consciente da água e adubos orgânicos.
-      </p>
-    </section>
+    <main class="container">
+        <!-- SOBRE O PROJETO -->
+        <div class="section-title">
+            <i class="fa-solid fa-leaf"></i> Sobre o projeto
+        </div>
 
-    <section class="card">
-      <h2>🌧️ Simulador</h2>
-      <p>
-        O simulador permite observar como diferentes decisões no cultivo,
-        como uso de água e cuidados com o solo, afetam o resultado das plantações.
-      </p>
-    </section>
+        <div class="grid-2x2">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="card-content">
+                    <h3>O que é o AgroTech?</h3>
+                    <p>O AgroTech Sustentável é uma plataforma educativa que utiliza tecnologia para acessar práticas agrícolas sustentáveis de forma simples, prática e acessível.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                <div class="card-content">
+                    <h3>Objetivo</h3>
+                    <p>Promover o conhecimento sobre o solo, plantio e manejo sustentável, oferecendo ferramentas que ajudam na tomada de decisão consciente no campo.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-desktop"></i></div>
+                <div class="card-content card-flex">
+                    <div>
+                        <h3>Simulador</h3>
+                        <p>Nosso simulador permite testar cenários de plantio e manejo do solo, mostrando os impactos das escolhas e auxiliando no aprendizado prático.</p>
+                    </div>
+                    <img src="planta.png" alt="Planta" class="card-img">
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="card-content">
+                    <h3>Base de conhecimento</h3>
+                    <p>Reunimos conteúdos educativos sobre solos, culturas, sustentabilidade e tecnologias agrícolas, com linguagem simples e confiável.</p>
+                </div>
+            </div>
+        </div>
 
-    <section class="card">
-      <h2>📚 Base de conhecimento</h2>
-      <p>
-        A base de conhecimento apresenta conteúdos simples e diretos sobre sustentabilidade na agricultura,
-        ajudando no entendimento de práticas mais responsáveis.
-      </p>
-    </section>
+        <!-- Para quem é -->
+        <div class="card-wide">
+            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="card-content">
+                <h3>Para quem é?</h3>
+                <p>O AgroTech é para estudantes, professores, produtores rurais e todos que desejam aprender mais sobre agricultura sustentável e o cuidado com o solo.</p>
+            </div>
+        </div>
 
-    <section class="card">
-      <h2>👥 Para quem é</h2>
-      <p>
-        Voltado para estudantes e pessoas interessadas em aprender mais sobre agricultura sustentável
-        e melhoria do uso do solo.
-      </p>
-    </section>
+        <!-- SEÇÃO DUPLA -->
+        <div class="split-section">
+            <!-- Tecnologias -->
+            <div>
+                <div class="section-title"><i class="fa-solid fa-code"></i> Tecnologias utilizadas</div>
+                <div class="tech-logos">
+                    <div class="tech-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                    <div class="tech-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                    <div class="tech-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                    <div class="tech-item"><div class="vercel-logo"></div> Vercel</div>
+                </div>
+                <div class="compromisso-box">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Nosso compromisso é com a educação, a inovação e a sustentabilidade para um futuro melhor no campo.</span>
+                </div>
+            </div>
 
-    <section class="card referencias">
-      <h2>📌 Referências</h2>
-      <ul>
-        <li>EMBRAPA - Agricultura sustentável</li>
-        <li>FAO - Organização das Nações Unidas para Agricultura e Alimentação</li>
-        <li>Conteúdos educativos sobre solo e irrigação</li>
-      </ul>
-    </section>
+            <!-- Referências -->
+            <div>
+                <div class="section-title"><i class="fa-solid fa-link"></i> Referências</div>
+                <div class="ref-list">
+                    <div class="ref-item">
+                        <div class="ref-logo-placeholder">Emb<span>rapa</span></div>
+                        <div class="ref-info">
+                            <h4>Empresa Brasileira de Pesquisa Agropecuária</h4>
+                            <a href="https://embrapa.br" target="_blank">embrapa.br</a>
+                        </div>
+                    </div>
+                    <div class="ref-item">
+                        <div class="ref-logo-placeholder"><i class="fa-solid fa-globe"></i> FAO</div>
+                        <div class="ref-info">
+                            <h4>Organização das Nações Unidas para Agricultura e Alimentação</h4>
+                            <a href="https://fao.org" target="_blank">fao.org</a>
+                        </div>
+                    </div>
+                    <div class="ref-item">
+                        <div class="ref-info">
+                            <h4 style="font-size: 11px; letter-spacing: 0.5px;">MINISTÉRIO DA AGRICULTURA E PECUÁRIA</h4>
+                            <a href="https://www.gov.br" target="_blank">gov.br/agricultura</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  </main>
+        <!-- CTA BANNER -->
+        <div class="cta-banner">
+            <div class="cta-info">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="cta-text">
+                    <h3>Tem dúvidas ou sugestões?</h3>
+                    <p>Entre em contato com a equipe AgroTech.</p>
+                </div>
+            </div>
+            <button class="cta-btn" id="btnContato">Enviar mensagem</button>
+        </div>
+    </main>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-leaf"></i> AgroTech</h3>
+                <p>Tecnologia e educação a serviço da agricultura sustentável.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Simulador</a></li>
+                    <li><a href="#">Conteúdos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Simulador de Plantio</a></li>
+                    <li><a href="#">Conteúdos Educativos</a></li>
+                    <li><a href="#">Sobre o Projeto</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-regular fa-envelope"></i> contato@agrotech.com</li>
+                    <li><i class="fa-brands fa-instagram"></i> @agrotech.sustentavel</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Brasil</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 AgroTech Sustentável. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Arquivo de Script Separado -->
+    <script src="script.js"></script>
 </body>
 </html>
