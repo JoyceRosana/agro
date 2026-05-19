@@ -54,7 +54,7 @@ body {
 
 .hero p {
     /* 5. MUDANÇA AQUI: Altere o '1.25rem' para o tamanho que desejar (ex: 1.1rem ou 1.4rem) */
-    font-size: 1.25rem; 
+    font-size: 2.00rem; 
     
     color: #060a2d;
     
@@ -63,7 +63,7 @@ body {
 }
 
     min-height: 60vh
-    
+
 /* Títulos das Seções */
 .section-title {
     font-size: 1.2rem;
