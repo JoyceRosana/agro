@@ -15,6 +15,85 @@ body{
     color:#16351f;
 }
 
+/* HEADER */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    backdrop-filter:blur(12px);
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.15);
+
+    padding:20px 0;
+}
+
+/* NAV */
+
+.nav{
+
+    width:92%;
+
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+/* LOGO */
+
+.logo{
+
+    font-size:1.7rem;
+
+    font-weight:800;
+
+    color:white;
+}
+
+/* MENU */
+
+nav ul{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:#7CFC8A;
+}
+
 /* HERO */
 
 .hero{
