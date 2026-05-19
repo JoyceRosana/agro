@@ -41,8 +41,8 @@ body {
     justify-content: flex-start; 
     
     /* 2. ADICIONE ISSO: Dá um espaçamento interno para o texto não colar na borda da tela */
-    padding-left: 10%; 
-    
+    padding-left: 80%; 
+
 .hero h1 {
     font-size: 3rem;
     color: #134326;
