@@ -1,5 +1,5 @@
 /* ==========================================================================
-   RESET E CONFIGURAÇÕES GERAIS
+   RESET E CONFIGURAÇÃO DE FUNDO (IGUAL À IMAGEM)
    ========================================================================== */
 * {
     margin: 0;
@@ -9,38 +9,35 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #fcfdfc; /* Fundo levemente esverdeado/cinza bem claro */
     color: #333333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 /* ==========================================================================
-   HEADER / MENU NAVEGAÇÃO
+   HEADER
    ========================================================================== */
 header {
     background-color: #ffffff;
-    border-bottom: 1px solid #eaeaea;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 75px;
 }
 
 .logo {
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 700;
     color: #0b4622;
     display: flex;
     align-items: center;
@@ -50,125 +47,122 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #555555;
+    color: #4b5563;
     font-size: 0.95rem;
-    transition: color 0.2s ease;
+    font-weight: 500;
 }
 
-nav ul li a:hover, 
 nav ul li a.active {
     color: #0b4622;
-    font-weight: 600;
+    border-bottom: 2px solid #0b4622;
+    padding-bottom: 4px;
 }
 
 /* ==========================================================================
-   HERO SECTION (SOBRE O AGROTECH)
+   HERO COM DEGRADÊ E IMAGEM DE FUNDO
    ========================================================================== */
 .hero {
-    padding: 60px 0 40px 0;
-    background-color: #ffffff;
+    padding: 80px 0 60px 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 20%, #fcfdfc 100%), 
+                url('a platação.png') no-repeat center center;
+    background-size: cover;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    color: #0b4622;
+    font-size: 3rem;
+    color: #052e16;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #666666;
-    max-width: 800px;
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 700px;
 }
 
-/* Titulos de Seções */
+/* Títulos das Seções */
 .section-title {
-    font-size: 1.25rem;
-    color: #0b4622;
+    font-size: 1.2rem;
+    color: #15512d;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin: 40px 0 20px 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 /* ==========================================================================
-   SEÇÃO CARDS (GRID 2x2 E WIDE)
+   GRID DE CARDS (2 COLUNAS)
    ========================================================================== */
 .grid-2x2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 24px;
 }
 
 .card {
     background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 28px;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    padding: 32px;
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
 }
 
+/* Card 5 ocupando as duas colunas */
 .card-wide {
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 28px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    margin-bottom: 50px;
+    grid-column: span 2;
 }
 
+/* Ícone Verde dos Cards */
 .card-icon {
     background-color: #f0fdf4;
     border: 1px solid #dcfce7;
     color: #16a34a;
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     flex-shrink: 0;
 }
 
 .card-content h3 {
-    font-size: 1.2rem;
-    color: #111827;
+    font-size: 1.25rem;
+    color: #0f172a;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 .card-content p {
     font-size: 0.95rem;
-    color: #4b5563;
+    color: #475569;
     line-height: 1.6;
 }
 
-/* Card do Simulador com Imagem Lateral */
+/* Layout Interno do Card Simulador */
 .card-flex {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
     width: 100%;
 }
 
 .card-img {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
     flex-shrink: 0;
 }
 
@@ -178,59 +172,57 @@ nav ul li a.active {
 .split-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    margin-bottom: 60px;
+    gap: 48px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-/* Bloco Tecnologias */
+/* Tecnologias */
 .tech-logos {
     display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
 .tech-item {
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 12px 20px;
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 12px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    min-width: 90px;
+    gap: 10px;
+    width: 100px;
     font-size: 0.8rem;
     font-weight: 600;
-    color: #4b5563;
+    color: #64748b;
 }
 
-.tech-item i {
-    font-size: 2rem;
-}
+.tech-item i { font-size: 2.2rem; }
+.tech-item.html5 i { color: #ea580c; }
+.tech-item.css3 i { color: #0284c7; }
+.tech-item.js i { color: #eab308; }
+.tech-item.vercel i { color: #000000; font-size: 1.8rem; }
 
-/* Cores específicas das tecnologias idênticas à imagem */
-.tech-item.html5 i { color: #e34f26; }
-.tech-item.css3 i { color: #1572b6; }
-.tech-item.js i { color: #f7df1e; }
-.tech-item.vercel i { color: #000000; font-size: 1.6rem; transform: rotate(180deg); } /* Rotacionado para virar o triângulo da Vercel */
-
-/* Caixa de Compromisso */
+/* Bloco Compromisso */
 .compromisso-box {
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    padding: 24px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    background-color: #ffffff;
+    gap: 16px;
 }
 
 .compromisso-icon {
     background-color: #f0fdf4;
     border: 1px solid #dcfce7;
-    width: 40px;
-    height: 40px;
+    color: #16a34a;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -238,80 +230,72 @@ nav ul li a.active {
     flex-shrink: 0;
 }
 
-.compromisso-icon img {
-    width: 20px;
-    height: 20px;
-}
-
 .compromisso-box span {
     font-size: 0.95rem;
-    color: #1b4332;
+    color: #14532d;
     font-weight: 500;
 }
 
-/* Bloco Referências */
+/* Referências */
 .ref-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .ref-item {
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    padding: 20px;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.ref-logo-placeholder {
-    width: 110px;
+.ref-logo {
+    width: 100px;
     height: 55px;
-    border: 1px solid #e5e7eb;
-    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 0.75rem;
-    font-weight: bold;
-    padding: 5px;
+    font-weight: 700;
     flex-shrink: 0;
-    background-color: #ffffff;
 }
 
-/* Estilização simulando os logos reais da imagem */
 .logo-embrapa { color: #005ca9; font-style: italic; font-size: 1.1rem; }
-.logo-fao { color: #0077b6; font-size: 0.85rem; flex-direction: column; gap: 2px; }
-.logo-fao i { font-size: 1.1rem; }
-.logo-ministerio { font-size: 0.55rem; line-height: 1.1; color: #333; font-family: sans-serif; border-left: 4px solid #005ca9; }
+.logo-embrapa span { color: #a3e635; }
+.logo-fao { color: #0284c7; font-size: 0.85rem; flex-direction: column; gap: 2px; }
+.logo-mapa { font-size: 0.55rem; padding: 4px; border-left: 4px solid #005ca9; color: #334155; }
 
 .ref-info h4 {
     font-size: 0.9rem;
-    color: #374151;
-    font-weight: 500;
-    margin-bottom: 2px;
+    color: #334155;
+    margin-bottom: 4px;
 }
 
 .ref-info a {
     font-size: 0.85rem;
-    color: #0b4622;
+    color: #16a34a;
     text-decoration: none;
-}
-
-.ref-info a:hover {
-    text-decoration: underline;
+    font-weight: 500;
 }
 
 /* ==========================================================================
-   CTA BANNER (TEM DÚVIDAS?)
+   CTA BANNER
    ========================================================================== */
 .cta-banner {
     background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 25px 35px;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    padding: 28px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
     margin-bottom: 60px;
 }
 
@@ -321,53 +305,35 @@ nav ul li a.active {
     gap: 20px;
 }
 
-.cta-icon-wrapper {
-    background-color: #f0fdf4;
-    border: 1px solid #dcfce7;
-    color: #16a34a;
-    width: 44px;
-    height: 44px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-}
-
 .cta-text h3 {
-    font-size: 1.25rem;
-    color: #111827;
-    font-weight: 600;
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 4px;
 }
 
 .cta-text p {
+    color: #64748b;
     font-size: 0.95rem;
-    color: #6b7280;
 }
 
 .cta-btn {
-    background-color: #052e16; /* Verde escuro idêntico ao botão da imagem */
+    background-color: #052e16;
     color: #ffffff;
     border: none;
     border-radius: 8px;
     padding: 14px 28px;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.cta-btn:hover {
-    background-color: #14532d;
 }
 
 /* ==========================================================================
-   FOOTER (RODAPÉ)
+   FOOTER
    ========================================================================== */
 footer {
-    background-color: #052e16; /* Fundo verde escuro */
+    background-color: #052e16;
     color: #ffffff;
-    padding: 50px 0 20px 0;
+    padding: 60px 0 30px 0;
 }
 
 .footer-grid {
@@ -379,23 +345,22 @@ footer {
 }
 
 .footer-brand h3 {
-    font-size: 1.5rem;
-    margin-bottom: 12px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .footer-brand p {
-    color: #a3e635; /* Subtítulo verde limão claro */
+    color: #cbd5e1;
     font-size: 0.95rem;
-    max-width: 250px;
+    max-width: 260px;
 }
 
 .footer-col h4 {
     font-size: 1rem;
-    margin-bottom: 18px;
-    font-weight: 600;
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
@@ -407,14 +372,9 @@ footer {
 }
 
 .footer-col ul li a {
-    color: #d1d5db;
+    color: #cbd5e1;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: color 0.2s ease;
-}
-
-.footer-col ul li a:hover {
-    color: #ffffff;
 }
 
 .footer-contact li {
@@ -422,40 +382,21 @@ footer {
     align-items: center;
     gap: 10px;
     font-size: 0.9rem;
-    color: #d1d5db;
-}
-
-.footer-contact i {
-    color: #ffffff;
+    color: #cbd5e1;
 }
 
 .copyright {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     font-size: 0.85rem;
-    color: #9ca3af;
+    color: #94a3b8;
 }
 
-/* ==========================================================================
-   RESPONSIVIDADE (MOBILE)
-   ========================================================================== */
+/* RESPONSIVIDADE */
 @media (max-width: 900px) {
-    .grid-2x2, .split-section, .footer-grid {
-        grid-template-columns: 1fr;
-    }
-    .split-section {
-        gap: 40px;
-    }
-    .cta-banner {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        align-items: center;
-    }
-    .cta-info {
-        flex-direction: column;
-    }
-    .card-flex {
-        flex-direction: column;
-    }
+    .grid-2x2, .split-section, .footer-grid { grid-template-columns: 1fr; }
+    .card-wide { grid-column: span 1; }
+    .cta-banner { flex-direction: column; gap: 20px; text-align: center; }
+    .cta-info { flex-direction: column; }
+    .card-flex { flex-direction: column; }
 }
