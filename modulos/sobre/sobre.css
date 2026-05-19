@@ -349,12 +349,17 @@ footer {
     padding: 60px 0 30px 0;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
+..footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #14532d;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-brand h3 {
