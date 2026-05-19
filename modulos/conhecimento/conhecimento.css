@@ -1,6 +1,4 @@
-/* ========================================
-   CONFIGURAÇÕES GERAIS E VARIÁVEIS
-======================================== */
+/* Configurações Gerais */
 :root {
     --primary-color: #00875a;
     --primary-dark: #006644;
@@ -24,158 +22,122 @@ body {
     line-height: 1.6;
 }
 
-.text-green {
-    color: var(--primary-color);
-}
-
-/* ========================================
-   CONTAINER (Unificado)
-======================================== */
 .container {
-    width: 92%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ========================================
-   HEADER (Unificado com efeito fixo)
-======================================== */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    backdrop-filter: blur(12px);
-    background: rgba(255, 255, 255, 0.9); /* Ajustado para melhor leitura sobre o conteúdo */
-    border-bottom: 1px solid var(--border-color);
-    padding: 15px 0;
-    transition: .3s;
+.text-green {
+    color: var(--primary-color);
 }
+/* ========================================
+   CONTAINER
+======================================== */
 
-/* Compensar o topo da página por conta do header fixo */
-body {
-    padding-top: 75px; 
+.container{
+    width:92%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:0 20px;
 }
 
 /* ========================================
-   NAVBAR & MENU
+   HEADER
 ======================================== */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
 
-nav ul{
+    backdrop-filter:blur(12px);
 
-    display:flex;
+    background:rgba(255,255,255,0.08);
 
-    align-items:center;
-
-    gap:35px;
-
-    list-style:none;
-}
-
-nav a{
-
-    text-decoration:none;
-
-    color:#16351f;
-
-    font-size:1rem;
-
-    font-weight:600;
-
-    position:relative;
+    border-bottom:1px solid rgba(255,255,255,0.15);
 
     transition:.3s;
 }
 
-/* Linha Efeito Hover no Menu */
-nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: #2E7D32;
-    transition: .3s;
-}
+/* ========================================
+   NAVBAR
+======================================== */
 
-nav a:hover::after,
-nav a.active::after {
-    width: 100%;
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 0;
 }
 
 /* ========================================
    LOGO
 ======================================== */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #16351f;
-}
 
-.logo small {
-    color: var(--text-light);
-    font-weight: normal;
-    font-size: 0.9rem;
-    border-left: 1px solid var(--border-color);
-    padding-left: 8px;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:2rem;
+    font-weight:800;
+
+    color:#16351f;
 }
 
 /* ========================================
-   BOTÕES
+   MENU
 ======================================== */
-.btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white) !important;
-    padding: 8px 16px;
-    border-radius: 6px;
-    transition: background 0.3s;
-    text-decoration: none;
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-dark);
+nav a{
+    text-decoration:none;
+    color:#16351f;
+    font-size:1rem;
+    font-weight:600;
+    position:relative;
+    transition:.3s;
 }
 
-.btn-outline {
-    display: inline-block;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 6px 16px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: all 0.3s;
-    text-align: center;
+nav a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#2E7D32;
+    transition:.3s;
 }
 
-.btn-outline:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+nav a:hover::after{
+    width:100%;
+}
+
+nav a.active::after{
+    width:100%;
 }
 
 /* ========================================
-   HERO / BANNER
+   HERO
 ======================================== */
+
 .hero{
     position:relative;
+
     min-height:60vh;
+
+    padding-top:120px;
 
     background:
     linear-gradient(
@@ -206,7 +168,66 @@ nav a.active::after {
     margin:0 auto;
     color:#d1fae5;
 }
+/* Botões */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    text-decoration: none;
+}
 
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0b251a 0%, #163e2b 100%);
+    color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #a3c7b8;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.search-box {
+    background: var(--white);
+    max-width: 650px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
 .search-icon {
     color: var(--text-light);
@@ -219,7 +240,6 @@ nav a.active::after {
     outline: none;
     font-size: 1rem;
     padding: 10px 0;
-    color: #333;
 }
 
 .btn-search {
@@ -243,9 +263,7 @@ nav a.active::after {
     margin-left: 8px;
 }
 
-/* ========================================
-   SEÇÕES GERAIS E GRIDS
-======================================== */
+/* Seções Gerais */
 .section {
     padding: 60px 0;
 }
@@ -272,6 +290,7 @@ nav a.active::after {
     color: var(--text-light);
 }
 
+/* Grid de Categorias */
 .grid-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -312,9 +331,7 @@ nav a.active::after {
     min-height: 45px;
 }
 
-/* ========================================
-   CONTEÚDOS EM DESTAQUE
-======================================== */
+/* Conteúdos em Destaque */
 .grid-featured {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -363,9 +380,7 @@ nav a.active::after {
     margin-bottom: 5px;
 }
 
-/* ========================================
-   FAQ ACCORDION
-======================================== */
+/* FAQ Accordion */
 .faq-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -414,16 +429,14 @@ nav a.active::after {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px;
+    max-height: 200px; /* Ajuste flexível conforme o texto */
 }
 
 .faq-item.active .faq-question i {
     transform: rotate(180deg);
 }
 
-/* ========================================
-   CTA SECTION
-======================================== */
+/* CTA Section Banner */
 .cta-section {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -442,62 +455,4 @@ nav a.active::after {
 
 @media (max-width: 768px) {
     .cta-box { flex-direction: column; text-align: center; }
-}
-
-.cta-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-@media (max-width: 768px) {
-    .cta-content { flex-direction: column; }
-}
-
-.cta-icon {
-    background-color: #e6f4ea;
-    color: var(--primary-color);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
-.cta-content h3 {
-    font-size: 1.25rem;
-    margin-bottom: 5px;
-}
-
-.cta-content p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-}
-
-.btn-large {
-    padding: 12px 28px;
-    font-weight: bold;
-}
-
-/* ========================================
-   FOOTER
-======================================== */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 20px;
-    border-top: 1px solid var(--border-color);
-    font-size: 0.9rem;
-    color: var(--text-light);
-}
-
-.footer a {
-    color: var(--text-light);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
+}.cta-content{ 
