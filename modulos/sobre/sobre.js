@@ -3,8 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (btnContato) {
         btnContato.addEventListener("click", () => {
+
+            const email = "tavares.rosana@escola.pr.gov.br";
+            const assunto = encodeURIComponent("Contato AgroTech");
+            const mensagem = encodeURIComponent(
+                "Olá, gostaria de entrar em contato."
+            );
+
             window.location.href =
-"mailto:tavares.rosana@escola.pr.gov.br?subject=Contato%20AgroTech&body=Olá,%20gostaria%20de%20entrar%20em%20contato.";
+                `mailto:${email}?subject=${assunto}&body=${mensagem}`;
         });
     }
 });
