@@ -1,14 +1,3 @@
-const conteudos = {
-    irrigacao: {
-        title: "Irrigação",
-        text: "Irrigação é o controle da água na lavoura..."
-    },
-    solo: {
-        title: "Solo",
-        text: "O solo é a base da produção agrícola..."
-    }
-};
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // FAQ
@@ -16,54 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     faqQuestions.forEach(question => {
         question.addEventListener('click', () => {
+
             const currentItem = question.parentElement;
-            currentItem.classList.toggle('active');
-        });
-    });
-
-    // Fechar modal
-    const modal = document.getElementById("modal");
-    const closeModal = document.getElementById("closeModal");
-
-    closeModal.onclick = () => {
-        modal.style.display = "none";
-    };
-
-    window.onclick = (e) => {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    };
-
-});
-
-function openModal(key) {
-    const modal = document.getElementById("modal");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalText = document.getElementById("modalText");
-
-    modalTitle.textContent = conteudos[key].title;
-    modalText.textContent = conteudos[key].text;
-
-    modal.style.display = "flex";
-}
-
-    // Accordion
-    const faqQuestions = document.querySelectorAll('.faq-question');
-
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-            const currentItem = question.parentElement;
-
-            const isActive = currentItem.classList.contains('active');
 
             document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
+                if (item !== currentItem) {
+                    item.classList.remove('active');
+                }
             });
 
-            if (!isActive) {
-                currentItem.classList.add('active');
-            }
+            currentItem.classList.toggle('active');
         });
     });
 
@@ -106,10 +57,49 @@ ${pergunta}
 
         });
 
-        // Permite apertar Enter
+        // Enter
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 searchButton.click();
             }
         });
     }
+
+    // FECHAR MODAL
+    const modal = document.getElementById("modal");
+    const closeModal = document.getElementById("closeModal");
+
+    if(closeModal){
+
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (e) => {
+
+            if(e.target === modal){
+                modal.style.display = "none";
+            }
+
+        });
+    }
+
+});
+
+
+// ABRIR MODAL
+function openModal(key){
+
+    const modal = document.getElementById("modal");
+
+    document.getElementById("modalTitle").textContent =
+    conteudos[key].title;
+
+    document.getElementById("modalImage").src =
+    conteudos[key].image;
+
+    document.getElementById("modalText").innerHTML =
+    conteudos[key].text;
+
+    modal.style.display = "flex";
+}
