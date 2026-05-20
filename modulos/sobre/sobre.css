@@ -47,13 +47,13 @@ CONTAINER
 }
 
 .hero h1 {
-    /* Aumenta o tamanho do título principal */
-    font-size: 3.0rem; 
+    font-size: 3.0rem;
     margin-bottom: 20px;
-    color: #0c311a; /* Verde escuro */
-    text-align: center; /* Garante o título centralizado */
-    
-    /* Mantém o contorno branco para leitura */
+    color: #0c311a;
+
+    /* MUDANÇA PRINCIPAL */
+    text-align: left;
+
     text-shadow: 
         -2px -2px 0 #fff,  
          2px -2px 0 #fff,
@@ -63,23 +63,25 @@ CONTAINER
 }
 
 .hero p {
-    max-width: 650px; /* Reduz um pouco a largura para forçar quebras de linha mais bonitas */
-    margin: 0 auto; /* Centraliza o bloco do parágrafo na tela */
-    text-align: center; /* Centraliza o texto interno do parágrafo */
+    max-width: 650px;
+
+    /* MUDANÇA PRINCIPAL */
+    margin: 0;
+
+    text-align: left;
+
     line-height: 1.6;
-    font-size: 1.15rem; /* Aumenta um pouquinho a letra para melhorar a leitura */
+    font-size: 1.15rem;
     color: #0c311a;
-    font-weight: 600; /* Deixa a fonte levemente mais grossa para destacar */
-    
-    /* Mantém o contorno branco para leitura */
+    font-weight: 600;
+
     text-shadow: 
         -2px -2px 0 #fff,  
          2px -2px 0 #fff,
         -2px  2px 0 #fff,
          2px  2px 0 #fff,
          0px  4px 10px rgba(0,0,0,0.15);
-        }
-
+}
 /* Títulos das Seções */
 .section-title {
     font-size: 1.2rem;
