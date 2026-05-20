@@ -172,52 +172,6 @@ nav a.active::after {
     color: var(--primary-color);
 }
 
-/* Barra de Busca */
-.search-box {
-    background: var(--white);
-    max-width: 650px;
-    margin: 0 auto 20px auto;
-    display: flex;
-    align-items: center;
-    border-radius: 6px;
-    padding: 5px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.search-icon {
-    color: var(--text-light);
-    padding: 0 15px;
-}
-
-.search-box input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    padding: 10px 0;
-}
-
-.btn-search {
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.popular-searches {
-    font-size: 0.85rem;
-    color: #a3c7b8;
-}
-
-.popular-searches a {
-    color: var(--white);
-    text-decoration: underline;
-    margin-left: 8px;
-}
-
 /* ========================================
    SEÇÕES GERAIS E GRIDS
 ======================================== */
