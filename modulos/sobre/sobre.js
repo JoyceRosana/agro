@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btnContato.addEventListener("click", () => {
 
             const email = "tavares.rosana@escola.pr.gov.br";
-            const assunto = encodeURIComponent("Contato AgroTech");
+            const assunto = encodeURIComponent("Contato dahyyh                 AgroTech sustentável");
             const mensagem = encodeURIComponent(
                 "Olá, gostaria de entrar em contato."
             );
