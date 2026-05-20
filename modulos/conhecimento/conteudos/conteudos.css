@@ -1,0 +1,479 @@
+/* Custom Reset & Estilos de Layout para a Página de Conteúdos */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Abas Superiores de Navegação */
+.conteudos-nav-container {
+    margin-bottom: 25px;
+}
+
+.nav-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tabs-scroll {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.tab-btn {
+    text-decoration: none;
+    background-color: #f1f3f5;
+    color: #495057;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    border: 1px solid #e9ecef;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background-color: #e9ecef;
+}
+
+.tab-btn.active {
+    background-color: #04291e;
+    color: #ffffff;
+    border-color: #04291e;
+}
+
+/* Banner da Página */
+.page-banner {
+    margin-bottom: 35px;
+}
+
+.banner-img-wrapper {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.banner-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-title {
+    font-size: 1.85rem;
+    color: #052e16;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+}
+
+.main-description {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Títulos das Seções */
+.section-heading {
+    font-size: 1.25rem;
+    color: #0d1e18;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-heading::before {
+    content: "✓";
+    background-color: #10b981;
+    color: white;
+    font-size: 0.75rem;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Grids Básicos */
+.section-block {
+    margin-bottom: 40px;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.gap-large {
+    gap: 40px;
+}
+
+.text-content p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0 0 14px 0;
+}
+
+.content-img-rounded {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 280px;
+}
+
+/* Grid de 4 Colunas (Como a irrigação pode ser aplicada) */
+.grid-4col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.agro-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    background-color: #f8fafc;
+    padding: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #1e293b;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.card-thumb {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 12px;
+    font-size: 0.8rem;
+    color: #475569;
+    flex-grow: 1;
+}
+
+.system-tag {
+    margin: 0 0 10px 0;
+}
+
+.features-title {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.card-body ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.card-body li {
+    margin-bottom: 4px;
+}
+
+/* Painéis de Problemas e Soluções */
+.panel {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.panel-danger {
+    border: 1px solid #fecaca;
+}
+
+.panel-success {
+    border: 1px solid #bbf7d0;
+}
+
+.panel-title {
+    font-size: 1.05rem;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.panel-title.red-icon::before {
+    content: "⚠️";
+    font-size: 1rem;
+}
+
+.panel-title.check-icon::before {
+    content: "✓";
+    background-color: #22c55e;
+    color: white;
+    font-size: 0.7rem;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.panel-subtitle {
+    font-size: 0.85rem;
+    color: #e11d48;
+    margin: 0 0 15px 0;
+}
+
+.panel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel-list li {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    color: #334155;
+}
+
+.panel-list-detailed {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel-list-detailed li {
+    margin-bottom: 14px;
+}
+
+.panel-list-detailed li:last-child {
+    margin-bottom: 0;
+}
+
+.item-title {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.panel-list-detailed p {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin: 0;
+    padding-left: 24px;
+}
+
+/* Benefícios Grid */
+.grid-6col {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.benefit-item {
+    background: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 6px;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.benefit-icon {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.benefit-item p {
+    font-size: 0.75rem;
+    margin: 0;
+    color: #334155;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Curiosidades */
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.curiosity-box {
+    background-color: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.curiosity-icon {
+    font-size: 1.1rem;
+}
+
+.curiosity-box p {
+    font-size: 0.82rem;
+    color: #451a03;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Quiz Rápido */
+.quiz-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.quiz-question {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #1e293b;
+}
+
+.quiz-options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.quiz-option:hover {
+    background-color: #f8fafc;
+}
+
+.quiz-option input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.quiz-option input[type="radio"]:checked + .radio-custom::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Feedbacks Visuais do Quiz via JS */
+.quiz-option.selected-wrong {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+    color: #991b1b;
+}
+
+.quiz-option.selected-correct {
+    border-color: #10b981;
+    background-color: #ecfdf5;
+    color: #065f46;
+}
+
+.quiz-feedback-box {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: none;
+}
+
+/* Rodapé de Conteúdo Concluído */
+.content-footer-card {
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.trophy-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.footer-card-title {
+    font-size: 1rem;
+    margin: 0 0 4px 0;
+    color: #1e293b;
+}
+
+.footer-card-sub {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Responsividade Básica (Smartphone) */
+@media (max-width: 768px) {
+    .grid-2col, .quiz-options-grid {
+        grid-template-columns: 1fr;
+    }
+    .grid-4col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-6col {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-3col {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-4col, .grid-6col {
+        grid-template-columns: 1fr;
+    }
+}
+
