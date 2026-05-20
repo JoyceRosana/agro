@@ -1,5 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Accordion (ok)
+    // FAQ (ok)
+    // modal refs (ok)
+
+    const modal = document.getElementById("modal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalText = document.getElementById("modalText");
+    const closeModal = document.getElementById("closeModal");
+
+    const conteudos = {
+        irrigacao: {
+            title: "Irrigação",
+            text: "Irrigação é o controle da água na lavoura..."
+        },
+        solo: {
+            title: "Solo",
+            text: "O solo é a base da produção agrícola..."
+        }
+    };
+
+    closeModal.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    window.onclick = (e) => {
+        if (e.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
+});
+
     // Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
 
@@ -65,38 +97,4 @@ ${pergunta}
             }
         });
     }
-const modal = document.getElementById("modal");
-const modalTitle = document.getElementById("modalTitle");
-const modalText = document.getElementById("modalText");
-const closeModal = document.getElementById("closeModal");
-
-// conteúdos (organização mínima obrigatória)
-const conteudos = {
-    irrigacao: {
-        title: "Irrigação",
-        text: "Irrigação é o conjunto de técnicas usadas para fornecer água às plantas de forma controlada. O objetivo é evitar desperdício, aumentar produtividade e garantir que a planta receba água no momento certo. Sistemas como gotejamento e aspersão ajudam a otimizar o uso da água."
-    },
-    solo: {
-        title: "Solo",
-        text: "O solo é a base da produção agrícola. Sua qualidade depende de nutrientes, matéria orgânica e estrutura. Práticas como rotação de culturas e adubação ajudam a manter o solo fértil e produtivo ao longo do tempo."
-    }
-};
-
-// abre modal
-function openModal(key) {
-    modalTitle.innerText = conteudos[key].title;
-    modalText.innerText = conteudos[key].text;
-    modal.style.display = "flex";
-}
-
-// fecha modal
-closeModal.onclick = () => {
-    modal.style.display = "none";
-};
-
-window.onclick = (e) => {
-    if (e.target == modal) {
-        modal.style.display = "none";
-    }
-};
 });
