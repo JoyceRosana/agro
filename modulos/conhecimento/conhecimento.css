@@ -115,7 +115,7 @@ nav a.active::after {
     margin-top: 90px;
     padding: 100px 20px;
     background: linear-gradient(rgba(11, 37, 26, .55), rgba(22, 62, 43, .55)),
-                url("../../assets/imagens/Plantação.png");
+                url("../../assets/imagens/conhecimento.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
