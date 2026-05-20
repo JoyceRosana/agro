@@ -16,8 +16,10 @@ Mensagem:
 `
 );
 
-            window.location.href =
-                `mailto:${email}?subject=${assunto}&body=${mensagem}`;
+           window.open(
+`mailto:${email}?subject=${assunto}&body=${mensagem}`,
+"_blank"
+           )
         });
     }
 });

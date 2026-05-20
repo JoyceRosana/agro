@@ -30,17 +30,27 @@ const searchButton = document.querySelector('.btn-search');
 
             if (pergunta !== "") {
 
-                const assunto = encodeURIComponent("Pergunta - AgroTech");
-                const mensagem = encodeURIComponent(
-                    `Pergunta enviada pela Base de Conhecimento:\n\n${pergunta}`
-                );
+                const email = "tavares.rosana@escola.pr.gov.br";
 
-                window.location.href =
-                `mailto:tavares.rosana@escola.pr.gov.br?subject=${assunto}&body=${mensagem}`;
-            } else {
-                alert("Digite uma pergunta.");
-            }
-        });
+const assunto = encodeURIComponent(
+    "Pergunta enviada pela Base de Conhecimento - AgroTech"
+);
+
+const mensagem = encodeURIComponent(
+`Olá,
+
+Estou entrando em contato pela Base de Conhecimento do AgroTech.
+
+Pergunta:
+${pergunta}
+
+`
+);
+
+window.open(
+`mailto:${email}?subject=${assunto}&body=${mensagem}`,
+"_blank"
+);
 
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
