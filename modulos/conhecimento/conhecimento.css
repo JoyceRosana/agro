@@ -42,7 +42,7 @@ body {
 .hero {
     position: relative;
     min-height: 90vh;
-     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/imagens/bannerconhecimento.png');
+     background: url('/assets/imagens/bannerconhecimento.png');
    
     background-size: cover;
     background-position: center;
