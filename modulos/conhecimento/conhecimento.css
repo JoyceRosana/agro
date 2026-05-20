@@ -71,36 +71,28 @@ body {
 }
 
 .hero .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Centraliza o texto */
-    
-    /* Efeito de vidro claro */
-    background: rgba(255, 255, 255, 0.65); /* Fundo branco semi-transparente */
-    backdrop-filter: blur(12px);           /* Desfoca o fundo para dar leitura */
-    -webkit-backdrop-filter: blur(12px);   /* Suporte para Safari */
-    
-    padding: 40px 60px;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    max-width: 800px;
+    background: none !important; /* Remove totalmente a caixa estranha */
+    backdrop-filter: none !important;
+    padding: 0;
 }
 
-/* No modo claro, use cores escuras e sólidas para o texto */
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #0c311a; /* Um verde floresta bem escuro (ótimo para Agro) */
-    font-weight: 700;
+    color: #0c311a; /* Verde escuro profissional */
+    /* Cria um contorno branco invisível que separa as letras da foto */
+    text-shadow: 
+        -2px -2px 0 #fff,  
+         2px -2px 0 #fff,
+        -2px  2px 0 #fff,
+         2px  2px 0 #fff,
+         0px  4px 10px rgba(0,0,0,0.1); 
 }
 
 .hero p {
-    max-width: 700px;
-    line-height: 1.8;
-    color: #2d3748; /* Um cinza grafite escuro e confortável para leitura */
+    color: #2d3748;
     font-weight: 500;
+    text-shadow: 0 0 8px #ffffff, 0 0 4px #ffffff;
 }
+
 
 /* ========================================
    BOTÕES E ELEMENTOS DE INTERAÇÃO
