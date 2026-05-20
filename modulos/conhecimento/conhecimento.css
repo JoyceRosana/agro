@@ -147,9 +147,6 @@ nav a.active::after{
 
     padding: 100px 20px;
     background:
-    linear-gradient(
-    rgba(11,37,26,0.75),
-    rgba(22,62,43,0.75)),
     url("/assets/imagens/Plantação.png");
 
     background-size: cover;
