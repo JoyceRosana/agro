@@ -133,17 +133,19 @@ nav a.active::after{
 ======================================== */
 
 .hero{
-    position:relative;
+    position: relative;
 
-    min-height:70vh;
+    min-height: 70vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    text-align:center;
+    text-align: center;
 
-    padding:180px 20px 100px;
+    margin-top: 90px;
+
+    padding: 100px 20px;
 
     background:
     linear-gradient(
@@ -151,10 +153,17 @@ nav a.active::after{
     rgba(22,62,43,0.75)),
     url("/assets/imagens/Plantação.png");
 
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 
-    color:white;
+    color: white;
+}
+
+.hero .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 .hero h1{
@@ -164,12 +173,7 @@ nav a.active::after{
 
 .hero p{
     max-width:700px;
-    margin:auto;
-
-    font-size:1.1rem;
     line-height:1.8;
-
-    color:#d1fae5;
 }
 /* Botões */
 .btn-primary {
