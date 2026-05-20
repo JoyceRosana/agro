@@ -5,10 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
         btnContato.addEventListener("click", () => {
 
             const email = "tavares.rosana@escola.pr.gov.br";
-            const assunto = encodeURIComponent("Contato dahyyh                 AgroTech sustentável");
-            const mensagem = encodeURIComponent(
-                "Olá, gostaria de entrar em contato."
-            );
+            const assunto = encodeURIComponent("Contato sobre o site AgroTech Sustentável");
+
+const mensagem = encodeURIComponent(
+`Olá,
+
+Estou entrando em contato sobre o site AgroTech Sustentável.
+
+Mensagem:
+`
+);
 
             window.location.href =
                 `mailto:${email}?subject=${assunto}&body=${mensagem}`;
