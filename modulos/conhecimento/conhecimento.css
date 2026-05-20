@@ -57,21 +57,49 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Centraliza o texto */
+    
+    /* Efeito de vidro claro */
+    background: rgba(255, 255, 255, 0.65); /* Fundo branco semi-transparente */
+    backdrop-filter: blur(12px);           /* Desfoca o fundo para dar leitura */
+    -webkit-backdrop-filter: blur(12px);   /* Suporte para Safari */
+    
+    padding: 40px 60px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    max-width: 800px;
 }
 
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    
+    /* Efeito de vidro claro */
+    background: rgba(255, 255, 255, 0.65); /* Fundo branco semi-transparente */
+    backdrop-filter: blur(12px);           /* Desfoca o fundo para dar leitura */
+    -webkit-backdrop-filter: blur(12px);   /* Suporte para Safari */
+    
+    padding: 40px 60px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    max-width: 800px;
+}
+
+/* No modo claro, use cores escuras e sólidas para o texto */
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #ffffff; /* Mude para branco para contrastar com a foto */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra escura focada */
+    color: #0c311a; /* Um verde floresta bem escuro (ótimo para Agro) */
+    font-weight: 700;
 }
 
 .hero p {
     max-width: 700px;
     line-height: 1.8;
-    color: #ffffff; /* Branco ou uma cor clara texturizada */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-    font-weight: 500; /* Deixar a letra levemente mais grossa ajuda */
+    color: #2d3748; /* Um cinza grafite escuro e confortável para leitura */
+    font-weight: 500;
 }
 
 /* ========================================
