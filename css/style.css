@@ -828,51 +828,57 @@ nav a.active::after{
     margin-top:80px;
 }
 
-/* ==========================================================================
+/* ========================================
    FOOTER
-   ========================================================================== */
+======================================== */
 
 footer{
+    width:100%;
     background:#052e16;
     color:white;
-    padding:60px 20px 30px;
+    padding:60px 20px;
 }
 
 .footer-grid{
+    max-width:1200px;
+    margin:0 auto;
+
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .footer-brand{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
     text-align:center;
-}
-
-.footer-brand h3{
-    display:flex;
-    align-items:center;
-    gap:8px;
-}
-
-.footer-brand p{
-    margin:0;
     max-width:700px;
 }
 
+.footer-brand h3{
+    font-size:1.6rem;
+    margin-bottom:15px;
+}
+
+.footer-brand p{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
 .copyright{
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:30px;
+    padding-top:20px;
+
     text-align:center;
-    padding-top:30px;
     color:#94a3b8;
 }
 
+/* RESPONSIVO */
+
 @media(max-width:768px){
 
-    .footer-grid{
-        flex-direction:column;
+    .footer-brand h3{
+        font-size:1.2rem;
     }
 
 }
