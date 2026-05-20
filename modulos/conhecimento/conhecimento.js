@@ -21,41 +21,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Botão Fazer Pergunta
     const searchInput = document.querySelector('.search-box input');
-const searchButton = document.querySelector('.btn-search');
+    const searchButton = document.querySelector('.btn-search');
 
     if (searchButton && searchInput) {
 
         searchButton.addEventListener('click', () => {
+
             const pergunta = searchInput.value.trim();
 
             if (pergunta !== "") {
 
                 const email = "tavares.rosana@escola.pr.gov.br";
 
-const assunto = encodeURIComponent(
-    "Pergunta enviada pela Base de Conhecimento - AgroTech"
-);
+                const assunto = encodeURIComponent(
+                    "Pergunta enviada pela Base de Conhecimento - AgroTech"
+                );
 
-const mensagem = encodeURIComponent(
+                const mensagem = encodeURIComponent(
 `Olá,
 
 Estou entrando em contato pela Base de Conhecimento do AgroTech.
 
 Pergunta:
 ${pergunta}
-
 `
-);
+                );
 
-window.open(
-`mailto:${email}?subject=${assunto}&body=${mensagem}`,
-"_blank"
-);
+                window.open(
+                    `mailto:${email}?subject=${assunto}&body=${mensagem}`,
+                    "_blank"
+                );
 
+            } else {
+                alert("Digite uma pergunta.");
+            }
+
+        });
+
+        // Permite apertar Enter
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 searchButton.click();
             }
         });
     }
+
 });
