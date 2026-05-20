@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Botão Fazer Pergunta
     const searchInput = document.querySelector('.search-box input');
-    const searchButton = document.querySelector('.btn-search');
+const searchButton = document.querySelector('.btn-search');
 
     if (searchButton && searchInput) {
 
