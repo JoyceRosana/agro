@@ -151,7 +151,7 @@ nav a.active::after{
         rgba(11,37,26,.55),
         rgba(22,62,43,.55)
     ),
-    url("../../assets/imagens/plantacao.png");
+    url("../../assets/imagens/Plantação.png");
 
     background-size:cover;
     background-position:center;
