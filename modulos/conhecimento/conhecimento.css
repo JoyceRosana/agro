@@ -1,4 +1,6 @@
-/* Configurações Gerais */
+/* ========================================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS
+======================================== */
 :root {
     --primary-color: #00875a;
     --primary-dark: #006644;
@@ -22,6 +24,7 @@ body {
     line-height: 1.6;
 }
 
+/* Base unificada para o alinhamento centralizado das seções */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -32,151 +35,113 @@ body {
 .text-green {
     color: var(--primary-color);
 }
-/* ========================================
-   CONTAINER
-======================================== */
-
-.container{
-    width:92%;
-    max-width:1400px;
-    margin:0 auto;
-    padding:0 20px;
-}
 
 /* ========================================
    HEADER
 ======================================== */
-
-.header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:999;
-
-    backdrop-filter:blur(12px);
-
-    background:rgba(255,255,255,0.08);
-
-    border-bottom:1px solid rgba(255,255,255,0.15);
-
-    transition:.3s;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    transition: .3s;
 }
 
 /* ========================================
-   NAVBAR
+   NAVBAR & MENU
 ======================================== */
-
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:24px 0;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
 }
 
-/* ========================================
-   LOGO
-======================================== */
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-
-    font-size:2rem;
-    font-weight:800;
-
-    color:#16351f;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #16351f;
 }
 
-/* ========================================
-   MENU
-======================================== */
-
-nav ul{
-    display:flex;
-    align-items:center;
-    gap:35px;
-    list-style:none;
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
 }
 
-nav a{
-    text-decoration:none;
-    color:#16351f;
-    font-size:1rem;
-    font-weight:600;
-    position:relative;
-    transition:.3s;
-}
-
-nav a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0;
-    height:2px;
-    background:#2E7D32;
-    transition:.3s;
-}
-
-nav a:hover::after{
-    width:100%;
-}
-
-nav a.active::after{
-    width:100%;
-}
-
-/* ========================================
-   HERO
-======================================== */
-
-.hero{
+nav a {
+    text-decoration: none;
+    color: #16351f;
+    font-size: 1rem;
+    font-weight: 600;
     position: relative;
-
-    min-height:70vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    margin-top:90px;
-    padding:100px 20px;
-
-    background:
-    linear-gradient(
-        rgba(11,37,26,.55),
-        rgba(22,62,43,.55)
-    ),
-    url("../../assets/imagens/Plantação.png");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    color:white;
+    transition: .3s;
 }
 
-.hero .container{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #2E7D32;
+    transition: .3s;
 }
 
-.hero h1{
-    font-size:3rem;
-    margin-bottom:20px;
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
 }
 
-.hero p{
-    max-width:700px;
-    line-height:1.8;
-    color:#d1fae5;
+/* ========================================
+   HERO (BANNER PRINCIPAL)
+======================================== */
+.hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 90px;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(11, 37, 26, .55), rgba(22, 62, 43, .55)),
+                url("../../assets/imagens/Plantação.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
-/* Botões */
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    line-height: 1.8;
+    color: #d1fae5;
+}
+
+/* ========================================
+   BOTÕES E ELEMENTOS DE INTERAÇÃO
+======================================== */
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--white) !important;
@@ -207,6 +172,7 @@ nav a.active::after{
     color: var(--primary-color);
 }
 
+/* Barra de Busca */
 .search-box {
     background: var(--white);
     max-width: 650px;
@@ -252,7 +218,9 @@ nav a.active::after{
     margin-left: 8px;
 }
 
-/* Seções Gerais */
+/* ========================================
+   SEÇÕES GERAIS E GRIDS
+======================================== */
 .section {
     padding: 60px 0;
 }
@@ -279,14 +247,19 @@ nav a.active::after{
     color: var(--text-light);
 }
 
-/* Grid de Categorias */
-.grid-categories {
+/* Grid estrutural das Categorias */
+.grid-categories, 
+.grid-featured {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
-.card-category {
+/* ========================================
+   CARDS (CATEGORIAS E DESTAQUES)
+======================================== */
+.card-category, 
+.card-featured {
     background: var(--white);
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -320,20 +293,7 @@ nav a.active::after{
     min-height: 45px;
 }
 
-/* Conteúdos em Destaque */
-.grid-featured {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.card-featured {
-    background: var(--white);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
+/* Emblemas / Badges dos Cards */
 .badges {
     position: absolute;
     top: 15px;
@@ -369,7 +329,9 @@ nav a.active::after{
     margin-bottom: 5px;
 }
 
-/* FAQ Accordion */
+/* ========================================
+   FAQ (SISTEMA DE ACORDEÃO)
+======================================== */
 .faq-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -418,14 +380,16 @@ nav a.active::after{
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px; /* Ajuste flexível conforme o texto */
+    max-height: 200px;
 }
 
 .faq-item.active .faq-question i {
     transform: rotate(180deg);
 }
 
-/* CTA Section Banner */
+/* ========================================
+   CTA BANNER SECTION
+======================================== */
 .cta-section {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -446,50 +410,12 @@ nav a.active::after{
     .cta-box { flex-direction: column; text-align: center; }
 }
 
-/* ==========================================================================
+/* ========================================
    FOOTER
-   ========================================================================== */
-footer{
-    background:#052e16;
-    color:white;
-    padding:60px 20px 30px;
-}
-
-.footer-grid{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.footer-brand{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-    text-align:center;
-}
-
-.footer-brand h3{
-    display:flex;
-    align-items:center;
-    gap:8px;
-}
-
-.footer-brand p{
-    margin:0;
-    max-width:700px;
-}
-
-.copyright{
-    text-align:center;
-    padding-top:30px;
-    color:#94a3b8;
-}
-
-@media(max-width:768px){
-
-    .footer-grid{
-        flex-direction:column;
-    }
-
+======================================== */
+.footer {
+    padding: 40px 0;
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
 }
