@@ -140,16 +140,25 @@ nav a.active::after{
     display: flex;
     justify-content: center;
     align-items: center;
+
     text-align: center;
+
     margin-top: 90px;
     padding: 100px 20px;
-    background: url("/assets/imagens/Plantação.png") no-repeat center center;
-    background-size: cover;
+
+    background:
+    linear-gradient(
+        rgba(11,37,26,0.55),
+        rgba(22,62,43,0.55)
+    ),
+    url("/assets/imagens/Plantação.png");
+
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     color: white;
 }
-
 .hero .container{
     display:flex;
     flex-direction:column;
