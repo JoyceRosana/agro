@@ -410,23 +410,20 @@ nav a.active::after {
     .cta-box { flex-direction: column; text-align: center; }
 }
 
-/* ========================================
+/* ==========================================================================
    FOOTER
-======================================== */
+   ========================================================================== */
 
-.footer{
-    width:100%;
+footer{
     background:#052e16;
     color:white;
     padding:60px 20px 30px;
-    margin-top:50px;
 }
 
 .footer-grid{
     display:flex;
     justify-content:center;
     align-items:center;
-    width:100%;
 }
 
 .footer-brand{
@@ -440,23 +437,17 @@ nav a.active::after {
 .footer-brand h3{
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:10px;
-    font-size:1.5rem;
-    margin-bottom:10px;
+    gap:8px;
 }
 
 .footer-brand p{
+    margin:0;
     max-width:700px;
-    line-height:1.8;
-    color:#d1d5db;
 }
 
 .copyright{
-    border-top:1px solid rgba(255,255,255,.1);
-    margin-top:30px;
-    padding-top:20px;
     text-align:center;
+    padding-top:30px;
     color:#94a3b8;
 }
 
