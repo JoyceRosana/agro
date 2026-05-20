@@ -77,22 +77,33 @@ body {
 }
 
 .hero h1 {
-    color: #0c311a; /* Verde escuro profissional */
-    /* Cria um contorno branco invisível que separa as letras da foto */
+    /* Aumenta o tamanho do título principal */
+    font-size: 3.8rem; 
+    margin-bottom: 20px;
+    color: #0c311a; /* Verde escuro */
+    text-align: center; /* Garante o título centralizado */
+    
+    /* Mantém o contorno branco para leitura */
     text-shadow: 
         -2px -2px 0 #fff,  
          2px -2px 0 #fff,
         -2px  2px 0 #fff,
          2px  2px 0 #fff,
-         0px  4px 10px rgba(0,0,0,0.1); 
+         0px  4px 10px rgba(0,0,0,0.15);
 }
 
 .hero p {
+    max-width: 650px; /* Reduz um pouco a largura para forçar quebras de linha mais bonitas */
+    margin: 0 auto; /* Centraliza o bloco do parágrafo na tela */
+    text-align: center; /* Centraliza o texto interno do parágrafo */
+    line-height: 1.6;
+    font-size: 1.15rem; /* Aumenta um pouquinho a letra para melhorar a leitura */
     color: #2d3748;
-    font-weight: 500;
+    font-weight: 600; /* Deixa a fonte levemente mais grossa para destacar */
+    
+    /* Sombra branca sutil para o parágrafo */
     text-shadow: 0 0 8px #ffffff, 0 0 4px #ffffff;
 }
-
 
 /* ========================================
    BOTÕES E ELEMENTOS DE INTERAÇÃO
