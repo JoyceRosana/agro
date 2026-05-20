@@ -1,31 +1,36 @@
+const conteudos = {
+    irrigacao: {
+        title: "Irrigação",
+        text: "Irrigação é o controle da água na lavoura..."
+    },
+    solo: {
+        title: "Solo",
+        text: "O solo é a base da produção agrícola..."
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Accordion (ok)
-    // FAQ (ok)
-    // modal refs (ok)
+    // FAQ
+    const faqQuestions = document.querySelectorAll('.faq-question');
 
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const currentItem = question.parentElement;
+            currentItem.classList.toggle('active');
+        });
+    });
+
+    // Fechar modal
     const modal = document.getElementById("modal");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalText = document.getElementById("modalText");
     const closeModal = document.getElementById("closeModal");
-
-    const conteudos = {
-        irrigacao: {
-            title: "Irrigação",
-            text: "Irrigação é o controle da água na lavoura..."
-        },
-        solo: {
-            title: "Solo",
-            text: "O solo é a base da produção agrícola..."
-        }
-    };
 
     closeModal.onclick = () => {
         modal.style.display = "none";
     };
 
     window.onclick = (e) => {
-        if (e.target == modal) {
+        if (e.target === modal) {
             modal.style.display = "none";
         }
     };
@@ -37,19 +42,9 @@ function openModal(key) {
     const modalTitle = document.getElementById("modalTitle");
     const modalText = document.getElementById("modalText");
 
-    const conteudos = {
-        irrigacao: {
-            title: "Irrigação",
-            text: "Irrigação é o controle da água na lavoura..."
-        },
-        solo: {
-            title: "Solo",
-            text: "O solo é a base da produção agrícola..."
-        }
-    };
-
     modalTitle.textContent = conteudos[key].title;
     modalText.textContent = conteudos[key].text;
+
     modal.style.display = "flex";
 }
 
