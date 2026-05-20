@@ -47,26 +47,38 @@ CONTAINER
 }
 
 .hero h1 {
-    /* 3. MUDANÇA AQUI: Altere o '3rem' para o tamanho que desejar (ex: 2.5rem ou 3.5rem) */
-    font-size: 3.5rem; 
+    /* Aumenta o tamanho do título principal */
+    font-size: 3.0rem; 
+    margin-bottom: 20px;
+    color: #0c311a; /* Verde escuro */
+    text-align: center; /* Garante o título centralizado */
     
-    color: #134326;
-    margin-bottom: 15px;
-    font-weight: 700;
-    
-    /* 4. GARANTIA: Força o alinhamento do texto à esquerda */
-    text-align: left; 
+    /* Mantém o contorno branco para leitura */
+    text-shadow: 
+        -2px -2px 0 #fff,  
+         2px -2px 0 #fff,
+        -2px  2px 0 #fff,
+         2px  2px 0 #fff,
+         0px  4px 10px rgba(0,0,0,0.15);
 }
 
 .hero p {
-    /* 5. MUDANÇA AQUI: Altere o '1.25rem' para o tamanho que desejar (ex: 1.1rem ou 1.4rem) */
-    font-size: 1.3rem; 
+    max-width: 650px; /* Reduz um pouco a largura para forçar quebras de linha mais bonitas */
+    margin: 0 auto; /* Centraliza o bloco do parágrafo na tela */
+    text-align: center; /* Centraliza o texto interno do parágrafo */
+    line-height: 1.6;
+    font-size: 1.15rem; /* Aumenta um pouquinho a letra para melhorar a leitura */
+    color: #0c311a;
+    font-weight: 600; /* Deixa a fonte levemente mais grossa para destacar */
     
-    color: #023406;
-    
-    /* 6. GARANTIA: Força o alinhamento do texto à esquerda */
-    text-align: left; 
-}
+    /* Mantém o contorno branco para leitura */
+    text-shadow: 
+        -2px -2px 0 #fff,  
+         2px -2px 0 #fff,
+        -2px  2px 0 #fff,
+         2px  2px 0 #fff,
+         0px  4px 10px rgba(0,0,0,0.15);
+        }
 
 /* Títulos das Seções */
 .section-title {
