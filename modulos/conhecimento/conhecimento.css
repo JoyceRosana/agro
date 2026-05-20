@@ -99,6 +99,7 @@ body {
     line-height: 1.6;
     font-size: 1.15rem; /* Aumenta um pouquinho a letra para melhorar a leitura */
     color: #0c311a;
+    font-weight: 600; /* Deixa a fonte levemente mais grossa para destacar */
     
     /* Mantém o contorno branco para leitura */
     text-shadow: 
