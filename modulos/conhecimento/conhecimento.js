@@ -1,41 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Sistema do Accordion (Perguntas Frequentes)
+
+    // Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
 
     faqQuestions.forEach(question => {
         question.addEventListener('click', () => {
             const currentItem = question.parentElement;
-            
-            // Verifica se o item já está ativo
+
             const isActive = currentItem.classList.contains('active');
-            
-            // Fecha todos os outros antes de abrir um novo (opcional)
+
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
             });
 
-            // Se não estava ativo, abre o atual
             if (!isActive) {
                 currentItem.classList.add('active');
             }
         });
     });
 
-    // Simulação do mecanismo de busca básica (opcional)
+    // Botão Fazer Pergunta
     const searchInput = document.querySelector('.search-box input');
     const searchButton = document.querySelector('.btn-search');
 
     if (searchButton && searchInput) {
+
         searchButton.addEventListener('click', () => {
-            const query = searchInput.value.trim();
-            if(query !== "") {
-                alert(`Buscando por: "${query}" na Base de Conhecimento...`);
-                // Aqui você pode redirecionar ou filtrar os elementos da tela
+            const pergunta = searchInput.value.trim();
+
+            if (pergunta !== "") {
+
+                const assunto = encodeURIComponent("Pergunta - AgroTech");
+                const mensagem = encodeURIComponent(
+                    `Pergunta enviada pela Base de Conhecimento:\n\n${pergunta}`
+                );
+
+                window.location.href =
+                `mailto:tavares.rosana@escola.pr.gov.br?subject=${assunto}&body=${mensagem}`;
+            } else {
+                alert("Digite uma pergunta.");
             }
         });
 
-        // Permitir buscar apertando Enter
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 searchButton.click();

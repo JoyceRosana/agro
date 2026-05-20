@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const btnContato = document.getElementById("btnContato");
+
     if (btnContato) {
         btnContato.addEventListener("click", () => {
-            alert("Redirecionando para o suporte do AgroTech...");
+            window.location.href =
+"mailto:tavares.rosana@escola.pr.gov.br?subject=Contato%20AgroTech&body=Olá,%20gostaria%20de%20entrar%20em%20contato.";
         });
     }
 });
