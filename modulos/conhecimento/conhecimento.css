@@ -42,7 +42,8 @@ body {
 .hero {
     position: relative;
     min-height: 90vh;
-    background: url('/assets/imagens/bannerconhecimento.png');
+     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/imagens/bannerconhecimento.png');
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,12 +62,16 @@ body {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #ffffff; /* Mude para branco para contrastar com a foto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra escura focada */
 }
 
 .hero p {
     max-width: 700px;
     line-height: 1.8;
-    color: #07f9a8;
+    color: #ffffff; /* Branco ou uma cor clara texturizada */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 500; /* Deixar a letra levemente mais grossa ajuda */
 }
 
 /* ========================================
