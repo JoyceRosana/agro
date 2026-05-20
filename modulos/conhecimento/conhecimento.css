@@ -206,25 +206,6 @@ nav a.active::after{
     color: var(--primary-color);
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #0b251a 0%, #163e2b 100%);
-    color: var(--white);
-    padding: 60px 0;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    color: #a3c7b8;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
-}
-
 .search-box {
     background: var(--white);
     max-width: 650px;
