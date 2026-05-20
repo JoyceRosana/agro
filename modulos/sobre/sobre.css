@@ -63,7 +63,7 @@ CONTAINER
 }
 
 .hero p {
-    max-width: 600px;
+    max-width: 800px;
 
     /* MUDANÇA PRINCIPAL */
     margin: 0;
@@ -71,7 +71,7 @@ CONTAINER
     text-align: left;
 
     line-height: 1.6;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #0c311a;
     font-weight: 600;
 
