@@ -32,6 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+function openModal(key) {
+    const modal = document.getElementById("modal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalText = document.getElementById("modalText");
+
+    const conteudos = {
+        irrigacao: {
+            title: "Irrigação",
+            text: "Irrigação é o controle da água na lavoura..."
+        },
+        solo: {
+            title: "Solo",
+            text: "O solo é a base da produção agrícola..."
+        }
+    };
+
+    modalTitle.textContent = conteudos[key].title;
+    modalText.textContent = conteudos[key].text;
+    modal.style.display = "flex";
+}
+
     // Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
 
