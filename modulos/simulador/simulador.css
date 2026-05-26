@@ -21,6 +21,6 @@ html, body {
 
 .world img {
   display: block;
-  width: 2000px; /* IMPORTANTE: maior que a tela */
+  width: 200px; /* IMPORTANTE: maior que a tela */
   height: auto;
 }
