@@ -3,45 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Simulador de Fazenda</title>
-  <style>
-    body {
-      margin: 0;
-      background: #87c38f;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .mapa {
-      width: 90vw;
-      max-width: 1200px;
-      border: 4px solid #3b2f2f;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-
-    .titulo {
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      color: white;
-      font-size: 22px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="simulador.css">
 </head>
 <body>
 
-  <div class="titulo">Simulador de Fazenda</div>
+  <div class="ceu"></div>
 
-  <div class="container">
-    <img class="mapa" src="/assets/imagens/geral/mapa.png" alt="Mapa da fazenda">
-  </div>
+  <div class="nuvem" style="top:80px; left:100px;"></div>
+  <div class="nuvem" style="top:150px; left:400px;"></div>
+  <div class="nuvem" style="top:60px; left:700px;"></div>
+
+  <img class="mapa" src="/assets/imagens/geral/mapa.png" alt="Mapa da fazenda">
 
 </body>
 </html>
