@@ -181,7 +181,7 @@ background:linear-gradient(
 #00875a
 );
 
-}                                                                                                                         
+}
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--white) !important;
