@@ -139,6 +139,49 @@ font-size:1rem;
 /* ========================================
    BOTÕES E ELEMENTOS DE INTERAÇÃO
 ======================================== */
+
+.botao{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:12px 22px;
+
+background:linear-gradient(
+90deg,
+#00875a,
+#00a86b
+);
+
+color:white;
+text-decoration:none;
+
+font-weight:600;
+font-size:.95rem;
+
+border-radius:50px;
+
+transition:.4s;
+
+box-shadow:
+0 6px 20px rgba(0,135,90,.25);
+}
+
+.botao:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 12px 25px rgba(0,135,90,.35);
+
+background:linear-gradient(
+90deg,
+#006644,
+#00875a
+);
+
+}                                                                                                                         
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--white) !important;
