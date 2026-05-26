@@ -379,132 +379,110 @@ letter-spacing:-1px;
 }
 
 /* ========================================
-   CTA BANNER PROFISSIONAL
+   CTA - ÁREA DE PERGUNTAS
 ======================================== */
 
 .cta-section{
 
-margin-top:100px;
+max-width:1200px;
 
-background:linear-gradient(
-135deg,
-#0f8a5f,
-#0a6d4b
-);
+margin:90px auto;
 
-padding:80px 20px;
-
-position:relative;
-
-overflow:hidden;
-}
-
-.cta-box::before{
-
-content:"";
-
-position:absolute;
-
-width:350px;
-height:350px;
-
-background:rgba(255,255,255,.05);
-
-border-radius:50%;
-
-right:-120px;
-top:-120px;
+padding:0 20px;
 }
 
 .cta-box{
 
-max-width:1200px;
+background:white;
 
-margin:auto;
+border:1px solid #e8ecef;
+
+border-radius:24px;
+
+padding:45px;
 
 display:grid;
 
-grid-template-columns:1.2fr .8fr;
+grid-template-columns:1fr .8fr;
 
 align-items:center;
 
-gap:50px;
+gap:40px;
 
-color:white;
+box-shadow:
+0 10px 30px rgba(0,0,0,.05);
+
+transition:.4s;
 }
 
+.cta-box:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+}
 
 .cta-content{
 
 display:flex;
-align-items:center;
-gap:25px;
 
-position:relative;
-z-index:2;
+align-items:flex-start;
+
+gap:20px;
 }
 
 .cta-icon{
 
-min-width:85px;
-height:85px;
+min-width:65px;
+height:65px;
 
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 
-font-size:2rem;
+font-size:1.5rem;
 
-border-radius:50%;
+border-radius:18px;
 
-background:rgba(255,255,255,.15);
+background:#e8f7ef;
 
-backdrop-filter:blur(10px);
+color:#00875a;
 }
 
 .cta-content h3{
 
-font-size:2rem;
+font-size:1.7rem;
 
-font-weight:700;
+margin-bottom:8px;
 
-margin-bottom:10px;
-
-color:white;
+color:#1f2937;
 }
 
 .cta-content p{
 
-font-size:1rem;
+line-height:1.7;
 
-line-height:1.8;
+color:#666;
 
 max-width:500px;
-
-color:rgba(255,255,255,.9);
 }
 
-/* INPUT */
+/* campo */
 
 .search-box{
 
 display:flex;
 
-background:white;
+background:#f8faf9;
 
-padding:8px;
+border:1px solid #e2e8f0;
 
 border-radius:60px;
 
+padding:6px;
+
 height:65px;
-
-width:100%;
-
-box-shadow:
-0 10px 30px rgba(0,0,0,.15);
-
-position:relative;
-z-index:2;
 }
 
 .search-box input{
@@ -513,9 +491,11 @@ flex:1;
 
 border:none;
 
-outline:none;
+background:transparent;
 
 padding:0 20px;
+
+outline:none;
 
 font-size:1rem;
 }
@@ -528,22 +508,18 @@ padding:0 28px;
 
 border-radius:50px;
 
-font-size:.95rem;
+background:#00875a;
+
+color:white;
 
 font-weight:600;
 
 cursor:pointer;
 
-background:#00875a;
-
-color:white;
-
-transition:.4s;
+transition:.3s;
 }
 
 .btn-search:hover{
-
-transform:scale(1.04);
 
 background:#006644;
 }
@@ -554,16 +530,14 @@ background:#006644;
 
 grid-template-columns:1fr;
 
-gap:35px;
-
 text-align:center;
-
-padding:40px;
 }
 
 .cta-content{
 
 flex-direction:column;
+
+align-items:center;
 }
 
 }
