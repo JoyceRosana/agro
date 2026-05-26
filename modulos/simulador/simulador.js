@@ -8,6 +8,6 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowUp") y += speed;
   if (e.key === "ArrowDown") y -= speed;
 
-  document.getElementById("world").style.transform =
+  document.querySelector(".world").style.transform =
     `translate(${x}px, ${y}px)`;
 });

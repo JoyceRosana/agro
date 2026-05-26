@@ -8,7 +8,7 @@ html, body {
 .viewport {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* isso elimina o branco */
   position: relative;
 }
 
@@ -21,5 +21,6 @@ html, body {
 
 .world img {
   display: block;
-  width: 1200px;
+  width: 2000px; /* IMPORTANTE: maior que a tela */
+  height: auto;
 }
