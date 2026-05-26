@@ -343,6 +343,7 @@ letter-spacing:-1px;
     margin-bottom: 40px;
 }
 
+
 .cta-box {
     background-color: var(--bg-light);
     border: 1px solid var(--border-color);
@@ -354,9 +355,77 @@ letter-spacing:-1px;
     gap: 20px;
 }
 
-@media (max-width: 768px) {
-    .cta-box { flex-direction: column; text-align: center; }
+/* Campo de pergunta */
+
+.search-box{
+
+display:flex;
+align-items:center;
+
+background:white;
+
+padding:6px;
+
+border-radius:50px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+max-width:550px;
+
+width:100%;
 }
+
+.search-box input{
+
+flex:1;
+
+border:none;
+
+outline:none;
+
+padding:14px 20px;
+
+font-size:1rem;
+
+background:transparent;
+}
+
+.search-box input::placeholder{
+color:#999;
+}
+
+.btn-search{
+
+border:none;
+
+padding:14px 24px;
+
+border-radius:50px;
+
+background:#00875a;
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.btn-search:hover{
+
+transform:translateY(-2px);
+
+background:#006644;
+}
+
+@media (max-width: 768px) {
+    .cta-box {
+        flex-direction: column;
+        text-align: center;
+    }
+} 
 
 .modal {
     display: none;
