@@ -7,13 +7,27 @@
 </head>
 <body>
 
-  <div class="ceu"></div>
+  <div class="viewport">
+    <div class="world" id="world">
+      <img src="mapa-fazenda.png" alt="Mapa da fazenda">
+    </div>
+  </div>
 
-  <div class="nuvem" style="top:80px; left:100px;"></div>
-  <div class="nuvem" style="top:150px; left:400px;"></div>
-  <div class="nuvem" style="top:60px; left:700px;"></div>
+  <script>
+    let x = 0;
+    let y = 0;
+    const speed = 30;
 
-  <img class="mapa" src="/assets/imagens/geral/mapa.png" alt="Mapa da fazenda">
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") x -= speed;
+      if (e.key === "ArrowLeft") x += speed;
+      if (e.key === "ArrowUp") y += speed;
+      if (e.key === "ArrowDown") y -= speed;
+
+      document.getElementById("world").style.transform =
+        `translate(${x}px, ${y}px)`;
+    });
+  </script>
 
 </body>
 </html>
