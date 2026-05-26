@@ -39,77 +39,88 @@ body {
 /* ========================================
    HERO (BANNER PRINCIPAL)
 ======================================== */
-.hero {
+
+.hero{
     position: relative;
     min-height: 90vh;
-     background: url('/assets/imagens/geral/bannerconhecimento.png');
-   
+
+    background: url('/assets/imagens/geral/bannerconhecimento.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0 80px;
-    overflow: hidden;
-}
-.hero .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Centraliza o texto */
-    
-    /* Efeito de vidro claro */
-    background: rgba(255, 255, 255, 0.65); /* Fundo branco semi-transparente */
-    backdrop-filter: blur(12px);           /* Desfoca o fundo para dar leitura */
-    -webkit-backdrop-filter: blur(12px);   /* Suporte para Safari */
-    
-    padding: 40px 60px;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    max-width: 800px;
+
+    padding: 100px 20px;
 }
 
-.hero .container {
-    background: none !important; /* Remove totalmente a caixa estranha */
-    backdrop-filter: none !important;
-    padding: 0;
+.hero .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+
+    background: rgba(255,255,255,.20);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    padding:40px 50px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.3);
+
+    max-width:800px;
 }
 
-.hero h1 {
-    /* Aumenta o tamanho do título principal */
-    font-size: 3.0rem; 
-    margin-bottom: 20px;
-    color: #0c311a; /* Verde escuro */
-    text-align: center; /* Garante o título centralizado */
-    
-    /* Mantém o contorno branco para leitura */
-    text-shadow: 
-        -2px -2px 0 #fff,  
-         2px -2px 0 #fff,
-        -2px  2px 0 #fff,
-         2px  2px 0 #fff,
-         0px  4px 10px rgba(0,0,0,0.15);
+.hero h1{
+    font-size:4rem;
+    font-weight:800;
+
+    color:#ffffff;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
 }
 
-.hero p {
-    max-width: 650px; /* Reduz um pouco a largura para forçar quebras de linha mais bonitas */
-    margin: 0 auto; /* Centraliza o bloco do parágrafo na tela */
-    text-align: center; /* Centraliza o texto interno do parágrafo */
-    line-height: 1.6;
-    font-size: 1.15rem; /* Aumenta um pouquinho a letra para melhorar a leitura */
-    color: #0c311a;
-    font-weight: 600; /* Deixa a fonte levemente mais grossa para destacar */
-    
-    /* Mantém o contorno branco para leitura */
-    text-shadow: 
-        -2px -2px 0 #fff,  
-         2px -2px 0 #fff,
-        -2px  2px 0 #fff,
-         2px  2px 0 #fff,
-         0px  4px 10px rgba(0,0,0,0.15);
-        }
+.hero p{
 
+    max-width:550px;
+
+    color:#f5f5f5;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    font-weight:400;
+}
+
+
+/* Responsivo */
+
+@media(max-width:768px){
+
+.hero{
+min-height:70vh;
+}
+
+.hero .container{
+padding:30px;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+}
 /* ========================================
    BOTÕES E ELEMENTOS DE INTERAÇÃO
 ======================================== */
