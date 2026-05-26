@@ -1,0 +1,12 @@
+.fazenda{
+display:grid;
+grid-template-columns:repeat(3,120px);
+gap:20px;
+}
+
+.canteiro{
+width:120px;
+height:120px;
+background:brown;
+cursor:pointer;
+}
