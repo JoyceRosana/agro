@@ -386,7 +386,8 @@ letter-spacing:-1px;
 
 max-width:1200px;
 
-margin:90px auto;
+margin:90px auto 120px auto;
+/* topo | lados | rodapé */
 
 padding:0 20px;
 }
