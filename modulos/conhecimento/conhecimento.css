@@ -37,68 +37,58 @@ body {
 }
 
 /* ========================================
-   HERO (BANNER PRINCIPAL)
+   HERO PROFISSIONAL
 ======================================== */
 
 .hero{
-    position: relative;
-    min-height: 90vh;
+    min-height:85vh;
 
-    background: url('/assets/imagens/geral/bannerconhecimento.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.30),
+        rgba(0,0,0,.30)
+    ),
+    url('/assets/imagens/geral/bannerconhecimento.png');
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size:cover;
+    background-position:center;
 
-    padding: 100px 20px;
+    display:flex;
+    align-items:center;
 }
 
 .hero .container{
+    max-width:700px;
+
     display:flex;
     flex-direction:column;
-    align-items:center;
-    text-align:center;
+    align-items:flex-start;
 
-    background: rgba(255,255,255,.20);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    padding:40px 50px;
-
-    border-radius:25px;
-
-    border:1px solid rgba(255,255,255,.3);
-
-    max-width:800px;
+    padding:0 20px;
 }
 
 .hero h1{
     font-size:4rem;
     font-weight:800;
+    color:white;
 
-    color:#ffffff;
+    line-height:1.1;
 
-    margin-bottom:25px;
-
-    line-height:1.2;
+    margin-bottom:20px;
 }
 
 .hero p{
 
-    max-width:550px;
-
-    color:#f5f5f5;
-
     font-size:1.1rem;
+
+    color:rgba(255,255,255,.92);
 
     line-height:1.8;
 
-    font-weight:400;
-}
+    margin-bottom:30px;
 
+    max-width:550px;
+}
 
 /* Responsivo */
 
@@ -106,10 +96,11 @@ body {
 
 .hero{
 min-height:70vh;
+text-align:center;
 }
 
 .hero .container{
-padding:30px;
+align-items:center;
 }
 
 .hero h1{
