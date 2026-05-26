@@ -2,25 +2,22 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: transparent;
 }
 
 .viewport {
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /* isso elimina o branco */
-  position: relative;
+  overflow: hidden;
 }
 
 .world {
-  position: absolute;
-  top: 0;
-  left: 0;
-  will-change: transform;
+  width: 100%;
+  height: 100%;
 }
 
 .world img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ESSENCIAL */
   display: block;
-  width: 200px; /* IMPORTANTE: maior que a tela */
-  height: auto;
 }
