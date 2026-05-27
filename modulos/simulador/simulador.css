@@ -8,6 +8,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 .world {
@@ -15,7 +16,9 @@ html, body {
   top: 0;
   left: 0;
 }
+
 .world img {
-  width: auto;
-  height: auto;
+  width: 1024px;
+  height: 683px;
+  display: block;
 }
