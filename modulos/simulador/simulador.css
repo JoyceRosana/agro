@@ -12,11 +12,10 @@ html, body {
 
 .world {
   position: absolute;
-  width: 2000px;
-  height: 2000px;
+  top: 0;
+  left: 0;
 }
 .world img {
-  width: 100%;
+  width: auto;
   height: auto;
-  display: block;
 }
