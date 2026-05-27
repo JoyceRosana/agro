@@ -15,7 +15,7 @@ html, body {
   width: 2000px;
   height: 2000px;
 }
- .world img {
-  width: auto;
-  height: auto;
+.world img {
+  width: 100%;
+  height: 100%;
 }
