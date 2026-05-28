@@ -253,7 +253,7 @@ body{
 
 .panel{
     background: white;
-    border-radius: 18px;
+    border-radius: 38px;
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
