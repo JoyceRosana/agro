@@ -32,11 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (isCorrect) {
                 option.classList.add("selected-correct");
                 feedbackBox.style.color = "#065f46";
-                feedbackBox.innerHTML = "✔ Resposta correta!";
             } else {
                 option.classList.add("selected-wrong");
                 feedbackBox.style.color = "#991b1b";
-                feedbackBox.innerHTML = "✖ Resposta incorreta.";
 
                 const correct = document.querySelector(".correct-target");
                 if (correct) correct.classList.add("selected-correct");
