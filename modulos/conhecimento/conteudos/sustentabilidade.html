@@ -284,33 +284,44 @@ Benefícios
 
 </section>
 
-<section class="section-block">
+<!-- QUIZ -->
+<section class="section-block quiz-section">
 
-<h2 class="section-heading green-icon">
-Quiz rápido
-</h2>
+    <h2 class="section-heading green-icon">Quiz rápido</h2>
 
-<div class="quiz-container">
+    <div class="quiz-container">
 
-<p class="quiz-question">
-Qual solução utiliza organismos naturais no combate às pragas?
-</p>
+        <p class="quiz-question">
+            Qual prática contribui para a sustentabilidade na agricultura?
+        </p>
 
-<form id="quiz-form">
+        <form id="quiz-form" class="quiz-options-grid">
 
-<label><input type="radio" name="quiz-answer">Adubação química</label>
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="a">
+                <span class="radio-custom"></span> Adubação química intensiva
+            </label>
 
-<label><input type="radio" name="quiz-answer">Desmatamento</label>
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="b">
+                <span class="radio-custom"></span> Desmatamento
+            </label>
 
-<label><input type="radio" value="correta" name="quiz-answer">Controle biológico</label>
+            <label class="quiz-option correct-target">
+                <input type="radio" name="quiz-answer" value="c">
+                <span class="radio-custom"></span> Controle biológico
+            </label>
 
-<label><input type="radio" name="quiz-answer">Queimadas</label>
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="d">
+                <span class="radio-custom"></span> Queimadas
+            </label>
 
-</form>
+        </form>
 
-<div id="quiz-feedback"></div>
+        <div id="quiz-feedback" class="quiz-feedback-box"></div>
 
-</div>
+    </div>
 
 </section>
 

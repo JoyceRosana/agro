@@ -245,34 +245,44 @@ Benefícios
 
 </section>
 
-<section class="section-block">
+<!-- QUIZ -->
+<section class="section-block quiz-section">
 
-<h2 class="section-heading green-icon">
-Quiz rápido
-</h2>
+    <h2 class="section-heading green-icon">Quiz rápido</h2>
 
-<div class="quiz-container">
+    <div class="quiz-container">
 
-<p class="quiz-question">
-Qual tecnologia ajuda no monitoramento aéreo das lavouras?
-</p>
+        <p class="quiz-question">
+            Qual tecnologia ajuda no monitoramento aéreo das lavouras?
+        </p>
 
-<form id="quiz-form">
+        <form id="quiz-form" class="quiz-options-grid">
 
-<label><input type="radio" name="quiz-answer">Trator</label>
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="a">
+                <span class="radio-custom"></span> Trator
+            </label>
 
-<label><input type="radio" value="correta" name="quiz-answer">Drone</label>
+            <label class="quiz-option correct-target">
+                <input type="radio" name="quiz-answer" value="b">
+                <span class="radio-custom"></span> Drone
+            </label>
 
-<label><input type="radio" name="quiz-answer">Arado</label>
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="c">
+                <span class="radio-custom"></span> Arado
+            </label>
 
-<label><input type="radio" name="quiz-answer">Adubo</label>
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="d">
+                <span class="radio-custom"></span> Adubo
+            </label>
 
-</form>
+        </form>
 
-<div id="quiz-feedback"></div>
+        <div id="quiz-feedback" class="quiz-feedback-box"></div>
 
-</div>
-
+    </div>
 </section>
 
 <footer class="content-footer-card">

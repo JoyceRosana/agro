@@ -334,61 +334,44 @@ Benefícios
 </section>
 
 
-<section class="section-block">
+<!-- QUIZ -->
+<section class="section-block quiz-section">
 
-<h2 class="section-heading green-icon">
-Quiz rápido
-</h2>
+    <h2 class="section-heading green-icon">Quiz rápido</h2>
 
-<div class="quiz-container">
+    <div class="quiz-container">
 
-<p class="quiz-question">
-Qual prática ajuda a proteger o solo contra erosão?
-</p>
+        <p class="quiz-question">
+            Qual prática ajuda a proteger o solo contra erosão?
+        </p>
 
-<form id="quiz-form">
+        <form id="quiz-form" class="quiz-options-grid">
 
-<label>
-<input type="radio"
-name="quiz-answer">
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="a">
+                <span class="radio-custom"></span> Adubação química
+            </label>
 
-Adubação química
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="b">
+                <span class="radio-custom"></span> Compactação
+            </label>
 
-</label>
+            <label class="quiz-option correct-target">
+                <input type="radio" name="quiz-answer" value="c">
+                <span class="radio-custom"></span> Cobertura vegetal
+            </label>
 
-<label>
+            <label class="quiz-option">
+                <input type="radio" name="quiz-answer" value="d">
+                <span class="radio-custom"></span> Desmatamento
+            </label>
 
-<input type="radio"
-name="quiz-answer">
+        </form>
 
-Compactação
+        <div id="quiz-feedback" class="quiz-feedback-box"></div>
 
-</label>
-
-<label>
-
-<input type="radio"
-name="quiz-answer"
-value="correta">
-
-Cobertura vegetal
-
-</label>
-
-<label>
-
-<input type="radio"
-name="quiz-answer">
-
-Desmatamento
-
-</label>
-
-</form>
-
-<div id="quiz-feedback"></div>
-
-</div>
+    </div>
 
 </section>
 
