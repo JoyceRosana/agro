@@ -258,10 +258,12 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-} 
+    padding: 24px; /* AQUI está o segredo */
+}
+
 .panel ul{
     margin: 0;
-    padding-left: 58px;
+    padding-left: 20px;
 }
 
 .panel li{
