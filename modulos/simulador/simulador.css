@@ -40,32 +40,32 @@ html, body {
 
 /* SILO */
 .silo {
-  width: 180px;
+  width: 140px;
 
-  top: 150px;
-  left: 200px;
+  top: 320px;
+  left: 650px;
 }
 
 /* ARMAZÉM */
 .armazem {
   width: 260px;
 
-  top: 350px;
-  left: 500px;
+  top: 420px;
+  left: 820px;
 }
 
 /* CATAVENTO */
 .catavento {
-  width: 120px;
+  width: 110px;
 
-  top: 120px;
-  right: 300px;
+  top: 180px;
+  left: 1200px;
 }
 
 /* MERCADO */
 .mercado {
   width: 220px;
 
-  bottom: 150px;
-  right: 250px;
+  top: 700px;
+  left: 1450px;
 }
