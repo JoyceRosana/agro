@@ -5,21 +5,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!quizForm) return;
 
+    let answered = false; // 🔒 trava do sistema
+
     options.forEach(option => {
         option.addEventListener("click", () => {
 
-            // limpa estilos anteriores
-            options.forEach(opt => {
-                opt.classList.remove("selected-correct", "selected-wrong");
-            });
+            if (answered) return; // impede mudança depois da escolha
+
+            answered = true; // trava o quiz
 
             const input = option.querySelector("input");
             if (!input) return;
 
             input.checked = true;
 
-            // NOVA REGRA: correto vem da classe correta padrão
             const isCorrect = option.classList.contains("correct-target");
+
+            // limpa estilos antigos
+            options.forEach(opt => {
+                opt.classList.remove("selected-correct", "selected-wrong");
+                opt.style.pointerEvents = "none"; // 🔒 bloqueia clique
+            });
 
             feedbackBox.style.display = "block";
 
@@ -32,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 feedbackBox.style.color = "#991b1b";
                 feedbackBox.innerHTML = "✖ Resposta incorreta.";
 
-                // mostra a correta automaticamente
                 const correct = document.querySelector(".correct-target");
                 if (correct) correct.classList.add("selected-correct");
             }
