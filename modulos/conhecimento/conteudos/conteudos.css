@@ -196,6 +196,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    align-items: stretch;
 }
 
 .grid-3col{
@@ -249,6 +250,9 @@ body{
     box-shadow: var(--shadow-sm);
 
     transition: all .25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .agro-card:hover,
