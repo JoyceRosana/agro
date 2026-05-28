@@ -386,42 +386,33 @@ Melhor aproveitamento dos recursos
 </section>
 
 
-<section class="section-block">
-
-<h2 class="section-heading green-icon">
-Quiz rápido
-</h2>
-
-<div class="quiz-container">
-
-<p class="quiz-question">
-
-Qual solução ajuda agricultores a acompanhar mudanças climáticas?
-
-</p>
-
-<form id="quiz-form">
-
-<label>
-<input type="radio" name="quiz-answer" value="errado">
-Sistemas de colheita
-</label>
-
-<label>
-<input type="radio" name="quiz-answer" value="errado">
-Adubação química
-</label>
-
-<label>
-<input type="radio" name="quiz-answer" value="correto">
-Monitoramento meteorológico
-</label>
-
-<label>
-<input type="radio" name="quiz-answer" value="errado">
-Desmatamento
-</label>
-
+<!-- Quiz Rápido -->
+        <section class="section-block quiz-section">
+            <h2 class="section-heading green-icon">Quiz rápido</h2>
+            <div class="quiz-container">
+                <p class="quiz-question">Qual solução ajuda agricultores a acompanhar mudanças climáticas?</p>
+                
+                <form id="quiz-form" class="quiz-options-grid">
+                    <label class="quiz-option">
+                        <input type="radio" name="quiz-answer" value="aspersao">
+                        <span class="radio-custom"></span> Sistemas de colheita
+                    </label>
+                    <label class="quiz-option correct-target">
+                        <input type="radio" name="quiz-answer" value="gotejamento">
+                        <span class="radio-custom"></span> Adubação química
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="quiz-answer" value="pivo">
+                        <span class="radio-custom"></span> Monitoramento meteorológico
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="quiz-answer" value="hidroponico">
+                        <span class="radio-custom"></span> Desmatamento
+                    </label>
+                </form>
+                <div id="quiz-feedback" class="quiz-feedback-box"></div>
+            </div>
+        </section>
 </form>
 
 <div id="quiz-feedback"></div>
