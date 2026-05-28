@@ -1,4 +1,4 @@
-js document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const quizForm = document.getElementById("quiz-form");
     const options = document.querySelectorAll(".quiz-option");
     const feedbackBox = document.getElementById("quiz-feedback");
