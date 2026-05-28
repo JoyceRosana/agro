@@ -1,16 +1,41 @@
-let x = 0;
-let y = 0;
-const speed = 30;
+const viewport = document.querySelector(".viewport");
 
-const world = document.querySelector(".world");
+let isDown = false;
+let startX;
+let startY;
+let scrollLeft;
+let scrollTop;
 
-document.addEventListener("keydown", (e) => {
+viewport.addEventListener("mousedown", (e) => {
+  isDown = true;
 
-  if (e.key === "ArrowRight") x -= speed;
-  if (e.key === "ArrowLeft") x += speed;
-  if (e.key === "ArrowUp") y += speed;
-  if (e.key === "ArrowDown") y -= speed;
+  startX = e.pageX - viewport.offsetLeft;
+  startY = e.pageY - viewport.offsetTop;
 
-  world.style.transform =
-    `translate(${x}px, ${y}px)`;
+  scrollLeft = viewport.scrollLeft;
+  scrollTop = viewport.scrollTop;
+});
+
+viewport.addEventListener("mouseleave", () => {
+  isDown = false;
+});
+
+viewport.addEventListener("mouseup", () => {
+  isDown = false;
+});
+
+viewport.addEventListener("mousemove", (e) => {
+
+  if (!isDown) return;
+
+  e.preventDefault();
+
+  const x = e.pageX - viewport.offsetLeft;
+  const y = e.pageY - viewport.offsetTop;
+
+  const walkX = (x - startX);
+  const walkY = (y - startY);
+
+  viewport.scrollLeft = scrollLeft - walkX;
+  viewport.scrollTop = scrollTop - walkY;
 });
