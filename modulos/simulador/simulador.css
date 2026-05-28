@@ -47,15 +47,7 @@ html, body {
     transform: scale(1.03);
 }
 
-/* SILO */
-.silo {
-  width: 300px;
-
-  top: 90px;
-  left: 800px;
-}
-
-/* ARMAZÉM */
+/* galpao */
 .armazem {
   width: 430px;
 
