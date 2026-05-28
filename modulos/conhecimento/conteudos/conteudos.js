@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         option.addEventListener("click", () => {
 
+            // limpa estados
             options.forEach(o => {
                 o.classList.remove("selected-correct", "selected-wrong");
             });
@@ -20,14 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (isCorrect) {
                 option.classList.add("selected-correct");
+
                 feedbackBox.style.color = "#065f46";
-                feedbackBox.innerHTML = "✨ Correto!";
+                feedbackBox.innerHTML = "✔ Resposta correta";
             } else {
                 option.classList.add("selected-wrong");
+
                 feedbackBox.style.color = "#991b1b";
-                feedbackBox.innerHTML = "❌ Incorreto.";
+                feedbackBox.innerHTML = "✖ Resposta incorreta";
 
                 const correct = document.querySelector(".quiz-option.correct-target");
+
                 if (correct) {
                     setTimeout(() => {
                         correct.classList.add("selected-correct");

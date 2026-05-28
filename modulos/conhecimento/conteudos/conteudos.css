@@ -463,3 +463,15 @@ body{
         font-size: 1rem;
     }
 }
+
+.quiz-option.selected-correct {
+    border-color: #22c55e;
+    background-color: #ecfdf5;
+    color: #065f46;
+}
+
+.quiz-option.selected-wrong {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+    color: #991b1b;
+}
