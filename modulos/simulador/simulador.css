@@ -40,9 +40,9 @@ html, body {
 
 /* SILO */
 .silo {
-  width: 250px;
+  width: 300px;
 
-  top: 80px;
+  top: 100px;
   left: 800px;
 }
 
@@ -50,16 +50,16 @@ html, body {
 .armazem {
   width: 300px;
 
-  top: 100px;
-  left: 1000px;
+  top: 300px;
+  left: 900px;
 }
 
 /* CATAVENTO */
 .catavento {
   width: 200px;
 
-  top: 150px;
-  left: 900px;
+  top: 100px;
+  left: 1200px;
 }
 
 /* MERCADO */
