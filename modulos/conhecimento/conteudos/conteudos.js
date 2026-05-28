@@ -1,42 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const quizForm = document.getElementById("quiz-form");
     const options = document.querySelectorAll(".quiz-option");
-    const feedbackBox = document.getElementById("quiz-feedback");
 
-    if (!quizForm) return;
-
-    let answered = false; // 🔒 trava do sistema
+    let answered = false;
 
     options.forEach(option => {
         option.addEventListener("click", () => {
 
-            if (answered) return; // impede mudança depois da escolha
-
-            answered = true; // trava o quiz
+            if (answered) return;
+            answered = true;
 
             const input = option.querySelector("input");
-            if (!input) return;
-
-            input.checked = true;
+            if (input) input.checked = true;
 
             const isCorrect = option.classList.contains("correct-target");
 
-            // limpa estilos antigos
+            // trava tudo e limpa estados visuais
             options.forEach(opt => {
-                opt.classList.remove("selected-correct", "selected-wrong");
-                opt.style.pointerEvents = "none"; // 🔒 bloqueia clique
-            });
+                opt.style.pointerEvents = "none";
 
-            feedbackBox.style.display = "block";
+                const optInput = opt.querySelector("input");
+                if (optInput) optInput.disabled = true;
+            });
 
             if (isCorrect) {
                 option.classList.add("selected-correct");
-                feedbackBox.style.color = "#065f46";
-                feedbackBox.innerHTML = "✔ Resposta correta!";
             } else {
                 option.classList.add("selected-wrong");
-                feedbackBox.style.color = "#991b1b";
-                feedbackBox.innerHTML = "✖ Resposta incorreta.";
 
                 const correct = document.querySelector(".correct-target");
                 if (correct) correct.classList.add("selected-correct");
