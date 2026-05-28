@@ -255,6 +255,23 @@ body{
     height: 100%;
 }
 
+.panel{
+    background: white;
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} 
+.panel ul{
+    margin: 0;
+    padding-left: 18px;
+}
+
+.panel li{
+    margin-bottom: 8px;
+}
+
 .agro-card:hover,
 .benefit-item:hover,
 .curiosity-box:hover{
