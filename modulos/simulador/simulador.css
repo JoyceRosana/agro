@@ -42,7 +42,7 @@ html, body {
 .silo {
   width: 200px;
 
-  top: 3000px;
+  top: -100px;
   left: 650px;
 }
 
