@@ -253,7 +253,7 @@ body{
 
 .panel{
     background: white;
-    border-radius: 38px;
+    border-radius: 25px;
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
@@ -261,7 +261,7 @@ body{
 } 
 .panel ul{
     margin: 0;
-    padding-left: 18px;
+    padding-left: 58px;
 }
 
 .panel li{
