@@ -42,7 +42,7 @@ html, body {
 .silo {
   width: 300px;
 
-  top: 100px;
+  top: 90px;
   left: 800px;
 }
 
@@ -50,15 +50,15 @@ html, body {
 .armazem {
   width: 400px;
 
-  top: 300px;
+  top: 250px;
   left: 900px;
 }
 
 /* CATAVENTO */
 .catavento {
-  width: 400px;
+  width: 350px;
 
-  top: 100px;
+  top: 60px;
   left: 1200px;
 }
 
