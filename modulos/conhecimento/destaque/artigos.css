@@ -1,451 +1,191 @@
-/* =========================
-   RESET
-========================= */
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E CORES (Estilo AgroVision)
+   ========================================================================== */
+:root {
+  --verde-escuro: #1b4332;   /* Cor principal dos títulos */
+  --verde-medio: #2d6a4f;    /* Detalhes, ícones e botões */
+  --verde-claro: #d8f3dc;    /* Fundos de destaque e hovers */
+  --texto-principal: #333333;/* Cor dos parágrafos (cinza escuro para leitura confortável) */
+  --fundo-site: #f8f9fa;     /* Cinza ultra claro para o fundo da página */
+  --fundo-card: #ffffff;     /* Branco para o bloco central do conteúdo */
+  --fonte: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-html{
-  scroll-behavior:smooth;
+body {
+  font-family: var(--fonte);
+  background-color: var(--fundo-site);
+  color: var(--texto-principal);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
 }
 
-/* =========================
-   BODY
-========================= */
-
-body{
-  font-family:"Inter","Segoe UI",sans-serif;
-  background:#f4f7f4;
-  color:#2b2b2b;
-  line-height:1.85;
-  -webkit-font-smoothing:antialiased;
+/* ==========================================================================
+   2. HEADER / NAVBAR (Topo Limpo e Espaçado)
+   ========================================================================== */
+header {
+  background-color: var(--fundo-card);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* =========================
-   HEADER FIXO
-========================= */
-
-.topbar{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
-
-  backdrop-filter:blur(12px);
-  background:rgba(255,255,255,0.82);
-
-  border-bottom:1px solid rgba(0,0,0,0.05);
-
-  padding:14px 0;
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--verde-escuro);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.nav-container{
-  width:92%;
-  max-width:1250px;
-  margin:auto;
-
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+nav a {
+  color: #555;
+  text-decoration: none;
+  margin-right: 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
 }
 
-.logo{
-  font-size:1.3rem;
-  font-weight:700;
-  color:#1b5e20;
+nav a:hover {
+  color: var(--verde-medio);
 }
 
-nav{
-  display:flex;
-  align-items:center;
-  gap:28px;
+/* Botão "Base de Conhecimento" do topo */
+.btn-nav {
+  border: 2px solid var(--verde-escuro);
+  color: var(--verde-escuro) !important;
+  padding: 8px 20px;
+  border-radius: 50px; /* Cantos totalmente arredondados da imagem */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.3s;
 }
 
-nav a{
-  text-decoration:none;
-  color:#444;
-  font-size:0.96rem;
-  font-weight:500;
-  transition:0.2s;
+.btn-nav:hover {
+  background-color: var(--verde-escuro);
+  color: white !important;
 }
 
-nav a:hover{
-  color:#2e7d32;
+/* ==========================================================================
+   3. CONTAINER PRINCIPAL DO ARTIGO
+   ========================================================================== */
+main {
+  max-width: 900px; /* Largura ideal para leitura de artigos */
+  margin: 40px auto;
+  padding: 40px;
+  background-color: var(--fundo-card);
+  border-radius: 16px; /* Bordas suaves do bloco principal */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
-.btn-voltar{
-  background:#2e7d32;
-  color:white;
-  padding:10px 18px;
-  border-radius:10px;
-  text-decoration:none;
-  font-size:0.92rem;
-  font-weight:600;
-  transition:0.2s;
+/* Títulos principais do artigo */
+h1 {
+  color: var(--verde-escuro);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
 }
 
-.btn-voltar:hover{
-  background:#1b5e20;
+.subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
-/* =========================
-   HERO
-========================= */
-
-.hero{
-  margin-top:90px;
-
-  background:
-  linear-gradient(
-    135deg,
-    #edf7ed,
-    #f8fbf8
-  );
-
-  padding:80px 20px 60px;
-
-  border-bottom:1px solid rgba(0,0,0,0.05);
+/* ==========================================================================
+   4. BANNER / IMAGEM DE DESTAQUE
+   ========================================================================== */
+.banner-container {
+  width: 100%;
+  margin-bottom: 40px;
 }
 
-.hero-content{
-  width:92%;
-  max-width:1100px;
-  margin:auto;
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px; /* Cantos arredondados idênticos aos da foto */
+  object-fit: cover;
 }
 
-.hero span{
-  display:inline-block;
-
-  background:#dff0df;
-  color:#2e7d32;
-
-  padding:8px 14px;
-  border-radius:999px;
-
-  font-size:0.82rem;
-  font-weight:600;
-
-  margin-bottom:25px;
+/* ==========================================================================
+   5. SEÇÕES DE TEXTO E SUBTÍTULOS (H2)
+   ========================================================================== */
+h2 {
+  color: var(--verde-escuro);
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Espaço para o ícone ao lado do título */
 }
 
-.hero h1{
-  font-size:3.2rem;
-  line-height:1.15;
-  color:#16351b;
-
-  max-width:850px;
-
-  margin-bottom:22px;
+/* Estilização para emular o ícone verde ao lado de "Introdução" */
+h2::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: var(--verde-claro);
+  border-radius: 6px;
+  /* Você pode injetar um SVG ou emoji aqui caso não use FontAwesome */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%232d6a4f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z'/%3E%3C/svg%3E");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.hero p{
-  max-width:760px;
-
-  font-size:1.15rem;
-  color:#5d5d5d;
-
-  line-height:1.8;
+p {
+  font-size: 1.05rem;
+  color: var(--texto-principal);
+  margin-bottom: 22px;
+  text-align: justify; /* Alinhamento do texto igual ao da imagem */
 }
 
-/* =========================
-   IMAGEM HERO
-========================= */
-
-.hero-image{
-  width:92%;
-  max-width:1100px;
-
-  margin:40px auto 0;
-}
-
-.hero-image img{
-  width:100%;
-  height:420px;
-
-  object-fit:cover;
-
-  border-radius:24px;
-
-  box-shadow:
-  0 10px 30px rgba(0,0,0,0.06);
-}
-
-/* =========================
-   CONTAINER PRINCIPAL
-========================= */
-
-.container{
-  width:92%;
-  max-width:850px;
-
-  margin:70px auto;
-}
-
-/* =========================
-   CARDS / SEÇÕES
-========================= */
-
-.card{
-  background:white;
-
-  padding:55px;
-
-  border-radius:26px;
-
-  margin-bottom:35px;
-
-  border:1px solid rgba(0,0,0,0.04);
-
-  box-shadow:
-  0 4px 10px rgba(0,0,0,0.02),
-  0 18px 40px rgba(0,0,0,0.03);
-}
-
-/* =========================
-   TITULOS
-========================= */
-
-h2{
-  font-size:2rem;
-
-  line-height:1.3;
-
-  color:#17361c;
-
-  margin-bottom:28px;
-
-  position:relative;
-}
-
-h2::after{
-  content:"";
-
-  width:70px;
-  height:4px;
-
-  background:#43a047;
-
-  display:block;
-
-  margin-top:16px;
-
-  border-radius:999px;
-}
-
-h3{
-  font-size:1.25rem;
-
-  color:#2e7d32;
-
-  margin-top:40px;
-  margin-bottom:16px;
-}
-
-/* =========================
-   PARÁGRAFOS
-========================= */
-
-p{
-  font-size:1.08rem;
-
-  color:#454545;
-
-  margin-bottom:24px;
-
-  text-align:left;
-}
-
-/* =========================
-   LISTAS
-========================= */
-
-ul{
-  margin:25px 0 30px 10px;
-}
-
-li{
-  margin-bottom:14px;
-
-  color:#444;
-
-  padding-left:10px;
-}
-
-/* =========================
-   DESTAQUE
-========================= */
-
-.destaque{
-  background:#f3f8f3;
-
-  border:1px solid #dfe9df;
-
-  border-left:5px solid #43a047;
-
-  padding:24px;
-
-  border-radius:18px;
-
-  margin:30px 0;
-}
-
-.destaque strong{
-  color:#1b5e20;
-}
-
-/* =========================
-   CAIXA "POR QUE ISSO IMPORTA?"
-========================= */
-
-.importancia{
-  background:#fafcf9;
-
-  border:1px solid rgba(46,125,50,0.12);
-
-  padding:28px;
-
-  border-radius:20px;
-
-  margin:35px 0;
-}
-
-.importancia h3{
-  margin-top:0;
-}
-
-/* =========================
-   LEITURA RECOMENDADA
-========================= */
-
-.relacionados{
-  margin-top:70px;
-}
-
-.relacionados-grid{
-  display:grid;
-
-  grid-template-columns:
-  repeat(auto-fit,minmax(240px,1fr));
-
-  gap:22px;
-
-  margin-top:25px;
-}
-
-.rel-card{
-  background:white;
-
-  padding:24px;
-
-  border-radius:20px;
-
-  border:1px solid rgba(0,0,0,0.05);
-
-  transition:0.25s;
-}
-
-.rel-card:hover{
-  transform:translateY(-5px);
-
-  box-shadow:
-  0 12px 30px rgba(0,0,0,0.05);
-}
-
-.rel-card h4{
-  color:#1b5e20;
-
-  margin-bottom:12px;
-
-  font-size:1.05rem;
-}
-
-.rel-card p{
-  font-size:0.95rem;
-
-  margin-bottom:18px;
-}
-
-.rel-card a{
-  text-decoration:none;
-
-  color:#2e7d32;
-
-  font-weight:600;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-  margin-top:90px;
-
-  background:white;
-
-  border-top:1px solid rgba(0,0,0,0.06);
-
-  padding:40px 20px;
-
-  text-align:center;
-
-  color:#666;
-}
-
-/* =========================
-   RESPONSIVO
-========================= */
-
-@media(max-width:900px){
-
-  .hero h1{
-    font-size:2.5rem;
+/* ==========================================================================
+   6. RESPONSIVIDADE (Ajustes para Celular)
+   ========================================================================== */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  nav a {
+    margin-right: 0;
   }
 
-  .card{
-    padding:38px;
+  main {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
   }
 
-}
-
-@media(max-width:700px){
-
-  nav{
-    display:none;
+  h1 {
+    font-size: 2rem;
   }
 
-  .hero{
-    padding:60px 20px 45px;
+  h2 {
+    font-size: 1.5rem;
   }
-
-  .hero h1{
-    font-size:2rem;
-  }
-
-  .hero p{
-    font-size:1rem;
-  }
-
-  .hero-image img{
-    height:260px;
-  }
-
-  .card{
-    padding:28px;
-    border-radius:20px;
-  }
-
-  h2{
-    font-size:1.6rem;
-  }
-
-  p,
-  li{
-    font-size:1rem;
-  }
-
 }
