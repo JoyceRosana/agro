@@ -1,191 +1,362 @@
-/* ==========================================================================
-   1. CONFIGURAÇÕES GERAIS E CORES (Estilo AgroVision)
-   ========================================================================== */
-:root {
-  --verde-escuro: #1b4332;   /* Cor principal dos títulos */
-  --verde-medio: #2d6a4f;    /* Detalhes, ícones e botões */
-  --verde-claro: #d8f3dc;    /* Fundos de destaque e hovers */
-  --texto-principal: #333333;/* Cor dos parágrafos (cinza escuro para leitura confortável) */
-  --fundo-site: #f8f9fa;     /* Cinza ultra claro para o fundo da página */
-  --fundo-card: #ffffff;     /* Branco para o bloco central do conteúdo */
-  --fonte: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+/* =========================================================
+   AGROVISION — ESTILO PREMIUM ARTIGOS
+========================================================= */
+
+:root{
+  --verde-1: #081c15;
+  --verde-2: #1b4332;
+  --verde-3: #2d6a4f;
+  --verde-4: #40916c;
+  --verde-5: #74c69d;
+
+  --fundo: #f3f7f4;
+  --card: #ffffff;
+  --texto: #2b2b2b;
+  --texto-suave: #5f6b66;
+
+  --sombra:
+  0 10px 30px rgba(0,0,0,0.06);
+
+  --fonte:
+  'Inter',
+  'Segoe UI',
+  sans-serif;
 }
 
-body {
-  font-family: var(--fonte);
-  background-color: var(--fundo-site);
-  color: var(--texto-principal);
-  margin: 0;
-  padding: 0;
-  line-height: 1.7;
+/* =========================================================
+   BASE
+========================================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* ==========================================================================
-   2. HEADER / NAVBAR (Topo Limpo e Espaçado)
-   ========================================================================== */
-header {
-  background-color: var(--fundo-card);
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+html{
+  scroll-behavior:smooth;
 }
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--verde-escuro);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+body{
+  font-family:var(--fonte);
+  background:
+  linear-gradient(
+    to bottom,
+    #edf7f1,
+    #f7faf8
+  );
+
+  color:var(--texto);
+  line-height:1.8;
 }
 
-nav a {
-  color: #555;
-  text-decoration: none;
-  margin-right: 25px;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.2s;
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+
+  padding:18px 7%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:rgba(255,255,255,0.78);
+
+  backdrop-filter:blur(12px);
+
+  border-bottom:
+  1px solid rgba(255,255,255,0.4);
+
+  z-index:999;
 }
 
-nav a:hover {
-  color: var(--verde-medio);
+.logo{
+  font-size:1.5rem;
+  font-weight:800;
+  color:var(--verde-2);
+
+  letter-spacing:-0.5px;
 }
 
-/* Botão "Base de Conhecimento" do topo */
-.btn-nav {
-  border: 2px solid var(--verde-escuro);
-  color: var(--verde-escuro) !important;
-  padding: 8px 20px;
-  border-radius: 50px; /* Cantos totalmente arredondados da imagem */
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  transition: all 0.3s;
+nav{
+  display:flex;
+  gap:28px;
 }
 
-.btn-nav:hover {
-  background-color: var(--verde-escuro);
-  color: white !important;
+nav a{
+  text-decoration:none;
+  color:#3d3d3d;
+
+  font-size:0.96rem;
+  font-weight:600;
+
+  transition:0.3s;
 }
 
-/* ==========================================================================
-   3. CONTAINER PRINCIPAL DO ARTIGO
-   ========================================================================== */
-main {
-  max-width: 900px; /* Largura ideal para leitura de artigos */
-  margin: 40px auto;
-  padding: 40px;
-  background-color: var(--fundo-card);
-  border-radius: 16px; /* Bordas suaves do bloco principal */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+nav a:hover{
+  color:var(--verde-3);
 }
 
-/* Títulos principais do artigo */
-h1 {
-  color: var(--verde-escuro);
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 5px;
-  letter-spacing: -0.5px;
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+  height:72vh;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.55)
+  ),
+
+  url("img/bioinsumos.jpg")
+  center/cover no-repeat;
+
+  display:flex;
+  align-items:end;
+
+  padding:80px 7%;
 }
 
-.subtitulo {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 400;
+.hero-content{
+  max-width:850px;
+  margin-bottom:60px;
 }
 
-/* ==========================================================================
-   4. BANNER / IMAGEM DE DESTAQUE
-   ========================================================================== */
-.banner-container {
-  width: 100%;
-  margin-bottom: 40px;
+.hero span{
+  background:rgba(255,255,255,0.14);
+
+  color:white;
+
+  padding:8px 18px;
+
+  border-radius:40px;
+
+  font-size:0.85rem;
+  font-weight:600;
+
+  backdrop-filter:blur(10px);
 }
 
-.banner-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 16px; /* Cantos arredondados idênticos aos da foto */
-  object-fit: cover;
+.hero h1{
+  font-size:4rem;
+  line-height:1.1;
+
+  color:white;
+
+  margin-top:24px;
+  margin-bottom:18px;
+
+  font-weight:800;
+
+  letter-spacing:-2px;
 }
 
-/* ==========================================================================
-   5. SEÇÕES DE TEXTO E SUBTÍTULOS (H2)
-   ========================================================================== */
-h2 {
-  color: var(--verde-escuro);
-  font-size: 1.8rem;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px; /* Espaço para o ícone ao lado do título */
+.hero p{
+  color:rgba(255,255,255,0.9);
+
+  font-size:1.2rem;
+
+  max-width:700px;
 }
 
-/* Estilização para emular o ícone verde ao lado de "Introdução" */
-h2::before {
-  content: '';
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  background-color: var(--verde-claro);
-  border-radius: 6px;
-  /* Você pode injetar um SVG ou emoji aqui caso não use FontAwesome */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%232d6a4f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z'/%3E%3C/svg%3E");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
+/* =========================================================
+   MAIN
+========================================================= */
+
+main{
+  max-width:980px;
+
+  margin:-80px auto 80px;
+
+  background:var(--card);
+
+  padding:60px;
+
+  border-radius:28px;
+
+  box-shadow:var(--sombra);
+
+  position:relative;
+  z-index:10;
 }
 
-p {
-  font-size: 1.05rem;
-  color: var(--texto-principal);
-  margin-bottom: 22px;
-  text-align: justify; /* Alinhamento do texto igual ao da imagem */
+/* =========================================================
+   SEÇÕES
+========================================================= */
+
+section{
+  margin-bottom:60px;
 }
 
-/* ==========================================================================
-   6. RESPONSIVIDADE (Ajustes para Celular)
-   ========================================================================== */
-@media (max-width: 768px) {
-  header {
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 15px;
+h2{
+  font-size:2rem;
+
+  color:var(--verde-2);
+
+  margin-bottom:22px;
+
+  line-height:1.2;
+
+  position:relative;
+
+  padding-left:20px;
+}
+
+h2::before{
+  content:"";
+
+  position:absolute;
+  left:0;
+  top:5px;
+
+  width:6px;
+  height:85%;
+
+  background:
+  linear-gradient(
+    to bottom,
+    var(--verde-3),
+    var(--verde-5)
+  );
+
+  border-radius:10px;
+}
+
+h3{
+  color:var(--verde-3);
+
+  margin-top:35px;
+  margin-bottom:14px;
+
+  font-size:1.3rem;
+}
+
+p{
+  font-size:1.08rem;
+
+  color:var(--texto);
+
+  margin-bottom:24px;
+
+  text-align:justify;
+}
+
+/* =========================================================
+   LISTAS
+========================================================= */
+
+ul{
+  margin:25px 0;
+  padding-left:22px;
+}
+
+li{
+  margin-bottom:14px;
+
+  color:#444;
+}
+
+/* =========================================================
+   DESTAQUE
+========================================================= */
+
+.destaque{
+  background:
+  linear-gradient(
+    135deg,
+    #edf9f0,
+    #d8f3dc
+  );
+
+  border-left:5px solid var(--verde-4);
+
+  padding:22px;
+
+  border-radius:18px;
+
+  margin:35px 0;
+
+  font-weight:500;
+
+  color:var(--verde-2);
+}
+
+/* =========================================================
+   IMAGEM INTERNA
+========================================================= */
+
+.img-artigo{
+  width:100%;
+
+  border-radius:22px;
+
+  margin:35px 0;
+
+  box-shadow:
+  0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+  background:var(--verde-1);
+
+  color:white;
+
+  padding:50px 7%;
+
+  margin-top:80px;
+}
+
+.footer-content{
+  max-width:1200px;
+  margin:auto;
+}
+
+footer h3{
+  color:white;
+  margin-bottom:12px;
+}
+
+footer p{
+  color:rgba(255,255,255,0.7);
+}
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media(max-width:900px){
+
+  .hero{
+    height:65vh;
   }
-  
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  nav a {
-    margin-right: 0;
+
+  .hero h1{
+    font-size:2.7rem;
   }
 
-  main {
-    margin: 15px;
-    padding: 20px;
-    border-radius: 8px;
+  main{
+    margin:-40px 18px 40px;
+
+    padding:30px;
   }
 
-  h1 {
-    font-size: 2rem;
+  header{
+    padding:16px 20px;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  nav{
+    display:none;
   }
+
 }
