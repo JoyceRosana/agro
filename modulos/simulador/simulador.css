@@ -62,3 +62,10 @@ html, body {
   top: 200px;
   left: 150px;
 }
+
+#milho{
+  width:512px;
+  height:512px;
+  background-image:url("milho.png");
+  background-repeat:no-repeat;
+}
