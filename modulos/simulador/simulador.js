@@ -40,17 +40,3 @@ viewport.addEventListener("mousemove", (e) => {
   viewport.scrollTop = scrollTop - walkY;
 });
 
-const milho = document.getElementById("milho");
-
-// estágio 1 (esquerda)
-milho.style.backgroundPosition = "0px 0px";
-
-setTimeout(() => {
-    // estágio 2 (meio)
-    milho.style.backgroundPosition = "-512px 0px";
-}, 5000);
-
-setTimeout(() => {
-    // estágio 3 (direita)
-    milho.style.backgroundPosition = "-1024px 0px";
-}, 10000);
