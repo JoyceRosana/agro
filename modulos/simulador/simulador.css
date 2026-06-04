@@ -51,16 +51,16 @@ html, body {
 .galpao {
   width: 400px;
 
-  top: 400px;
+  top: 430px;
   left: 50px;
 }
 
 /* MERCADO */
 .mercado {
-  width: 220px;
+  width: 250px;
 
   top: 600px;
-  left: 450px;
+  left: 400px;
 }
 
 /* MILHO */
