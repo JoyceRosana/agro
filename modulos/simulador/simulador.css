@@ -49,10 +49,10 @@ html, body {
 
 /* galpao */
 .galpao {
-  width: 430px;
+  width: 400px;
 
   top: 400px;
-  left: 100px;
+  left: 50px;
 }
 
 /* MERCADO */
@@ -65,7 +65,7 @@ html, body {
 
 /* MILHO */
 .milho {
-  width: 200px;
+  width: 500px;
 
   top: 900px;
   left: 1300px;
