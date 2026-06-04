@@ -40,3 +40,24 @@ viewport.addEventListener("mousemove", (e) => {
   viewport.scrollTop = scrollTop - walkY;
 });
 
+// Define a quantidade exata de linhas e colunas
+const linhas = 8;
+const colunas = 15;
+const totalBlocos = linhas * colunas;
+
+// Seleciona o container do HTML
+const grade = document.getElementById('grade');
+
+// Loop para gerar e inserir os blocos automaticamente
+for (let i = 0; i < totalBlocos; i++) {
+  const img = document.createElement('img');
+  
+  // ATENÇÃO: Substitua pelo nome ou caminho correto do seu arquivo de imagem
+  img.src = 'terra.png'; 
+  
+  img.className = 'bloco-terra';
+  img.alt = 'Bloco de Terra';
+  
+  grade.appendChild(img);
+}
+
