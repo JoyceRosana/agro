@@ -63,9 +63,10 @@ html, body {
   left: 150px;
 }
 
-#milho{
-  width:512px;
-  height:512px;
-  background-image:url("/assets/imagens/simulador/milho.png");
-  background-repeat:no-repeat;
+/* MILHO */
+.milho {
+  width: 200px;
+
+  top: 200px;
+  left: 150px;
 }
