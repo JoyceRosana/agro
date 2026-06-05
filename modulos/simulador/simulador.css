@@ -73,13 +73,13 @@ html, body {
 
 .plantacao {
   position: absolute;
-
   top: 200px;
   left: 500px;
 
   display: grid;
   grid-template-columns: repeat(5, 100px);
-  grid-template-rows: repeat(6, 100px);
+
+  gap: 0px;
 }
 
 .terra {
