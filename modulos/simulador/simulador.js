@@ -22,7 +22,7 @@ viewport.addEventListener("mouseleave", () => {
 
 viewport.addEventListener("mouseup", () => {
   isDown = false;
-
+});
   // Define a quantidade exata de linhas e colunas
 const linhas = 8;
 const colunas = 15;
@@ -43,4 +43,3 @@ for (let i = 0; i < totalBlocos; i++) {
   
   grade.appendChild(img);
 }
-});
