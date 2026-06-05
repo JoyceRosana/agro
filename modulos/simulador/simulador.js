@@ -37,7 +37,7 @@ for (let i = 0; i < totalBlocos; i++) {
   
   // CAMINHO ATUALIZADO: Aponta para a sua pasta de assets
   img.src = '/assets/imagens/simulador/terra.png'; 
-  
+
   img.className = 'bloco-terra';
   img.alt = 'Bloco de Terra';
   

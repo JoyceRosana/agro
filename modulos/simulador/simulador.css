@@ -93,9 +93,9 @@ body {
 /* Cria a grade com a largura total que você definiu */
 .grade-container {
   display: grid;
-  grid-template-columns: repeat(15, calc(250px / 15)); /* Divide os 250px de largura igualmente entre as 15 colunas */
-  grid-template-rows: repeat(8, calc(250px / 15));    /* Mantém a proporção quadrada para as 8 linhas */
-  width: 250px;                                       /* Largura exata que você pediu */
+  grid-template-columns: repeat(15, calc(500px / 15)); /* Divide os 500px de largura igualmente entre as 15 colunas */
+  grid-template-rows: repeat(8, calc(500px / 15));    /* Mantém a proporção quadrada para as 8 linhas */
+  width: 500px;                                       /* Largura exata que você pediu */
   gap: 0px;
 }
 
