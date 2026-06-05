@@ -28,54 +28,26 @@
 </div>
 
 </div>
-<!-- GALPÂO -->
+<!-- ARMAZÉM -->
 <div id="armazem" class="armazem oculto">
 
-  <div class="armazem-conteudo">
-<div class="titulo-galpao">
-    GALPÃO
-</div>
-    <div class="lista-itens">
+  <div class="armazem-box">
 
-      <div class="item" onclick="mostrarInfo('milho')">
-        🌽 Milho - 50 kg
-      </div>
-
-      <div class="item" onclick="mostrarInfo('soja')">
-        🌱 Soja - 40 kg
-      </div>
-
-      <div class="item" onclick="mostrarInfo('feijao')">
-        🫘 Feijão - 25 kg
-      </div>
-
-      <div class="item" onclick="mostrarInfo('alface')">
-        🥬 Alface - 30 un.
-      </div>
-
-      <div class="item" onclick="mostrarInfo('organico')">
-        🧺 Adubo Orgânico - 20 sacos
-      </div>
-
-      <div class="item" onclick="mostrarInfo('quimico')">
-        🧪 Adubo Químico - 15 sacos
-      </div>
-
+    <div class="lista">
+      <div onclick="mostrar('milho')">🌽 Milho - 50 kg</div>
+      <div onclick="mostrar('soja')">🌱 Soja - 40 kg</div>
+      <div onclick="mostrar('feijao')">🫘 Feijão - 25 kg</div>
+      <div onclick="mostrar('alface')">🥬 Alface - 30 un.</div>
+      <div onclick="mostrar('organico')">🧺 Adubo Orgânico - 20</div>
+      <div onclick="mostrar('quimico')">🧪 Adubo Químico - 15</div>
     </div>
 
-    <div id="painel-info" class="painel-info">
-
-      <h2>galpao</h2>
-
-      <p>
-        Selecione um item para visualizar informações.
-      </p>
-
+    <div class="info" id="info">
+      <h2>GALPÃO</h2>
+      <p>Selecione um item para ver informações.</p>
     </div>
 
-    <button class="fechar" onclick="fecharArmazem()">
-      X
-    </button>
+    <button onclick="fechar()">X</button>
 
   </div>
 
