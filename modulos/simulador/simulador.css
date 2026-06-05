@@ -84,11 +84,14 @@ body {
   overflow: hidden;
 }
 
-/* Container do mundo: inclina o plano para o formato isométrico */
+/* Container do mundo: inclina o plano e move para cima */
 .mundo-isometrico {
-  transform: rotateX(60deg) rotateZ(-45deg);
+  transform: rotateX(60deg) rotateZ(-45deg) translateY(-100px); /* Adicionado translateY para subir */
   transform-style: preserve-3d;
+  position: relative;
+  top: -50px; /* Segunda opção de ajuste fino para empurrar para cima */
 }
+
 
 /* Cria a grade estrita de 15 colunas por 8 linhas */
 .grade-container {
