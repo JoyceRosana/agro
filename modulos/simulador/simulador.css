@@ -71,29 +71,10 @@ html, body {
   left: 630px;
 }
 
+/* TERRA */
+.terra {
+  width: 500px;
 
-/* Container que organiza as 120 imagens HTML */
-.grade-terras-html {
-  position: absolute;
-  
-  /* Mantém fixado na coordenada do mapa */
   top: 200px;
   left: 800px;
-  
-  /* Largura total onde as 15 imagens vão se espalhar */
-  width: 800px; 
-  
-  /* Sistema de grid estrito para organizar as tags do HTML */
-  display: grid;
-  grid-template-columns: repeat(15, 1fr); 
-  gap: 0px; /* Mantém as imagens grudadas uma na outra */
-  z-index: 5;
-}
-
-/* Configuração individual de cada imagem de terra */
-.terra {
-  width: 100%;
-  height: auto;
-  display: block;
-  image-rendering: pixelated; /* Deixa nítido se for pixel art */
 }
