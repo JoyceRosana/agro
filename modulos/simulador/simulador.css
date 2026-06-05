@@ -106,12 +106,12 @@ plantacao {
 }
 
 .armazem-conteudo{
-  width: 900px;
-  height: 500px;
+  width: 950px;
+  height: 550px;
 
-  background: #d7ccc8;
+  background: #fff8ee;
 
-  border: 10px solid #5d4037;
+    border: 10px solid #280000;
 
   border-radius: 20px;
 
@@ -125,10 +125,38 @@ plantacao {
     0 10px 30px rgba(0,0,0,0.4);
 }
 
-.lista-itens{
-  width: 270px;
+.titulo-galpao{
+    position:absolute;
 
-  background:#8d6e63;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:70px;
+
+    background:#280000;
+
+    color:#f69100;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    letter-spacing:3px;
+
+    z-index:10;
+}
+
+.lista-itens{
+  margin-top:70px;
+
+    width:280px;
+
+    background:#ff9800;
 
   display:flex;
   flex-direction:column;
@@ -137,31 +165,33 @@ plantacao {
 }
 
 .item{
-  padding:18px;
+    color:#f69100;
 
-  color:white;
+    font-weight:bold;
 
-  font-size:18px;
+    padding:18px;
 
-  cursor:pointer;
+    cursor:pointer;
 
-  border-bottom:1px solid rgba(255,255,255,0.15);
-
-  transition:0.3s;
+    transition:0.3s;
 }
 
 .item:hover{
-  background:#6d4c41;
+    background:#f69100;
 
-  padding-left:25px;
+    color:#280000;
 }
 
 .painel-info{
-  flex:1;
+   margin-top:70px;
 
-  padding:30px;
+    flex:1;
 
-  color:#3e2723;
+    padding:30px;
+
+    color:#000000;
+
+    background:#fff8ee;
 
   overflow-y:auto;
 

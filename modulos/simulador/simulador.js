@@ -43,97 +43,101 @@ function mostrarInfo(item){
   const dados = {
 
   milho: `
-    <h2>🌽 Milho</h2>
+    <h2>🌽 MILHO</h2>
 
     <p><strong>Quantidade disponível:</strong> 50 kg</p>
 
-    <h3>Informações</h3>
+    <h3>Benefícios</h3>
 
     <p>✔ Utilizado na alimentação humana e animal.</p>
+    <p>✔ Pode ser vendido para gerar lucro.</p>
+    <p>✔ É uma das culturas mais produzidas no Brasil.</p>
+    <p>✔ Serve como matéria-prima para diversos produtos.</p>
 
-    <p>✔ Pode ser comercializado após a colheita.</p>
-
-    <p>✔ Necessita irrigação e adubação adequadas.</p>
+    <h3>Curiosidade</h3>
+    <p>O milho é uma das culturas agrícolas mais cultivadas do mundo.</p>
   `,
 
   soja: `
-    <h2>🌱 Soja</h2>
+    <h2>🌱 SOJA</h2>
 
     <p><strong>Quantidade disponível:</strong> 40 kg</p>
 
-    <h3>Informações</h3>
+    <h3>Benefícios</h3>
 
-    <p>✔ Possui alto valor comercial.</p>
+    <p>✔ Alto valor comercial.</p>
+    <p>✔ Usada na produção de óleo e ração animal.</p>
+    <p>✔ Importante para exportação agrícola.</p>
+    <p>✔ Gera grande renda para o produtor.</p>
 
-    <p>✔ É utilizada na produção de diversos alimentos.</p>
-
-    <p>✔ Requer manejo adequado para alta produtividade.</p>
+    <h3>Curiosidade</h3>
+    <p>O Brasil está entre os maiores produtores de soja do mundo.</p>
   `,
 
   feijao: `
-    <h2>🫘 Feijão</h2>
+    <h2>🫘 FEIJÃO</h2>
 
     <p><strong>Quantidade disponível:</strong> 25 kg</p>
 
-    <h3>Informações</h3>
+    <h3>Benefícios</h3>
 
-    <p>✔ Alimento importante na dieta brasileira.</p>
-
+    <p>✔ Alimento essencial na alimentação brasileira.</p>
+    <p>✔ Rico em proteínas e nutrientes.</p>
     <p>✔ Pode ser vendido após a colheita.</p>
+    <p>✔ Contribui para a segurança alimentar.</p>
 
-    <p>✔ Necessita solo fértil e irrigação adequada.</p>
+    <h3>Curiosidade</h3>
+    <p>O feijão é um dos alimentos mais consumidos no Brasil diariamente.</p>
   `,
 
   alface: `
-    <h2>🥬 Alface</h2>
+    <h2>🥬 ALFACE</h2>
 
     <p><strong>Quantidade disponível:</strong> 30 unidades</p>
 
-    <h3>Informações</h3>
-
-    <p>✔ Hortaliça muito consumida.</p>
+    <h3>Benefícios</h3>
 
     <p>✔ Crescimento rápido.</p>
+    <p>✔ Muito consumida em saladas.</p>
+    <p>✔ Pode ser vendida em feiras e mercados locais.</p>
+    <p>✔ Fonte de vitaminas e minerais.</p>
 
-    <p>✔ Necessita irrigação frequente.</p>
+    <h3>Curiosidade</h3>
+    <p>A alface pode ser colhida em poucos dias dependendo do manejo.</p>
   `,
 
   organico: `
-    <h2>🧺 Adubo Orgânico</h2>
+    <h2>🧺 ADUBO ORGÂNICO</h2>
 
     <p><strong>Quantidade disponível:</strong> 20 sacos</p>
 
     <h3>Benefícios</h3>
 
     <p>✔ Melhora a qualidade do solo.</p>
-
     <p>✔ Reduz a poluição ambiental.</p>
-
     <p>✔ Aumenta a fertilidade da terra.</p>
+    <p>✔ Ajuda na retenção de água no solo.</p>
+    <p>✔ Favorece o crescimento saudável das plantas.</p>
 
-    <h3>Utilização</h3>
-
-    <p>✔ Aplicado antes do plantio.</p>
-
-    <p>✔ Pode ser utilizado em milho, soja, feijão e alface.</p>
+    <h3>Curiosidade</h3>
+    <p>É produzido a partir de restos naturais como folhas e esterco.</p>
   `,
 
   quimico: `
-    <h2>🧪 Adubo Químico</h2>
+    <h2>🧪 ADUBO QUÍMICO</h2>
 
     <p><strong>Quantidade disponível:</strong> 15 sacos</p>
 
     <h3>Benefícios</h3>
 
     <p>✔ Fornece nutrientes rapidamente.</p>
-
     <p>✔ Aumenta a produtividade das culturas.</p>
-
     <p>✔ Auxilia no desenvolvimento das plantas.</p>
+    <p>✔ Acelera o crescimento da lavoura.</p>
+    <p>✔ Deve ser usado com planejamento.</p>
 
-    <h3>Utilização</h3>
-
-    <p>✔ Aplicado conforme a necessidade da cultura.</p>
+    <h3>Curiosidade</h3>
+    <p>Seu uso excessivo pode prejudicar o solo a longo prazo.</p>
   `
 };
 }
