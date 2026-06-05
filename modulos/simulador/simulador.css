@@ -72,36 +72,28 @@ html, body {
 }
 
 
-/* Reseta margens da página */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #1a1a1a; /* Fundo escuro */
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-/* CORREÇÃO DO CONTAINER: Posição absolute fixa em relação ao mapa de 2000px */
-.mundo-isometrico {
+/* Container que organiza as 120 imagens HTML */
+.grade-terras-html {
   position: absolute;
-  top: 200px;  /* Controla a altura da grade inteira no mapa */
-  left: 800px; /* Controla a posição lateral da grade inteira no mapa */
-  z-index: 5;  /* Garante que fique acima do chão do mapa */
-}
-
-/*Remove o transform 3D para as imagens aparecerem perfeitamente */
-.grade-container {
+  
+  /* Mantém fixado na coordenada do mapa */
+  top: 200px;
+  left: 800px;
+  
+  /* Largura total onde as 15 imagens vão se espalhar */
+  width: 450px; 
+  
+  /* Sistema de grid estrito para organizar as tags do HTML */
   display: grid;
-  /* Cria as 15 colunas dividindo os 250px de tamanho estipulado */
-  grid-template-columns: repeat(15, calc(250px / 15)); 
-  gap: 0px; /* Gruda uma imagem na outra */
-  width: 250px;
+  grid-template-columns: repeat(15, 1fr); 
+  gap: 0px; /* Mantém as imagens grudadas uma na outra */
+  z-index: 5;
 }
 
-/* Garante a renderização e o encaixe dos blocos de terra */
-.bloco-terra {
+/* Configuração individual de cada imagem de terra */
+.terra {
   width: 100%;
   height: auto;
   display: block;
-  image-rendering: pixelated; /* Mantém os blocos nítidos se forem pixel art */
+  image-rendering: pixelated; /* Deixa nítido se for pixel art */
 }
