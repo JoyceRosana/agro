@@ -79,7 +79,7 @@ html, body {
   display: grid;
   grid-template-columns: repeat(5, 100px);
 
-  gap: -2px;
+  gap: 2px;
 }
 
 .terra {
