@@ -72,39 +72,37 @@ html, body {
 }
 
 
-/* Reseta margens e centraliza o mundo na tela */
+/* Reseta margens da página */
 body {
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a; /* Fundo escuro para dar contraste */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #1a1a1a; /* Fundo escuro */
   min-height: 100vh;
   overflow: hidden;
 }
 
-/* Container do mundo: inclina o plano e move para cima */
+/* Container do mundo: posicionado exatamente onde você pediu */
 .mundo-isometrico {
-  transform: rotateX(60deg) rotateZ(-45deg) translateY(-100px); /* Adicionado translateY para subir */
+  position: absolute;
+  top: 200px;                      /* Posição vertical exata */
+  left: 800px;                     /* Posição horizontal exata */
+  transform: rotateX(60deg) rotateZ(-45deg);
   transform-style: preserve-3d;
-  position: relative;
-  top: -50px; /* Segunda opção de ajuste fino para empurrar para cima */
 }
 
-
-/* Cria a grade estrita de 15 colunas por 8 linhas */
+/* Cria a grade com a largura total que você definiu */
 .grade-container {
   display: grid;
-  grid-template-columns: repeat(15, 60px); /* 15 colunas: mude 60px para ajustar o encaixe */
-  grid-template-rows: repeat(8, 60px);    /* 8 linhas */
-  gap: 0px;                                /* Garante que os blocos fiquem colados */
+  grid-template-columns: repeat(15, calc(250px / 15)); /* Divide os 250px de largura igualmente entre as 15 colunas */
+  grid-template-rows: repeat(8, calc(250px / 15));    /* Mantém a proporção quadrada para as 8 linhas */
+  width: 250px;                                       /* Largura exata que você pediu */
+  gap: 0px;
 }
 
-/* Garante o comportamento correto de cada bloco de terra */
+/* Garante que os blocos de terra preencham o novo tamanho */
 .bloco-terra {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  image-rendering: pixelated; /* Evita que o navegador deixe a imagem borrada */
+  image-rendering: pixelated;
 }
