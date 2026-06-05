@@ -136,3 +136,4 @@ function mostrarInfo(item){
     <p>✔ Aplicado conforme a necessidade da cultura.</p>
   `
 };
+}
