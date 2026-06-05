@@ -71,16 +71,14 @@ html, body {
   left: 630px;
 }
 
-.plantacao {
+plantacao {
   position: absolute;
   top: 200px;
   left: 500px;
 
   display: grid;
-  grid-template-columns: repeat(5, 100px);
-  grid-template-rows: repeat(6, 100px);
-
-  gap: 0;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(6, 60px);
 }
 
 .terra {
