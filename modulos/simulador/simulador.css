@@ -81,7 +81,7 @@ html, body {
   left: 800px;
   
   /* Largura total onde as 15 imagens vão se espalhar */
-  width: 450px; 
+  width: 800px; 
   
   /* Sistema de grid estrito para organizar as tags do HTML */
   display: grid;
