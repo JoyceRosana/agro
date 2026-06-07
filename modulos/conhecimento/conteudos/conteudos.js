@@ -33,3 +33,39 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// MENU CONHECIMENTO
+
+const menuConhecimento = document.getElementById("menuConhecimento");
+const dropdownMenu = document.getElementById("dropdownMenu");
+const seta = document.getElementById("seta");
+
+if (menuConhecimento && dropdownMenu) {
+
+    menuConhecimento.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        dropdownMenu.classList.toggle("show");
+
+        if (seta) {
+            seta.style.display =
+                dropdownMenu.classList.contains("show")
+                ? "none"
+                : "inline";
+        }
+    });
+
+    document.addEventListener("click", function(e) {
+
+        if (
+            !menuConhecimento.contains(e.target) &&
+            !dropdownMenu.contains(e.target)
+        ) {
+            dropdownMenu.classList.remove("show");
+
+            if (seta) {
+                seta.style.display = "inline";
+            }
+        }
+    });
+}
